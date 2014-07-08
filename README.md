@@ -4,13 +4,17 @@
 
 OS X support: Mavericks
 
-Supported models:
-- 6-series laptop: HP Probook 4x30s, 6x60b, Elitebook 8x60p, 2x60p
-- 7-series laptop: HP Probook 4x40s, 4x0 G0, 6x70b, Elitebook 8x70p, 2x70p, 9470m
-- 8-series laptop: HP Probook 4x0 G1, Elitebook 8x0 G1
+Supported models:  
 
-[##Guide to install](http://www.tonymacx86.com/hp-probook-mavericks/112383-guide-install-mavericks-clover-bootloader.html)
+* 6-series laptop: HP Probook 4x30s, 6x60b, Elitebook 8x60p, 2x60p
+* 7-series laptop: HP Probook 4x40s, 4x0 G0, 6x70b, Elitebook 8x70p, 2x70p, 9470m
+* 8-series laptop: HP Probook 4x0 G1, Elitebook 8x0 G1
 
+[Guide to install OS X on HP Probook](http://www.tonymacx86.com/hp-probook-mavericks/112383-guide-install-mavericks-clover-bootloader.html)  
+
+###C h a n g e l o g  
+    
+* 07/08/2014: 6.1.14.1 Official Released
 ###C r e d i t s:
 
 **Chameleon Trunk** is courtesy of the **Chameleon Team**.  
