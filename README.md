@@ -20,10 +20,10 @@ Supported models:
 **Clover Bootloader** is courtesy of the **Clover Team**.  
 [The Clover support thread](http://www.projectosx.com/forum/index.php?showtopic=2562)  
 
-The **VoodooPS2Controller** fork is courtesy of **RehabMan**  
+The **VoodooPS2Controller** fork is courtesy of **RehabMan**.
 [The VoodooPS2Controller support thread](http://www.tonymacx86.com/hp-probook/75649-new-voodoops2controller-keyboard-trackpad.html)  
 
-The **AppleSmartBatteryManager** fork is courtesy of **RehabMan**  
+The **AppleSmartBatteryManager** fork is courtesy of **RehabMan**.
 [The AppleSmartBatteryManager support thread](http://www.tonymacx86.com/mountain-lion-laptop-support/69472-battery-manager-fix-boot-without-batteries.html)  
 [The original support thread](http://www.insanelymac.com/forum/topic/264597-hp-dvx-acpi-3x4x-battery-driver-106107/#entry1729132)  
 
@@ -54,15 +54,12 @@ The AHCI patch, **patch-hda.pl** and **patch-hda-codecs.pl** are courtesy of **b
 [The Trim Enabler support forums](http://www.groths.org/forums/)  
 
 **AICPMPatch.pl** is courtesy of **el coniglio** with modifications by **RehabMan**.  
-[The original support thread](http://olarila.com/forum/viewtopic.php?f=9&t=1003&sid=d6df188c360c6a74d9b788ae9568df84)  
-
-**FileNVRAM** copyright © 2013 **xZeneu LLC**. **FileNVRAM** is licensed under the Attribution-NonCommercial 3.0 Unported license (included in the Installer).  
-[The FIleNVRAM support thread](http://www.insanelymac.com/forum/topic/286563-filenvram-113-released/)  
+[The original support thread](http://olarila.com/forum/viewtopic.php?f=9&t=1003&sid=d6df188c360c6a74d9b788ae9568df84)   
 
 The unified **AppleIntelFramebufferCapri.kext** patch is courtesy of **kpkp**.  
 [The original support thread](http://www.tonymacx86.com/hp-probook/99533-testers-ivy-probooks-needed.html)    
 
-**ACPIPoller.kext**, the fan reset module for Chameleon/Chimera and the **blinkscreen** utility are courtesy of **RehabMan**.  
+**ACPIPoller.kext** and the fan reset driver for Clover are courtesy of **RehabMan**.  
 The Atheros Bluetooth kext is courtesy of **mac4mat** and **RehabMan**.  
 The **patchmatic** utility by **RehabMan** is based of the **MaciASL** source code and uses **RegexKitLite** by **John Engelhart**.  
 The **DSDT generator/patcher** is courtesy of **RehabMan**, **BigDonkey** and **philip_petev**.  
