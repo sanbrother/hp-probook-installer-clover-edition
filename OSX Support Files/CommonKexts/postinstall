@@ -1,0 +1,16 @@
+#!/bin/bash
+
+RightNowIs=`/usr/libexec/PlistBuddy -c "Print :CurrentDateTime" /tmp/PBI.plist`
+BackupDir="$HOME/Desktop/Installer Backups/Backup $RightNowIs"
+
+./Backup.sh ./list_common ${3}
+
+if [ ! -d /Volumes/EFI/EFI/CLOVER/kexts/10.10 ]
+then
+	mkdir -p /Volumes/EFI/EFI/CLOVER/kexts/10.10
+fi
+
+rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/*
+cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/* /Volumes/EFI/EFI/CLOVER/kexts/10.10
+
+/usr/libexec/PlistBuddy -c "Set :KextCacheRebuild yes" /tmp/PBI.plist

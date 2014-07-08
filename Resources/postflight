@@ -1,0 +1,18 @@
+#!/bin/bash
+# rebilding the kext cache, if triggered
+RebuildOn=`/usr/libexec/PlistBuddy -c "Print :KextCacheRebuild" /tmp/PBI.plist`
+if [ "$RebuildOn" == "yes" ]
+then
+	touch "${3}/System/Library/Extensions"
+fi
+# setting the Installer Backups folder's owner to the current user
+if [ -e "$HOME/Desktop/Installer Backups" ]
+then
+	chown -R $USER "$HOME/Desktop/Installer Backups"
+fi
+# deleting temporary files
+rm -rf /tmp/PBI.plist
+rm -rf /tmp/Apps
+# enabling AirDrop
+pmset -a hibernatemode 0
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
