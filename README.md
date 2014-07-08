@@ -17,9 +17,6 @@ Supported models:
 * 07/08/2014: 6.1.14.1 Official Released
 ###C r e d i t s:
 
-**Chameleon Trunk** is courtesy of the **Chameleon Team**.  
-[The Chameleon Trunk support thread](http://www.insanelymac.com/forum/topic/231075-chameleon-22svn-official-pkg-installer-binaries)  
-
 **Clover Bootloader** is courtesy of the **Clover Team**.  
 [The Clover support thread](http://www.projectosx.com/forum/index.php?showtopic=2562)  
 
@@ -46,8 +43,7 @@ The AHCI patch, **patch-hda.pl** and **patch-hda-codecs.pl** are courtesy of **b
 [The AHCI patch support thread](http://www.insanelymac.com/forum/topic/280062-waiting-for-root-device-when-kernel-cache-used-only-with-some-disks-fix/)  
 [The AppleHDA patch support thread](http://www.insanelymac.com/forum/topic/284004-script-to-patch-applehda-binary-for-osx107108/)  
 
-**Chameleon Wizard** and **Kext Wizard** are courtesy of **janek202**.  
-[The Chameleon Wizard support thread](http://www.insanelymac.com/forum/topic/257464-chameleon-wizard-utility-for-chameleon/)  
+**Kext Wizard** is courtesy of **janek202**.   
 [The Kext Wizard support thread](http://www.insanelymac.com/forum/topic/253395-kext-wizard-easy-to-use-kext-installer-and-more/)  
 
 **FakeSMC** is courtesy of **RehabMan**, **kozlek**, **netkas**, **slice** and **navi**.  
@@ -64,10 +60,7 @@ The AHCI patch, **patch-hda.pl** and **patch-hda-codecs.pl** are courtesy of **b
 [The FIleNVRAM support thread](http://www.insanelymac.com/forum/topic/286563-filenvram-113-released/)  
 
 The unified **AppleIntelFramebufferCapri.kext** patch is courtesy of **kpkp**.  
-[The original support thread](http://www.tonymacx86.com/hp-probook/99533-testers-ivy-probooks-needed.html)  
-
-The default Chameleon theme **LoginToLion** is courtesy of **Enzo**.  
-[The original theme thread](http://forum.voodooprojects.org/index.php/topic,2125.0.html)  
+[The original support thread](http://www.tonymacx86.com/hp-probook/99533-testers-ivy-probooks-needed.html)    
 
 **ACPIPoller.kext**, the fan reset module for Chameleon/Chimera and the **blinkscreen** utility are courtesy of **RehabMan**.  
 The Atheros Bluetooth kext is courtesy of **mac4mat** and **RehabMan**.  
