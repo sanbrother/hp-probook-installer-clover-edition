@@ -35465,7 +35465,7 @@ Credits for bcc9.</string>
 						<key>LANGUAGE</key>
 						<string>English</string>
 						<key>VALUE</key>
-						<string>HP ProBook Installer 6.1.14.1 Clover Edition</string>
+						<string>HP ProBook Installer 6.1.14.2 Clover Edition</string>
 					</dict>
 				</array>
 			</dict>
@@ -35696,7 +35696,7 @@ Credits for bcc9.</string>
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>HP ProBook Installer</string>
+			<string>HP ProBook Installer Clover Edition</string>
 		</dict>
 	</dict>
 	<key>TYPE</key>
