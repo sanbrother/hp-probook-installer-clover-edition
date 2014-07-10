@@ -3,7 +3,12 @@ set -x
 
 if [ -e /Volumes/EFI/EFI/Boot/BOOTX64.efi ]
 then
-	cp /Volumes/EFI/EFI/Boot/BOOTX64.efi /Volumes/EFI/EFI/CLOVER/CLOVERX64.efi
+	cp -f /Volumes/EFI/EFI/Boot/BOOTX64.efi /Volumes/EFI/EFI/CLOVER/CLOVERX64.efi
+fi
+
+if [ -e "/Volumes/EFI/EFI/CLOVER/themes/Yosemite/Yosemite all blur.png" ]
+then
+	cp -f "/Volumes/EFI/EFI/CLOVER/themes/Yosemite/Yosemite all blur.png" "/Volumes/EFI/EFI/CLOVER/themes/Yosemite S/"
 fi
 
 if [ ! -d /Volumes/EFI/EFI/CLOVER/kexts/10.10 ]

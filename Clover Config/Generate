@@ -534,7 +534,7 @@ then
 	then
 		if [[ "$CurrentTheme" == '' ]]
 		then
-			CurrentTheme='Universe'
+			CurrentTheme='Yosemite'
 		fi
 
 		printf '\t\t<key>Theme</key>\n' >> $config
@@ -542,7 +542,7 @@ then
 	else
 		if [[ "$CurrentTheme" == '' ]]
 		then
-			CurrentTheme='Universe S'
+			CurrentTheme='Yosemite S'
 		fi
 		printf '\t\t<key>ScreenResolution</key>\n' >> $config
 		printf '\t\t<string>1024x768</string>\n' >> $config
