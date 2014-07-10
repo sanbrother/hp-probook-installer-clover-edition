@@ -52,6 +52,10 @@
 	<array>
 		<string>iDisk</string>
 	</array>
+	<key>/System/Library/InternetAccounts/iCloud.iaplugin/Contents/Resources/iCloudSidebar.tiff</key>
+	<array>
+		<string>x-applefinder-vnode:CloudDocs%20libraries</string>
+	</array>
 	<key>/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AirDrop.icns</key>
 	<array>
 		<string>x-applefinder-vnode:AirDrop</string>
