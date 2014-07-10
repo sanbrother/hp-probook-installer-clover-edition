@@ -6,21 +6,33 @@ cp /tmp/config.plist /Volumes/EFI/EFI/CLOVER/
 rm /tmp/config.plist
 
 cd /tmp/tempDSDT
-ACPI_Tables="$(ioreg -lw0 | grep 'ACPI Tables' | cut -f2 -d '{' | tr -d '}' | tr ',' '\012')"
 
-#mv ./Mini-SSDT-DualLink.aml ./Mini-SSDT-DualLink.aml.bak
-#mv ./Mini-SSDT-IMEI.aml ./Mini-SSDT-IMEI.aml.bak
 
-# Extract Tables from Dump
-for table in ${ACPI_Tables}; do
-    tableName=$(echo $table | cut -f1 -d '=' | tr -d '"')
-    printf "${tableName} \n"
-    if [[ $tableName == *DSDT* ]] || [[ $tableName == *SSDT* ]]
-    then
-	    tableData=$(echo "$table" | cut -f2 -d '<' | tr -d '>')
-	    echo "$tableData" | xxd -r -p > "./${tableName}.aml"
-	fi
-done
+if [ -f /Volumes/CLOVER/EFI/CLOVER/ACPI/origin/DSDT.aml ]
+then
+	# get original DSDT from CLOVER USB
+	cp /Volumes/CLOVER/EFI/ACPI/origin/DSDT.aml .
+	cp /Volumes/CLOVER/EFI/ACPI/origin/SSDT*.aml .
+elif [ -f /Volumes/EFI/EFI/CLOVER/ACPI/origin/DSDT.aml ]
+then
+	# get original DSDT from EFI partition
+	cp /Volumes/EFI/EFI/CLOVER/ACPI/origin/DSDT.aml .
+	cp /Volumes/EFI/EFI/CLOVER/ACPI/origin/SSDT*.aml .
+else 
+	#statements
+	ACPI_Tables="$(ioreg -lw0 | grep 'ACPI Tables' | cut -f2 -d '{' | tr -d '}' | tr ',' '\012')"
+
+	# Extract Tables from Dump
+	for table in ${ACPI_Tables}; do
+	    tableName=$(echo $table | cut -f1 -d '=' | tr -d '"')
+	    printf "${tableName} \n"
+	    if [[ $tableName == *DSDT* ]] || [[ $tableName == *SSDT* ]]
+	    then
+		    tableData=$(echo "$table" | cut -f2 -d '<' | tr -d '>')
+		    echo "$tableData" | xxd -r -p > "./${tableName}.aml"
+		fi
+	done
+fi
 
 cp ./*.aml /Volumes/EFI/EFI/CLOVER/acpi/origin/
 
@@ -31,8 +43,6 @@ VanillaCheck=`cat ./DSDT.dsl | grep 'If (CondRefOf (FPED))\|External (_SB_.ISCT)
 if [ "$VanillaCheck" == "" -a -f ./4x*.txt ] || [ "$VanillaCheck" != "" -a ! -f ./4x*.txt ]
 then
 	cp ./warning.txt "$HOME/Desktop/DSDT Warning.txt"
-	#cp ./Mini-SSDT-DualLink.aml.bak "$HOME/Desktop/Mini-SSDT-DualLink.aml"
-	#cp ./Mini-SSDT-IMEI.aml.bak "$HOME/Desktop/Mini-SSDT-IMEI.aml"
 else
 	
 	for patch in "4x30s.txt" \
