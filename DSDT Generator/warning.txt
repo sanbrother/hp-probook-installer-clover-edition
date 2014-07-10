@@ -3,10 +3,7 @@ If you see this warning message, that means you're trying to do any of the follo
 1. You're trying to patch already patched DSDT with the main model-specific patch.
 2. You're trying to patch your vanilla DSDT, but you haven't selected the main model-specific patch.
 
-Please, run the ProBook Installer again and select correct DSDT options.
-
 If you want to make yourself a new patched DSDT, you should do the following:
 
-Create new USB Clover with Clover.zip and Config.zip in https://www.dropbox.com/sh/28spnh4ozkb424m/AACuCmfpsu9tSvEv_4CSU67za.
-Boot from USB
-Run PBI Clover Edition again
+Press F4 at Clover screen
+Run PBI Clover Edition again and select correct DSDT options.
