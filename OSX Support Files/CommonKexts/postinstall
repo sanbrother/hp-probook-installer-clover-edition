@@ -3,7 +3,6 @@
 RightNowIs=`/usr/libexec/PlistBuddy -c "Print :CurrentDateTime" /tmp/PBI.plist`
 BackupDir="$HOME/Desktop/Installer Backups/Backup $RightNowIs"
 
-./Backup.sh ./list_common ${3}
 
 if [ ! -d /Volumes/EFI/EFI/CLOVER/kexts/10.10 ]
 then
