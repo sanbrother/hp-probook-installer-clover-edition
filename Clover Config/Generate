@@ -189,6 +189,8 @@ then
 		printf '\t\t<string>kext-dev-mode=1</string>\n' >> $config
 	fi
 
+	printf '\t\t<key>UseAlternateLogo</key>\n' >> $config
+	printf '\t\t<true/>\n' >> $config
 	printf '\t\t<key>Legacy</key>\n' >> $config
 	printf '\t\t<string>LegacyBiosDefault</string>\n' >> $config
 	printf '\t\t<key>Log</key>\n' >> $config
