@@ -32,6 +32,23 @@ then
 		printf '\t\t\t<key>NVidia</key>\n' >> $config
 		printf '\t\t\t<false/>\n' >> $config
 		printf '\t\t</dict>\n' >> $config
+	elif [ "$CloverModel" == "6x70AMD" ]
+	then
+		printf '\t\t<key>DualLink</key>\n' >> $config
+		printf '\t\t<integer>1</integer>\n' >> $config
+		printf '\t\t<key>FBName</key>\n' >> $config
+		printf '\t\t<string>Typha</string>\n' >> $config
+		printf '\t\t<key>Inject</key>\n' >> $config
+		printf '\t\t<dict>\n' >> $config
+		printf '\t\t\t<key>Intel</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t\t<key>ATI</key>\n' >> $config
+		printf '\t\t\t<true/>\n' >> $config
+		printf '\t\t\t<key>NVidia</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t</dict>\n' >> $config
+		printf '\t\t<key>LoadVBios</key>\n' >> $config
+		printf '\t\t<true/>\n' >> $config
 	else
 		case $CloverResolution in 
 			low)
@@ -91,7 +108,7 @@ then
 			prodname="MacBookPro8,1"
 			serial="C02J"$week_letter$(random_char)$(random_char)$(random_char)"DH2G"
 			;;
-		4x40|6x70|4x0G0)
+		4x40|6x70*|4x0G0)
 			boardtype="10"
 			chassistype="8"
 			chassis="MacBook-Aluminum"
@@ -415,6 +432,26 @@ then
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch audio HDMI HD4400/4600 laptop</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config
+	elif ([ "$CloverModel" == "6x70AMD" ])
+	then
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AMD6000Controller</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tAAQAAAQDAAAAAQEAEQIEAQAEAAAEAwAAAAECACEDBQIA
+                BAAAAAEAAAAJAwAQAAIFAAQAAAABAAAACQQAIAEDBgQA
+                AAAUAgAAAAEFAAIEAQM=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tAgAAAEAAAAAJAQAAEAEAAQAEAAAEAwAAAAECABECAQUA
+                BAAABAIAAAABAgAhAgICAAQAAAQCAAAAAQAAEgADAxAA
+                AAAQAAAAAAEAAAAABAg=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Patch AMD port</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
 	fi
 	
 	case $CloverModel in 
@@ -481,7 +518,7 @@ then
 			printf '\t\t\t\t<string>IDT 76E0</string>\n' >> $config
 			printf '\t\t\t</dict>\n' >> $config
 			;;
-		6x60|6x70)
+		6x60|6x70*)
 			printf '\t\t\t<dict>\n' >> $config
 			printf '\t\t\t\t<key>Name</key>\n' >> $config
 			printf '\t\t\t\t<string>AppleHDA</string>\n' >> $config
@@ -532,7 +569,7 @@ then
 		fi
 	fi
 
-	if [ "$CloverModel" == "4x0G1" ] || ( ( [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] ) && [ "$CloverResolution" == "high" ] )
+	if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "6x70AMD" ] || ( ( [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == 6x70* ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] ) && [ "$CloverResolution" == "high" ] )
 	then
 		if [[ "$CurrentTheme" == '' ]]
 		then

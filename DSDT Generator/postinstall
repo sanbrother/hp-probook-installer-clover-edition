@@ -61,6 +61,7 @@ else
 	for patch in "4x30s.txt" \
 		"4x40s_IvyBridge.txt" \
 		"4x40s_SandyBridge.txt" \
+		"4x40s_AMD.txt" \
 		"4x0G1.txt" \
 		"03a_HDMI.txt" \
 		"03b_1080p+HDMI.txt" \
@@ -84,6 +85,11 @@ else
 				rm ./03b_1080p+HDMI.txt
 				rm ./04a_FanPatch.txt
 				rm ./04b_FanQuiet.txt
+			fi
+			if [ $patch == "4x40s_AMD.txt" ]
+			then
+				rm ./03a_HDMI.txt
+				rm ./03b_1080p+HDMI.txt
 			fi
 			./patchmatic ./DSDT.dsl ./$patch ./DSDT.dsl
 		fi

@@ -36,6 +36,7 @@
                 <line choice="installer_choice_5_1_6"/>
                 <line choice="installer_choice_5_1_7"/>
                 <line choice="installer_choice_5_1_8"/>
+                <line choice="installer_choice_5_1_9"/>
             </line>
             <line choice="installer_choice_5_2">
                 <line choice="installer_choice_5_2_1"/>
@@ -96,28 +97,31 @@
         <pkg-ref id="com.MadMax.pkg.Support.9470m"/>
     </choice>
     <choice id="installer_choice_4" title="INSTALLER_CHOICE_4_TITLE" description="INSTALLER_CHOICE_4_DESCRIPTION"/>
-    <choice id="installer_choice_5_1_1" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_1_1_TITLE" description="INSTALLER_CHOICE_5_1_1_DESCRIPTION">
+    <choice id="installer_choice_5_1_1" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected &amp;&amp; !choices.installer_choice_5_1_9.selected)" title="INSTALLER_CHOICE_5_1_1_TITLE" description="INSTALLER_CHOICE_5_1_1_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part1.4x30s"/>
     </choice>
-    <choice id="installer_choice_5_1_2" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_1_2_TITLE" description="">
+    <choice id="installer_choice_5_1_2" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected &amp;&amp; !choices.installer_choice_5_1_9.selected)" title="INSTALLER_CHOICE_5_1_2_TITLE" description="">
         <pkg-ref id="com.MadMax.pkg.Part1.6x60b"/>
     </choice>
-    <choice id="installer_choice_5_1_3" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_1_3_TITLE" description="INSTALLER_CHOICE_5_1_3_DESCRIPTION">
+    <choice id="installer_choice_5_1_3" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected &amp;&amp; !choices.installer_choice_5_1_9.selected)" title="INSTALLER_CHOICE_5_1_3_TITLE" description="INSTALLER_CHOICE_5_1_3_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part1.4x40s.ib"/>
     </choice>
-    <choice id="installer_choice_5_1_4" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_1_4_TITLE" description="INSTALLER_CHOICE_5_1_4_DESCRIPTION">
+    <choice id="installer_choice_5_1_4" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected &amp;&amp; !choices.installer_choice_5_1_9.selected)" title="INSTALLER_CHOICE_5_1_4_TITLE" description="INSTALLER_CHOICE_5_1_4_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part1.4x40s.sb"/>
     </choice>
-    <choice id="installer_choice_5_1_5" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_1_5_TITLE" description="INSTALLER_CHOICE_5_1_5_DESCRIPTION">
+    <choice id="installer_choice_5_1_5" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected &amp;&amp; !choices.installer_choice_5_1_9.selected)" title="INSTALLER_CHOICE_5_1_5_TITLE" description="INSTALLER_CHOICE_5_1_5_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part1.6x70b"/>
     </choice>
-    <choice id="installer_choice_5_1_6" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_1_6_TITLE" description="INSTALLER_CHOICE_5_1_6_DESCRIPTION">
+    <choice id="installer_choice_5_1_6" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected &amp;&amp; !choices.installer_choice_5_1_9.selected)" title="INSTALLER_CHOICE_5_1_6_TITLE" description="INSTALLER_CHOICE_5_1_6_DESCRIPTION">
+        <pkg-ref id="com.MadMax.pkg.Part1.6x70bAMD"/>
+    </choice>
+    <choice id="installer_choice_5_1_7" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_8.selected &amp;&amp; !choices.installer_choice_5_1_9.selected)" title="INSTALLER_CHOICE_5_1_7_TITLE" description="INSTALLER_CHOICE_5_1_7_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part1.4x0sG0"/>
     </choice>
-    <choice id="installer_choice_5_1_7" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_1_7_TITLE" description="INSTALLER_CHOICE_5_1_7_DESCRIPTION">
+    <choice id="installer_choice_5_1_8" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_9.selected)" title="INSTALLER_CHOICE_5_1_8_TITLE" description="INSTALLER_CHOICE_5_1_8_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part1.4x0sG1"/>
     </choice>
-    <choice id="installer_choice_5_1_8" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected)" title="INSTALLER_CHOICE_5_1_8_TITLE" description="INSTALLER_CHOICE_5_1_8_DESCRIPTION">
+    <choice id="installer_choice_5_1_9" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_1_1.selected &amp;&amp; !choices.installer_choice_5_1_2.selected &amp;&amp; !choices.installer_choice_5_1_3.selected &amp;&amp; !choices.installer_choice_5_1_4.selected &amp;&amp; !choices.installer_choice_5_1_5.selected &amp;&amp; !choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_7.selected &amp;&amp; !choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_1_8_TITLE" description="INSTALLER_CHOICE_5_1_9_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part1.9470m"/>
     </choice>
     <choice id="installer_choice_5_1" title="INSTALLER_CHOICE_5_1_TITLE" description="INSTALLER_CHOICE_5_1_DESCRIPTION"/>
@@ -130,14 +134,14 @@
     <choice id="installer_choice_5_2_3" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_2_1.selected &amp;&amp; !choices.installer_choice_5_2_2.selected)" title="INSTALLER_CHOICE_5_2_3_TITLE" description="INSTALLER_CHOICE_5_2_3_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part2.fan.speed"/>
     </choice>
-    <choice id="installer_choice_5_2" visible="(!choices.installer_choice_5_1_7.selected)" title="INSTALLER_CHOICE_5_2_TITLE" description="INSTALLER_CHOICE_5_2_DESCRIPTION"/>
+    <choice id="installer_choice_5_2" visible="(!choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_2_TITLE" description="INSTALLER_CHOICE_5_2_DESCRIPTION"/>
     <choice id="installer_choice_5_3_1" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_3_2.selected)" title="INSTALLER_CHOICE_5_3_1_TITLE" description="INSTALLER_CHOICE_5_3_1_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part3.HDMI.stock"/>
     </choice>
     <choice id="installer_choice_5_3_2" start_selected="false" selected="(my.choice.selected &amp;&amp; !choices.installer_choice_5_3_1.selected)" title="INSTALLER_CHOICE_5_3_2_TITLE" description="INSTALLER_CHOICE_5_3_2_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Part3.HDMI.1080"/>
     </choice>
-    <choice id="installer_choice_5_3" visible="(!choices.installer_choice_5_1_7.selected)" title="INSTALLER_CHOICE_5_3_TITLE" description="INSTALLER_CHOICE_5_3_DESCRIPTION"/>
+    <choice id="installer_choice_5_3" visible="(!choices.installer_choice_5_1_6.selected &amp;&amp; !choices.installer_choice_5_1_8.selected)" title="INSTALLER_CHOICE_5_3_TITLE" description="INSTALLER_CHOICE_5_3_DESCRIPTION"/>
     <choice id="installer_choice_5_4" start_visible="false" start_selected="false" selected="DSDTSelected()" title="INSTALLER_CHOICE_5_4_TITLE" description="INSTALLER_CHOICE_5_4_DESCRIPTION">
         <pkg-ref id="com.MadMax.pkg.Patcher"/>
     </choice>
@@ -202,6 +206,7 @@
     <pkg-ref id="com.MadMax.pkg.Part2.fan.quiet" version="1.0" auth="Root" installKBytes="6">#Part2.fan.quiet.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Part1.4x0sG0" version="1.0" auth="Root" installKBytes="35">#Part1.4x0sG0.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Support.4x0sG1" version="1.0" auth="Root" installKBytes="9">#Support.4x0sG1.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Part1.6x70bAMD" version="1.0" auth="Root" installKBytes="30">#Part1.6x70bAMD.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Support.9470m" version="1.0" auth="Root" installKBytes="9">#Support.9470m.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Part3.HDMI.stock" version="1.0" auth="Root" installKBytes="1">#Part3.HDMI.stock.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.SSDTGenerator" version="1.0" auth="Root" installKBytes="0">#SSDTGenerator.pkg</pkg-ref>
