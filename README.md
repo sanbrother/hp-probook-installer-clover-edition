@@ -1,8 +1,13 @@
 ##HP ProBook Installer Clover Edition 6.x repository  
 
 **Maintainer: pokenguyen**
+  
 
-OS X support: Mavericks
+[![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=dhnguyenit@gmail.com&lc=VN&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
+  
+
+ 
+OS X support: Mavericks, Yosemite
 
 Supported models:  
 
@@ -12,9 +17,28 @@ Supported models:
 
 [Guide to install OS X on HP Probook](http://www.tonymacx86.com/hp-probook-mavericks/112383-guide-install-mavericks-clover-bootloader.html)  
 
-###C h a n g e l o g  
+###C h a n g e l o g   
+  
+
+**Version 6.2 (July 13th 2014)**  
+
+* Fix kext backup.
+* Add UseAlternateLogo to config.plist.
+* Add 6x70b/8x70p AMD support (experiment).
+* Update SSDTPrgen, Clover Configurator, Clover, VoodooPS2.
+
+**Version 6.1.14.2 (July 10th 2014):**  
+
+* Getting DSDT from origin folder.
+* Change theme to Yosemite.
+* Update XtraFinder.
+
     
-* 07/08/2014: 6.1.14.1 Official Released
+**Version 6.1.14.1 (July 7th 2014)**  
+
+* Officially release!
+
+
 ###C r e d i t s:
 
 **Clover Bootloader** is courtesy of the **Clover Team**.  
