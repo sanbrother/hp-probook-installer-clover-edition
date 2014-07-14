@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 PBIplist="/tmp/PBI.plist"
 if [ -e "$PBIplist" ]
 then
@@ -11,10 +12,18 @@ fi
 
 if [ -d "/Volumes/EFI" ]
 then
-	diskutil unmount /Volumes/EFI
+    if mount | grep /Volumes/EFI > /dev/null; then
+		diskutil unmount /Volumes/EFI
+	else
+		rm -rf /Volumes/EFI
+	fi
 fi
 
 if [ -d "/Volumes/ESP" ]
 then
-	diskutil unmount /Volumes/ESP
+	if mount | grep /Volumes/ESP > /dev/null; then
+		diskutil unmount /Volumes/ESP
+	else
+		rm -rf /Volumes/ESP
+	fi
 fi
