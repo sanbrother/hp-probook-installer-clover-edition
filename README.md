@@ -19,6 +19,12 @@ Supported models:
 
 ###C h a n g e l o g   
   
+**Version 6.2.1 (July 17th 2014)**  
+
+* Check invalid EFI mount point.
+* Replace UseAlternateLogo by CustomLogo.
+* Replace IOath3kfrmwr.kext by BTFirmwareUploader.kext.
+* Update Clover Configurator, Clover.
 
 **Version 6.2 (July 13th 2014)**  
 
@@ -63,6 +69,9 @@ The SSDT generator script is courtesy of **RevoGirl** and **PikeRAlpha**.
 [The original GenericUSBXHCI.kext support thread](http://www.insanelymac.com/forum/topic/286860-genericusbxhci-usb-30-driver-for-os-x-with-source/)  
 [The original RealtekRTL8111.kext support thread](http://www.insanelymac.com/forum/topic/287161-new-driver-for-realtek-rtl8111/)  
 
+**BTFirmwareUploader.kext** is courtesy of **EMlyDinEsH**.  
+[The original BTFirmwareUploader.kext support thread](http://forum.osxlatitude.com/index.php?/topic/2925-bluetooth-firmware-uploader/)  
+
 The AHCI patch, **patch-hda.pl** and **patch-hda-codecs.pl** are courtesy of **bcc9**.  
 [The AHCI patch support thread](http://www.insanelymac.com/forum/topic/280062-waiting-for-root-device-when-kernel-cache-used-only-with-some-disks-fix/)  
 [The AppleHDA patch support thread](http://www.insanelymac.com/forum/topic/284004-script-to-patch-applehda-binary-for-osx107108/)  
@@ -84,7 +93,6 @@ The unified **AppleIntelFramebufferCapri.kext** patch is courtesy of **kpkp**.
 [The original support thread](http://www.tonymacx86.com/hp-probook/99533-testers-ivy-probooks-needed.html)    
 
 **ACPIPoller.kext** and the fan reset driver for Clover are courtesy of **RehabMan**.  
-The Atheros Bluetooth kext is courtesy of **mac4mat** and **RehabMan**.  
 The **patchmatic** utility by **RehabMan** is based of the **MaciASL** source code and uses **RegexKitLite** by **John Engelhart**.  
 The **DSDT generator/patcher** is courtesy of **RehabMan**, **BigDonkey** and **philip_petev**.  
 The **EDID generator** is courtesy of **philip_petev**.  

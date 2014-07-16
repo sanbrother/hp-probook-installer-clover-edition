@@ -189,39 +189,39 @@
         +==========================+-->
     <pkg-ref id="com.MadMax.pkg.Part2.fan.speed" version="1.0" auth="Root" installKBytes="1">#Part2.fan.speed.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Part3.HDMI.1080" version="1.0" auth="Root" installKBytes="1">#Part3.HDMI.1080.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Probook.logos" version="1.0" auth="Root" installKBytes="833">#Probook.logos.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Part1.4x30s" version="1.0" auth="Root" installKBytes="27">#Part1.4x30s.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Probook.logos" version="1.0" auth="Root" installKBytes="1667">#Probook.logos.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Part1.4x30s" version="1.0" auth="Root" installKBytes="28">#Part1.4x30s.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Part1.6x70b" version="1.0" auth="Root" installKBytes="35">#Part1.6x70b.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Part1.4x40s.ib" version="1.0" auth="Root" installKBytes="35">#Part1.4x40s.ib.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Patcher" version="1.0" auth="Root" installKBytes="1071">#Patcher.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.XtraFinder" version="1.0" auth="Root" installKBytes="4852">#XtraFinder.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Support.4x30" version="1.0" auth="Root" installKBytes="10">#Support.4x30.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.CloverConfigurator" version="1.0" auth="Root" installKBytes="17061">#Extra_CloverConfigurator.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Part1.4x0sG1" version="1.0" auth="Root" installKBytes="31">#Part1.4x0sG1.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Patcher" version="1.0" auth="Root" installKBytes="1070">#Patcher.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.XtraFinder" version="1.0" auth="Root" installKBytes="4910">#XtraFinder.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Support.4x30" version="1.0" auth="Root" installKBytes="4569">#Support.4x30.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.CloverConfigurator" version="1.0" auth="Root" installKBytes="1744">#Extra_CloverConfigurator.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Part1.4x0sG1" version="1.0" auth="Root" installKBytes="32">#Part1.4x0sG1.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.0.postinstall" version="1.0" auth="Root" installKBytes="0">#0.postinstall.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Part2.fan.std" version="1.0" auth="Root" installKBytes="2">#Part2.fan.std.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Part1.4x40s.sb" version="1.0" auth="Root" installKBytes="35">#Part1.4x40s.sb.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Part2.fan.std" version="1.0" auth="Root" installKBytes="3">#Part2.fan.std.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Part1.4x40s.sb" version="1.0" auth="Root" installKBytes="36">#Part1.4x40s.sb.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.CameraControl" version="1.0" auth="Root" installKBytes="22">#Extra_CameraControl.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.CommonFiles" version="1.0" auth="Root" installKBytes="3091">#CommonFiles.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Part2.fan.quiet" version="1.0" auth="Root" installKBytes="6">#Part2.fan.quiet.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.CommonFiles" version="1.0" auth="Root" installKBytes="4559">#CommonFiles.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Part2.fan.quiet" version="1.0" auth="Root" installKBytes="3">#Part2.fan.quiet.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Part1.4x0sG0" version="1.0" auth="Root" installKBytes="35">#Part1.4x0sG0.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Support.4x0sG1" version="1.0" auth="Root" installKBytes="9">#Support.4x0sG1.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Support.4x0sG1" version="1.0" auth="Root" installKBytes="4569">#Support.4x0sG1.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Part1.6x70bAMD" version="1.0" auth="Root" installKBytes="30">#Part1.6x70bAMD.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Support.9470m" version="1.0" auth="Root" installKBytes="9">#Support.9470m.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Support.9470m" version="1.0" auth="Root" installKBytes="4569">#Support.9470m.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Part3.HDMI.stock" version="1.0" auth="Root" installKBytes="1">#Part3.HDMI.stock.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.SSDTGenerator" version="1.0" auth="Root" installKBytes="0">#SSDTGenerator.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Support.4x0s" version="1.0" auth="Root" installKBytes="9">#Support.4x0s.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Support.4x0s" version="1.0" auth="Root" installKBytes="4569">#Support.4x0s.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.OldKextRemover" version="1.0" auth="Root" installKBytes="0">#Extra_OldKextRemover.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.CloverUEFI" version="1.0" auth="Root" installKBytes="6016">#Clover_UEFI.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.CloverUEFI" version="1.0" auth="Root" installKBytes="7494">#Clover_UEFI.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.HWMonitor" version="1.0" auth="Root" installKBytes="3062">#Extra_HWMonitor.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.0.preinstall" version="1.0" auth="Root" installKBytes="0">#0.preinstall.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Support.4x40" version="1.0" auth="Root" installKBytes="10">#Support.4x40.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Support.6x70" version="1.0" auth="Root" installKBytes="10">#Support.6x70.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Support.4x40" version="1.0" auth="Root" installKBytes="4569">#Support.4x40.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Support.6x70" version="1.0" auth="Root" installKBytes="4569">#Support.6x70.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.ColorProfiles" version="1.0" auth="Root" installKBytes="102">#ColorProfiles.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.Part1.9470m" version="1.0" auth="Root" installKBytes="35">#Part1.9470m.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Part1.6x60b" version="1.0" auth="Root" installKBytes="27">#Part1.6x60b.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Elitebook.logos" version="1.0" auth="Root" installKBytes="978">#Elitebook.logos.pkg</pkg-ref>
-    <pkg-ref id="com.MadMax.pkg.Support.6x60" version="1.0" auth="Root" installKBytes="10">#Support.6x60.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Part1.6x60b" version="1.0" auth="Root" installKBytes="28">#Part1.6x60b.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Elitebook.logos" version="1.0" auth="Root" installKBytes="1467">#Elitebook.logos.pkg</pkg-ref>
+    <pkg-ref id="com.MadMax.pkg.Support.6x60" version="1.0" auth="Root" installKBytes="4569">#Support.6x60.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.KextWizard" version="1.0" auth="Root" installKBytes="368">#Extra_KextWizard.pkg</pkg-ref>
     <pkg-ref id="com.MadMax.pkg.LocalTimeToggle" version="1.0" auth="Root" installKBytes="2">#Extra_LocalTimeToggle.pkg</pkg-ref>
     <!--+==========================+

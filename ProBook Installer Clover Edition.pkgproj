@@ -9320,6 +9320,24 @@
 																			<key>GID</key>
 																			<integer>0</integer>
 																			<key>PATH</key>
+																			<string>OSX Support Files/CommonKexts/Extensions/BTFirmwareUploader.kext</string>
+																			<key>PATH_TYPE</key>
+																			<integer>1</integer>
+																			<key>PERMISSIONS</key>
+																			<integer>511</integer>
+																			<key>TYPE</key>
+																			<integer>3</integer>
+																			<key>UID</key>
+																			<integer>0</integer>
+																		</dict>
+																		<dict>
+																			<key>BUNDLE_CAN_DOWNGRADE</key>
+																			<true/>
+																			<key>CHILDREN</key>
+																			<array/>
+																			<key>GID</key>
+																			<integer>0</integer>
+																			<key>PATH</key>
 																			<string>OSX Support Files/CommonKexts/Extensions/FakeSMC.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
@@ -9339,24 +9357,6 @@
 																			<integer>0</integer>
 																			<key>PATH</key>
 																			<string>OSX Support Files/CommonKexts/Extensions/GenericUSBXHCI.kext</string>
-																			<key>PATH_TYPE</key>
-																			<integer>1</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>493</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>BUNDLE_CAN_DOWNGRADE</key>
-																			<true/>
-																			<key>CHILDREN</key>
-																			<array/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>OSX Support Files/CommonKexts/Extensions/IOath3kfrmwr.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
 																			<key>PERMISSIONS</key>
@@ -33426,7 +33426,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 2758 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 2760 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -36069,7 +36069,7 @@ Credits for bcc9.</string>
 						<key>LANGUAGE</key>
 						<string>English</string>
 						<key>VALUE</key>
-						<string>HP ProBook Installer 6.2 Clover Edition</string>
+						<string>HP ProBook Installer 6.2.1 Clover Edition</string>
 					</dict>
 				</array>
 			</dict>
