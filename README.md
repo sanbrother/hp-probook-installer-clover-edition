@@ -18,6 +18,12 @@ Supported models:
 [Guide to install OS X on HP Probook](http://www.tonymacx86.com/hp-probook-mavericks/112383-guide-install-mavericks-clover-bootloader.html)  
 
 ###C h a n g e l o g   
+
+**Version 6.2.2 (July 20th 2014)**  
+
+* Remove CustomLogo in config.
+* Fix 6x70AMD model and 4x0G1 model.
+* Update Clover 2771.
   
 **Version 6.2.1 (July 17th 2014)**  
 
