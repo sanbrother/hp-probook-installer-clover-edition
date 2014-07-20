@@ -13,11 +13,36 @@ then
 	# get original DSDT from CLOVER USB
 	cp /Volumes/CLOVER/EFI/CLOVER/ACPI/origin/DSDT.aml .
 	cp /Volumes/CLOVER/EFI/CLOVER/ACPI/origin/SSDT*.aml .
+	./iasl -da *.aml
+	if [[ ! -f ./DSDT.dsl ]]
+	then
+		for file in ./SSDT*.aml; do
+	        rm "$file" # If it does what you want, remove the echo
+	        ./iasl -da *.aml
+	        if [[ -f ./DSDT.dsl ]]
+	        then
+	        	break
+	        fi
+    	done
+	fi	
 elif [ -f /Volumes/EFI/EFI/CLOVER/ACPI/origin/DSDT.aml ]
 then
 	# get original DSDT from EFI partition
 	cp /Volumes/EFI/EFI/CLOVER/ACPI/origin/DSDT.aml .
 	cp /Volumes/EFI/EFI/CLOVER/ACPI/origin/SSDT*.aml .
+	./iasl -da *.aml
+
+	if [[ ! -f ./DSDT.dsl ]]
+	then
+		for file in ./SSDT*.aml; do
+	        rm "$file" # If it does what you want, remove the echo
+	        ./iasl -da *.aml
+	        if [[ -f ./DSDT.dsl ]]
+	        then
+	        	break
+	        fi
+    	done
+	fi	
 else 
 	#statements
 	ACPI_Tables="$(ioreg -lw0 | grep 'ACPI Tables' | cut -f2 -d '{' | tr -d '}' | tr ',' '\012')"
@@ -32,13 +57,25 @@ else
 		    echo "$tableData" | xxd -r -p > "./${tableName}.aml"
 		fi
 	done
+	./iasl -da *.aml
+	if [[ ! -f ./DSDT.dsl ]]
+	then
+		for file in ./SSDT*.aml; do
+	        rm "$file" # If it does what you want, remove the echo
+	        ./iasl -da *.aml
+	        if [[ -f ./DSDT.dsl ]]
+	        then
+	        	break
+	        fi
+    	done
+	fi	
 fi
 
 cp ./*.aml /Volumes/EFI/EFI/CLOVER/acpi/origin/
 
-./iaslpbi -da *.aml
 
-VanillaCheck=`cat ./DSDT.dsl | grep 'If (CondRefOf (FPED))\|External (_SB_.ISCT)'`
+
+VanillaCheck=`cat ./DSDT.dsl | grep 'If (CondRefOf (FPED))\|External (_SB_.ISCT, UnknownObj)'`
 
 if [ "$VanillaCheck" == "" -a -f ./4x*.txt ] || [ "$VanillaCheck" != "" -a ! -f ./4x*.txt ]
 then
@@ -103,13 +140,13 @@ else
 		then
 			./patchmatic ./DSDT.dsl ./11b_Radeon_OFF_DSDT.txt ./DSDT.dsl			
 			./patchmatic $file ./11a_Radeon_OFF_SSDT.txt $file
-			./iaslpbi -p SSDT-1 $file
+			./iasl -p SSDT-1 $file
 			cp ./SSDT-1.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
 			break
 		fi
 	done
 
-	./iaslpbi -p DSDT ./DSDT.dsl
+	./iasl -p DSDT ./DSDT.dsl
 	cp ./DSDT.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/DSDT.aml
 fi
 rm -rf /tmp/tempDSDT

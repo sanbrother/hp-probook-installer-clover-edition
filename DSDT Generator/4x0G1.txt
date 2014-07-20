@@ -57,7 +57,7 @@ into_all method code_regex \\_TZ.* removeall_matched;
 
 # Fix parse errors
 into device label GFX0 code_regex If\s\(CondRefOf\s\(FPED\)\)\s*\n\s*\{\s*\n\s*FPED\s\(\)\s*\n\s*\} remove_matched;
-into definitionblock code_regex External\s+\(_SB_\.ISCT\) remove_matched;
+into definitionblock code_regex External\s+\(_SB_\.ISCT,\sUnknownObj\) remove_matched;
 
 # Fix line 2169 2181 compilations errors (these are specfiic to 4530s)
 into_all all code_regex DWordMemory\s\(ResourceProducer,\sPosDecode,\sMinFixed,\sMaxFixed,\sCacheable,\sReadWrite,\n\s+0x00000000,\s+//\sGranularity\n\s+0x00000000,\s+//\sRange\sMinimum\n\s+0x00000000,\s+//\sRange\sMaximum\n\s+0x00000000,\s+//\sTranslation\sOffset\n\s+0x00000000,\s+//\sLength replace_matched
