@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>13C64</string>
+	<string>13B42</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -17,15 +17,15 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.0.1426</string>
+	<string>6.0.1330</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1426</string>
+	<string>1330</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>5B130a</string>
+	<string>5A3005</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
@@ -33,9 +33,9 @@
 	<key>DTSDKName</key>
 	<string>macosx10.8</string>
 	<key>DTXcode</key>
-	<string>0510</string>
+	<string>0502</string>
 	<key>DTXcodeBuild</key>
-	<string>5B130a</string>
+	<string>5A3005</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>FakeSMC</key>
