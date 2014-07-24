@@ -11,12 +11,12 @@ then
 	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/ACPIPoller.kext
 fi
 
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/AppleIntelE1000e.kext ]
+if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/RealtekRTL8111.kext ]
 then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/AppleIntelE1000e.kext
+	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/RealtekRTL8111.kext
 fi
 
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/AppleIntelE1000e.kext ]
+if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/RealtekRTL8111.kext ]
 then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/AppleIntelE1000e.kext
+	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/RealtekRTL8111.kext
 fi

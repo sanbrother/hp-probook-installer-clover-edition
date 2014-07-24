@@ -567,7 +567,7 @@ then
 		fi
 	fi
 
-	if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "6x70AMD" ] || ( ( [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] ) && [ "$CloverResolution" == "high" ] )
+	if [ "$CloverModel" == "6x70AMD" ] || ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] ) && [ "$CloverResolution" == "high" ] )
 	then
 		if [[ "$CurrentTheme" == '' ]]
 		then

@@ -112,7 +112,9 @@ else
 		"10_LPC_4x40s_Sandy_SL.txt" \
 		"12_Brightness.txt" \
 		"12_Brightness_Haswell.txt" \
-		"12c_generic_BCL.txt"
+		"12c_generic_BCL.txt" \
+		"13a_ProBookKeyboard.txt" \
+		"13b_EliteBookKeyboard.txt"
 	do
 		if [ -f $patch ]
 		then
