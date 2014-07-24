@@ -18,6 +18,12 @@ then
 		then
 			mkdir "$GenDir"
 		fi
+
+		/usr/libexec/PlistBuddy -c "Remove :DisplayProductName" "$GenDir/$GenFile"
+		/usr/libexec/PlistBuddy -c "Remove :DisplayProductID" "$GenDir/$GenFile"
+		/usr/libexec/PlistBuddy -c "Remove :DisplayVendorID" "$GenDir/$GenFile"
+		/usr/libexec/PlistBuddy -c "Remove :IODisplayEDID" "$GenDir/$GenFile"
+
 		/usr/libexec/PlistBuddy -c "Add :DisplayProductName string 'HP EliteBook'" "$GenDir/$GenFile"
 		/usr/libexec/PlistBuddy -c "Add :test array" "$GenDir/$GenFile"
 		/usr/libexec/PlistBuddy -c "Merge /tmp/display.plist :test" "$GenDir/$GenFile"
