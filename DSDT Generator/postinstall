@@ -1,9 +1,16 @@
 #!/bin/bash
 set -x
 ./BackupESP "$1" "$2" "$3"
-./Generate
-cp /tmp/config.plist /Volumes/EFI/EFI/CLOVER/
-rm /tmp/config.plist
+
+CloverConfigGenerate=`/usr/libexec/PlistBuddy -c "Print :CloverConfigGenerate" /tmp/PBI.plist`
+
+if [ "$CloverConfigGenerate" != "no" ]
+then
+	./Generate
+	cp /tmp/config.plist /Volumes/EFI/EFI/CLOVER/
+	rm /tmp/config.plist
+fi
+
 
 cd /tmp/tempDSDT
 
