@@ -37,11 +37,6 @@ fi
 rm -f "$HOME"/Library/LaunchAgents/com.projectosx.Clover.Updater.plist
 cp ./CloverUpdaterUtility.plist "$HOME"/Library/LaunchAgents/com.projectosx.Clover.Updater.plist
 chown -R "$USER" "$HOME"/Library/LaunchAgents
-#if [ ! -e /Volumes/EFI/EFI/CLOVER/config.plist ]
-#then
-#	
-#	if [ -e "$HOME"/Desktop/config.plist ]
-#	then
-#		cp "$HOME"/Desktop/config.plist /Volumes/EFI/EFI/CLOVER/config.plist
-#	fi
-#fi
+
+
+defaults write com.apple.loginwindow LogoutHook /private/etc/rc.shutdown.d/80.save_nvram_plist.local
