@@ -33,12 +33,9 @@ then
 	if ( ! $mounted )
 	then
 		while read line; do
-			mountpoint=`echo "$line" | awk -F'%' '{print substr($3, 4)}'`
-			bsdname=`echo "$line" | awk '{print $1}'`
-			efidevice=`diskutil list $bsdname | grep EFI | tr -s ' ' | awk '{print $NF}'`
-
+			efidevice=`diskutil list $line | grep EFI | tr -s ' ' | awk '{print $NF}'`
 			case "$efidevice" in
-			"")	echo "This drive $bsdname has no EFI partition.";;
+			"")	echo "This drive $line has no EFI partition.";;
 			*)	echo "Found EFI partition at /dev/$efidevice."
 				if [ "`df -h | grep /dev/$efidevice`" != "" ]
 				then
@@ -49,7 +46,7 @@ then
 				fi
 				break;;
 			esac
-		done < <(df -h | grep "/dev/")
+		done < <(diskutil list | grep "/dev/")
 	fi
 
 
