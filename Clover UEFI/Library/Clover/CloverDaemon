@@ -135,4 +135,8 @@ set -u
 
 StartService # Launch @ boot
 
-exit 0
+trap StopService SIGTERM # SIGTERM @ shutdown
+while true; do
+    sleep 86400 &  # Start the sleep process in background
+    wait $!        # and wait to finish
+done
