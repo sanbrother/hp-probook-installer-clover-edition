@@ -27,8 +27,9 @@ Supported models:
 * Revert FakeSMC 6.0.1330.
 * Fix 6x70AMD model and 4x0G1 model.
 * Fix keyboard layout in 10.10 by DSDT.
+* Fix EFI mount problem.
 * UI Improvement.
-* Update Clover 2779.
+* Update Clover 2779, XtraFinder.
 
 **Version 6.2.2 (July 20th 2014)**  
 
