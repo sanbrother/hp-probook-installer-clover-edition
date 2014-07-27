@@ -19,7 +19,7 @@ Supported models:
 
 ###C h a n g e l o g   
 
-**Version 6.2.3 RC (July 24th 2014)**  
+**Version 6.2.3 (July 27th 2014)**  
 
 * Add FixEDID for 6x70b AMD.
 * Add Espanol keyboard layout (eduk33s).
@@ -28,7 +28,7 @@ Supported models:
 * Fix 6x70AMD model and 4x0G1 model.
 * Fix keyboard layout in 10.10 by DSDT.
 * UI Improvement.
-* Update Clover 2778.
+* Update Clover 2779.
 
 **Version 6.2.2 (July 20th 2014)**  
 

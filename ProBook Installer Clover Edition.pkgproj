@@ -36296,7 +36296,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 2778 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 2779 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -36822,7 +36822,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 												<key>LANGUAGE</key>
 												<string>English</string>
 												<key>VALUE</key>
-												<string>DIsable Config generator</string>
+												<string>Patch DSDT only</string>
 											</dict>
 										</array>
 										<key>TOOLTIP</key>
@@ -39242,7 +39242,7 @@ Credits for bcc9.</string>
 						<key>LANGUAGE</key>
 						<string>English</string>
 						<key>VALUE</key>
-						<string>HP ProBook Installer Clover Edition 6.2.3 RC</string>
+						<string>HP ProBook Installer Clover Edition 6.2.3</string>
 					</dict>
 				</array>
 			</dict>
