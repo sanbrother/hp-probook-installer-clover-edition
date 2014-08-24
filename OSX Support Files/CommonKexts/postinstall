@@ -15,4 +15,6 @@ rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/GenericUSBXHCI.kext
 cp -rf /Volumes/EFI/EFI/CLOVER/kexts/GenericUSBXHCI.kext /Volumes/EFI/EFI/CLOVER/kexts/10.10
 rm -rf /Volumes/EFI/EFI/CLOVER/kexts/GenericUSBXHCI.kext
 
+rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/ACPIBacklight.kext
+
 /usr/libexec/PlistBuddy -c "Set :KextCacheRebuild yes" /tmp/PBI.plist
