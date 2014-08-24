@@ -282,11 +282,11 @@
 		<key>BCM-AZWave-CE123H-3404-13d3</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4352</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
@@ -301,11 +301,11 @@
 		<key>BCM-Asus-BCM4352-BT-17cf-b05 </key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4352</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
@@ -317,35 +317,33 @@
 			<key>idVendor</key>
 			<integer>2821</integer>
 		</dict>
-		<key>BCM-Asus-BT400-BT-17cb-0b05</key>
+		<key>BCM-Asus-BT400-17cb-0b05</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCMSTDA</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
 			<string>IOUSBDevice</string>
 			<key>UpdFwAfterSleep</key>
 			<true/>
-			<key>UseStandaloneFw</key>
-			<true/>
 			<key>idProduct</key>
 			<integer>6091</integer>
 			<key>idVendor</key>
 			<integer>2821</integer>
 		</dict>
-		<key>BCM-Dell-AW BCM4352-3411-13d3</key>
+		<key>BCM-Dell-AW-BCM4352-3411-13d3</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4352</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
@@ -360,11 +358,11 @@
 		<key>BCM-Dell-DW1550-BT-8143-413c</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4352</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
@@ -376,56 +374,33 @@
 			<key>idVendor</key>
 			<integer>16700</integer>
 		</dict>
-		<key>BCM-Delock-BT40-BT-21E8-0A5C</key>
+		<key>BCM-Dongles-BT40-BT-21E8-0A5C</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCMSTDA</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
 			<string>IOUSBDevice</string>
 			<key>UpdFwAfterSleep</key>
-			<true/>
-			<key>UseStandaloneFw</key>
 			<true/>
 			<key>idProduct</key>
 			<integer>8680</integer>
 			<key>idVendor</key>
 			<integer>2652</integer>
 		</dict>
-		<key>BCM-HP-BCM1043-BT-21E1-0A5C</key>
-		<dict>
-			<key>BTController</key>
-			<string>BCM</string>
-			<key>CFBundleIdentifier</key>
-			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
-			<key>IOClass</key>
-			<string>BTFirmwareUploader</string>
-			<key>IOProviderClass</key>
-			<string>IOUSBDevice</string>
-			<key>UpdFwAfterSleep</key>
-			<true/>
-			<key>UseStandaloneFw</key>
-			<true/>
-			<key>idProduct</key>
-			<integer>8673</integer>
-			<key>idVendor</key>
-			<integer>2652</integer>
-		</dict>
 		<key>BCM-HP-BCM4313-BT-21E3-0A5C</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4313</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
@@ -440,11 +415,11 @@
 		<key>BCM-HP-BCM4352-21FB-0A5C</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4352</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
@@ -456,14 +431,33 @@
 			<key>idVendor</key>
 			<integer>2652</integer>
 		</dict>
+		<key>BCM-HP-BT40-21E1-0A5C</key>
+		<dict>
+			<key>BTController</key>
+			<string>BCMSTDA</string>
+			<key>CFBundleIdentifier</key>
+			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
+			<key>DeviceSpecificFw</key>
+			<true/>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>UpdFwAfterSleep</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>8673</integer>
+			<key>idVendor</key>
+			<integer>2652</integer>
+		</dict>
 		<key>BCM-LiteOn-BCM4352-200A-0c4a</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4352</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
@@ -478,11 +472,11 @@
 		<key>BCM-LiteOn-BCM4352-200B-0c4a</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4352</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
@@ -497,11 +491,11 @@
 		<key>BCM-LiteOn-BCM4352-200C-0c4a </key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4352</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
@@ -516,11 +510,11 @@
 		<key>BCM-Toshiba-4352-0223-0930</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM</string>
+			<string>BCM4352</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>Firmware</key>
-			<integer>0</integer>
+			<key>DeviceSpecificFw</key>
+			<true/>
 			<key>IOClass</key>
 			<string>BTFirmwareUploader</string>
 			<key>IOProviderClass</key>
