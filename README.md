@@ -19,6 +19,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.4 (August 4th 2014)**  
+
+* Add HDMI Audio patch for Haswell.
+* Remove ACPIBacklight for 10.10.
+* Update Clover 2838, XtraFinder, CloverConfigurator.
+
 **Version 6.2.3 (July 27th 2014)**  
 
 * Add FixEDID for 6x70b AMD.
