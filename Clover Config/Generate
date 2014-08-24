@@ -421,6 +421,21 @@ then
 		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
 		printf '\t\t\t\t<key>Find</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tAgAAADAAAAABBRIAAAQAAIcAAAACBBIAAAQAAIcAAAD/AAEAAQAAAEAAAAAPAAAAAQEAAAQAAAA=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tAgAAADAAAAABBRIAAAQAAIcAAAACBBIAAAgAAIcAAAD/AAEAAQAAAEAAAAAPAAAAAQEAAAQAAAA=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Patch audio HDMI HD4400/4600 laptop 10.9.1</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
 		printf '\t\t\t\tAgAAADAAAAABBQkAAAQAAIcAAAACBAkAAAQAAIcAAAD/AAAAAQAAAEAAAAAPAAAAAQEAAAQAAAA=\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config

@@ -101,6 +101,20 @@ Run PBI Clover Edition again and select correct DSDT options." )
 end tell
 EOT
 else
+	if [ -f "4x0G1.txt" ]
+	then
+		rm ./03a_HDMI.txt
+		rm ./03b_1080p+HDMI.txt
+		rm ./04a_FanPatch.txt
+		rm ./04b_FanQuiet.txt
+	fi
+
+	if [ -f  "4x40s_AMD.txt" ]
+	then
+		rm ./03a_HDMI.txt
+		rm ./03b_1080p+HDMI.txt
+	fi
+
 	
 	for patch in "4x30s.txt" \
 		"4x40s_IvyBridge.txt" \
@@ -123,23 +137,23 @@ else
 		"13a_ProBookKeyboard.txt" \
 		"13b_EliteBookKeyboard.txt"
 	do
-		if [ -f $patch ]
-		then
-			if [ $patch == "4x0G1.txt" ]
-			then
-				rm ./03a_HDMI.txt
-				rm ./03b_1080p+HDMI.txt
-				rm ./04a_FanPatch.txt
-				rm ./04b_FanQuiet.txt
-			fi
-			if [ $patch == "4x40s_AMD.txt" ]
-			then
-				rm ./03a_HDMI.txt
-				rm ./03b_1080p+HDMI.txt
-			fi
-			./patchmatic ./DSDT.dsl ./$patch ./DSDT.dsl
-		fi
+		./patchmatic ./DSDT.dsl ./$patch ./DSDT.dsl
 	done
+
+	if [ -f "4x0G1.txt" ]
+	then
+		for file in ./SSDT*.dsl
+		do
+			B0D3Check=`cat $file | grep -i 'Device (B0D3)'`
+			if [[ $B0D3Check != '' ]]
+			then		
+				./patchmatic $file ./03c_Haswell.txt $file
+				./iasl -p SSDT-1 $file
+				cp ./SSDT-1.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
+				break
+			fi
+		done
+	fi
 
 	GraphicCheck=''
 	for file in ./SSDT*.dsl
@@ -149,11 +163,20 @@ else
 		then
 			./patchmatic ./DSDT.dsl ./11b_Radeon_OFF_DSDT.txt ./DSDT.dsl			
 			./patchmatic $file ./11a_Radeon_OFF_SSDT.txt $file
-			./iasl -p SSDT-1 $file
-			cp ./SSDT-1.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
+
+			if [ -f "4x0G1.txt" ]
+			then
+				./iasl -p SSDT-2 $file
+				cp ./SSDT-2.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-2.aml
+			else
+				./iasl -p SSDT-1 $file
+				cp ./SSDT-1.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
+			fi
+
 			break
 		fi
 	done
+	
 
 	./iasl -p DSDT ./DSDT.dsl
 	cp ./DSDT.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/DSDT.aml
