@@ -10,19 +10,23 @@
 		</data>
 		<key>Resources/About.nib</key>
 		<data>
-		YFvl073W9QDVnVEo2+iGZ2msCRQ=
+		LyU7NEyHEIo4LrE8SGjRauoyWeg=
+		</data>
+		<key>Resources/AdjustWidthOfColumns.nib</key>
+		<data>
+		X5pwP9UEta2VdR2A946ZSSAwF7U=
 		</data>
 		<key>Resources/AttributesMenu.nib</key>
 		<data>
-		Aexp5wvYAflN7s1Y0Kw/O1TaBwI=
+		TFWxOKEyrUZRbQ0NSxaznqPY7jY=
 		</data>
 		<key>Resources/BrowserWindow.nib</key>
 		<data>
-		7uoJW69xg36Xj0/BQ5DxBICCV5c=
+		apGrSCdNOTrQ1irUo7XUhh+PzvE=
 		</data>
 		<key>Resources/CopyPath.nib</key>
 		<data>
-		fxI1+tDfd+TM8u6Nfd1EFvzPo00=
+		TmL9yeV3nF00Q7yp/LwNfR8IOwA=
 		</data>
 		<key>Resources/DeletePernamentTemplate.png</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Resources/EditWindows.nib</key>
 		<data>
-		zj66PORk2vCC39VHlfGZeinfTVw=
+		yjFMCWhlkilLcnr03gyLiPa8/Js=
 		</data>
 		<key>Resources/GoUpTemplate.png</key>
 		<data>
@@ -58,11 +62,11 @@
 		</data>
 		<key>Resources/Main.nib</key>
 		<data>
-		Q/SPaRWqaL0yOElOZ3YmVTMnGbs=
+		QRSsah1paW942DQv+AI0nhOWgeI=
 		</data>
 		<key>Resources/NewFile.nib</key>
 		<data>
-		2r61s+BITQq9F1CDO12RM+O0kFk=
+		6aBLMIkeGu4P+eCigqZgzdFfCMg=
 		</data>
 		<key>Resources/NewFileTemplates/Untitled.html</key>
 		<data>
@@ -94,19 +98,19 @@
 		</data>
 		<key>Resources/PinnableBrowserWindow.nib</key>
 		<data>
-		j1gXscYs4qkUHe8bnpLsWCcEPVk=
+		kaS3JTWtN+C3TrmphIMcCKE28Ec=
 		</data>
 		<key>Resources/Preferences.nib</key>
 		<data>
-		oz6GhzDtj/y4PJkMmJoh7J33y70=
+		wghhD2fvR8zyYISMgDBXTiK/nbM=
 		</data>
 		<key>Resources/SaveWindow.nib</key>
 		<data>
-		+3WvxPAt9TLmzJtMRmiL95M7LRY=
+		8vVW/gf45jNMc4Qxp/DKCKck04s=
 		</data>
 		<key>Resources/Select.nib</key>
 		<data>
-		OJ+6d7yMXOaf8C+yKkIsQweVzOI=
+		rRDY8CplAMnC8Ilsy5FAolxBONU=
 		</data>
 		<key>Resources/SelectToolbarButtonTemplate.png</key>
 		<data>
@@ -119,10 +123,6 @@
 		<key>Resources/ShowAllFilesToolbarButtonTemplate.png</key>
 		<data>
 		CBPcXuMJebPkk/T7H9GfEkdgbYc=
-		</data>
-		<key>Resources/SidebarHeader.nib</key>
-		<data>
-		FBIdHOiH7hb8TCoWOrzbyU2v3j0=
 		</data>
 		<key>Resources/StatusItemHelp.nib</key>
 		<data>
@@ -138,15 +138,15 @@
 		</data>
 		<key>Resources/TabContents.nib</key>
 		<data>
-		HRcw7OJVG4q/H+ynOcIAzZuZ6P4=
+		VZ+XSTGBj7AiSPgkQ8uodbeaBb4=
 		</data>
 		<key>Resources/TabView.nib</key>
 		<data>
-		4P+8X8eEFq9ivQI5QF7kH6mOQHk=
+		AQMl8QMaIGd2KMsqG2aDbg0RS4o=
 		</data>
 		<key>Resources/TabViewOpera.nib</key>
 		<data>
-		Rf0JCZOoyDsoeHufPwyE59RHIbk=
+		fWJA7cnyDZ7MAHddieehszIj+aw=
 		</data>
 		<key>Resources/Tabs.nib</key>
 		<data>
@@ -170,11 +170,11 @@
 		</data>
 		<key>Resources/Toolbar.nib</key>
 		<data>
-		+D6Q9SxyZktY7Lh+oAaKWCIW2lY=
+		wEQvEcPMSvg/WRZ2s5B9IWreGGQ=
 		</data>
 		<key>Resources/ToolbarItemSplitButtonView.nib</key>
 		<data>
-		qnpfmm2nq51+UqKKtYY4Ugm0mas=
+		nVzwAMyxE4QbfXvCS2IFsXwNti4=
 		</data>
 		<key>Resources/Window.png</key>
 		<data>
@@ -205,6 +205,15 @@
 			<key>hash</key>
 			<data>
 			A8Hd1GXM5cGoHpEHFa1K8ctuTxo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/de.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -249,7 +258,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/Oajm8KdRnzGv+DopTGpnmK2XKQ=
+			kPhpmQB428KOjleuRl0sBa2dk5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -325,6 +334,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/en.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/en.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -365,7 +383,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vrmMnsJnNMRz9WA54ug2OvD+dTA=
+			Wc8b5fmALfmia82aJtFsBucgMgQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -433,6 +451,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/es.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/es.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -473,7 +500,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			thq83mYw3wwFudznsfmkKdGxw0E=
+			u7U/h1AH/kEcjuMDRCdodbqrUzc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -541,6 +568,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/fr.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/fr.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -563,7 +599,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fdFJ34X4fVsrPSqRxN4QO3YtJPQ=
+			9zz9jJ/9vdoNsnV5PspS/yStdmg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -581,7 +617,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zo3pRuotTPqtJa74hxvMjbty0Nw=
+			o24k5/GKSX8Y02of59pFgzy/Qlo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -635,7 +671,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wgtUIV040xvXTKxk/7t5tk5IHp8=
+			O+eV9gaJV2vQvgqFZ8g7yUBaMOI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -649,6 +685,15 @@
 			<key>hash</key>
 			<data>
 			QscAeHKupRvTTz4f8S3DKmqcXRI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/it.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -693,7 +738,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n9d5ybLqnn8gYXDAy1Se+kaOuHM=
+			4ohvxK6GOFCx6IHaChS7leJVWnk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -761,6 +806,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/ja.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/ja.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -801,7 +855,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hZOMmBhj57ontiOHxBp53PkpvT0=
+			asFqgQ5Qt/7nGbApXk/pR0ohHq8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -869,6 +923,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/ko.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/ko.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -891,7 +954,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fdFJ34X4fVsrPSqRxN4QO3YtJPQ=
+			ruqkxxVng0Yi96c70qE+dYK5GCk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -900,7 +963,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YyyZiixGKsKrYKMbJOH+T3qczE8=
+			7i/6Pt/pHZQ4c3QL5SIaiw7KClU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -909,7 +972,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8foyPYd1Ru3A3+kGtWKJ5Yzk9AA=
+			xtzJszjFtiHThAeIbnQ4D71lDQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -963,7 +1026,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6Qr39UUwYnVK5GiKj4NVLkRPP1k=
+			YDM+cQ79B4z96eQq4XtIHv/dN30=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1013,6 +1076,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/nl.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/nl.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1053,7 +1125,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cAWgByTx3/vcgmR/nRt6MdFUDzA=
+			UJqjEQZ7myPOOorjQIjvL4NhkgA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1121,6 +1193,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/pl.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/pl.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1161,7 +1242,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j1c24UFkHCnZpHDdpegpq9Yy120=
+			YzNaS7XvhOKxu8c8I6Q1SYtFzzc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1224,7 +1305,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dj/QiKq3Qf+ueyvCQKgBTqgqTTU=
+			C37FW6Te+m6KGhdov/17jacRCqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/pt-BR.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1233,7 +1323,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			unjKJeLEi0TET9UBrsYtgMOO1cs=
+			8YVkOqwqDkTJXcY2IUcAJlDTM4A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1251,7 +1341,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fdFJ34X4fVsrPSqRxN4QO3YtJPQ=
+			KveCSUUU6jYGoT0FVKxhZqRawOI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1260,7 +1350,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UbQ0ucAR3sy3/3EsspB9ZRuBNzE=
+			iTfAPgV8cVAz6dDCp3tMg6J6mlI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1269,7 +1359,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4C/FtcNgVSQZmPn87stCGhWgnFI=
+			v0Rg5SyJt+LhUH14NM3oPeOjusw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1287,7 +1377,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3KHChYQ76tlPuU2VbGdpRhfG+No=
+			t3CK59JDtRDcLMAP+QL/DO0JsSQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1296,7 +1386,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Uoo1VtFpvJE3okqOFelDateepPI=
+			xM1jnxWhiE6UM4L/1QxDJ6BSmnA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1305,7 +1395,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9T6BkpYdUL4FpzGuDvO7jWEECRc=
+			AQ/Uc08Bsrez0GM4BTvKztStqsU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1314,7 +1404,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QQoWUZEp70VlZb21Xi/HBxzNjbY=
+			7KRBtSvIYuJmBsoSwjDi+ES6148=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1323,7 +1413,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			plXBcdGHJvaHegW7Kv1YHKH+CWE=
+			6uC4PzXWZGCCNcws+w3SayjmaoM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1333,6 +1423,15 @@
 			<key>hash</key>
 			<data>
 			v0PMrsVwIXkF47MPkbsOIor1J/E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/pt-PT.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1377,7 +1476,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1fmxVOKwc4ZwxEvVjZanNANaP2M=
+			6N1jhPIJNUIDB9x7sBhn02G04mw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1445,6 +1544,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/ru.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/ru.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1485,7 +1593,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rghaoY4il12a49AIE8iv0t7AvSc=
+			FJVqDp0fnMwDXUXf/sXTnt5boP8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1557,6 +1665,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/sv.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/sv.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1597,7 +1714,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XIvFrnW4qNEBjTwHhTbgitU9QJc=
+			AmB4BF5MY/HA3oPQ/TPwLvsSNWE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1713,7 +1830,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HXsewHiOYey2fWk6lqBn+f6RZWQ=
+			vy1D5ive2tK3ai8GxQcYAtIGEYo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1772,6 +1889,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/zh-Hans.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/zh-Hans.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1812,7 +1938,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sccM2edtUF38vSntcC5RKOOeWlM=
+			OnovMDySyIzNyvv7bGBmKIgwX6A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1880,6 +2006,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/zh-Hant.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/zh-Hant.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1920,7 +2055,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q1J2A6MRB4C6vglBIWvhGkTc4Bg=
+			qHZPHedIYeOTN4VrsKM+k83bv50=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2006,19 +2141,23 @@
 		</data>
 		<key>Resources/About.nib</key>
 		<data>
-		YFvl073W9QDVnVEo2+iGZ2msCRQ=
+		LyU7NEyHEIo4LrE8SGjRauoyWeg=
+		</data>
+		<key>Resources/AdjustWidthOfColumns.nib</key>
+		<data>
+		X5pwP9UEta2VdR2A946ZSSAwF7U=
 		</data>
 		<key>Resources/AttributesMenu.nib</key>
 		<data>
-		Aexp5wvYAflN7s1Y0Kw/O1TaBwI=
+		TFWxOKEyrUZRbQ0NSxaznqPY7jY=
 		</data>
 		<key>Resources/BrowserWindow.nib</key>
 		<data>
-		7uoJW69xg36Xj0/BQ5DxBICCV5c=
+		apGrSCdNOTrQ1irUo7XUhh+PzvE=
 		</data>
 		<key>Resources/CopyPath.nib</key>
 		<data>
-		fxI1+tDfd+TM8u6Nfd1EFvzPo00=
+		TmL9yeV3nF00Q7yp/LwNfR8IOwA=
 		</data>
 		<key>Resources/DeletePernamentTemplate.png</key>
 		<data>
@@ -2034,7 +2173,7 @@
 		</data>
 		<key>Resources/EditWindows.nib</key>
 		<data>
-		zj66PORk2vCC39VHlfGZeinfTVw=
+		yjFMCWhlkilLcnr03gyLiPa8/Js=
 		</data>
 		<key>Resources/GoUpTemplate.png</key>
 		<data>
@@ -2054,11 +2193,11 @@
 		</data>
 		<key>Resources/Main.nib</key>
 		<data>
-		Q/SPaRWqaL0yOElOZ3YmVTMnGbs=
+		QRSsah1paW942DQv+AI0nhOWgeI=
 		</data>
 		<key>Resources/NewFile.nib</key>
 		<data>
-		2r61s+BITQq9F1CDO12RM+O0kFk=
+		6aBLMIkeGu4P+eCigqZgzdFfCMg=
 		</data>
 		<key>Resources/NewFileTemplates/Untitled.html</key>
 		<data>
@@ -2090,19 +2229,19 @@
 		</data>
 		<key>Resources/PinnableBrowserWindow.nib</key>
 		<data>
-		j1gXscYs4qkUHe8bnpLsWCcEPVk=
+		kaS3JTWtN+C3TrmphIMcCKE28Ec=
 		</data>
 		<key>Resources/Preferences.nib</key>
 		<data>
-		oz6GhzDtj/y4PJkMmJoh7J33y70=
+		wghhD2fvR8zyYISMgDBXTiK/nbM=
 		</data>
 		<key>Resources/SaveWindow.nib</key>
 		<data>
-		+3WvxPAt9TLmzJtMRmiL95M7LRY=
+		8vVW/gf45jNMc4Qxp/DKCKck04s=
 		</data>
 		<key>Resources/Select.nib</key>
 		<data>
-		OJ+6d7yMXOaf8C+yKkIsQweVzOI=
+		rRDY8CplAMnC8Ilsy5FAolxBONU=
 		</data>
 		<key>Resources/SelectToolbarButtonTemplate.png</key>
 		<data>
@@ -2115,10 +2254,6 @@
 		<key>Resources/ShowAllFilesToolbarButtonTemplate.png</key>
 		<data>
 		CBPcXuMJebPkk/T7H9GfEkdgbYc=
-		</data>
-		<key>Resources/SidebarHeader.nib</key>
-		<data>
-		FBIdHOiH7hb8TCoWOrzbyU2v3j0=
 		</data>
 		<key>Resources/StatusItemHelp.nib</key>
 		<data>
@@ -2134,15 +2269,15 @@
 		</data>
 		<key>Resources/TabContents.nib</key>
 		<data>
-		HRcw7OJVG4q/H+ynOcIAzZuZ6P4=
+		VZ+XSTGBj7AiSPgkQ8uodbeaBb4=
 		</data>
 		<key>Resources/TabView.nib</key>
 		<data>
-		4P+8X8eEFq9ivQI5QF7kH6mOQHk=
+		AQMl8QMaIGd2KMsqG2aDbg0RS4o=
 		</data>
 		<key>Resources/TabViewOpera.nib</key>
 		<data>
-		Rf0JCZOoyDsoeHufPwyE59RHIbk=
+		fWJA7cnyDZ7MAHddieehszIj+aw=
 		</data>
 		<key>Resources/Tabs.nib</key>
 		<data>
@@ -2166,11 +2301,11 @@
 		</data>
 		<key>Resources/Toolbar.nib</key>
 		<data>
-		+D6Q9SxyZktY7Lh+oAaKWCIW2lY=
+		wEQvEcPMSvg/WRZ2s5B9IWreGGQ=
 		</data>
 		<key>Resources/ToolbarItemSplitButtonView.nib</key>
 		<data>
-		qnpfmm2nq51+UqKKtYY4Ugm0mas=
+		nVzwAMyxE4QbfXvCS2IFsXwNti4=
 		</data>
 		<key>Resources/Window.png</key>
 		<data>
@@ -2201,6 +2336,15 @@
 			<key>hash</key>
 			<data>
 			A8Hd1GXM5cGoHpEHFa1K8ctuTxo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/de.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2245,7 +2389,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/Oajm8KdRnzGv+DopTGpnmK2XKQ=
+			kPhpmQB428KOjleuRl0sBa2dk5c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2321,6 +2465,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/en.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/en.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2361,7 +2514,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vrmMnsJnNMRz9WA54ug2OvD+dTA=
+			Wc8b5fmALfmia82aJtFsBucgMgQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2429,6 +2582,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/es.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/es.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2469,7 +2631,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			thq83mYw3wwFudznsfmkKdGxw0E=
+			u7U/h1AH/kEcjuMDRCdodbqrUzc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2537,6 +2699,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/fr.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/fr.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2559,7 +2730,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fdFJ34X4fVsrPSqRxN4QO3YtJPQ=
+			9zz9jJ/9vdoNsnV5PspS/yStdmg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2577,7 +2748,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zo3pRuotTPqtJa74hxvMjbty0Nw=
+			o24k5/GKSX8Y02of59pFgzy/Qlo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2631,7 +2802,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wgtUIV040xvXTKxk/7t5tk5IHp8=
+			O+eV9gaJV2vQvgqFZ8g7yUBaMOI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2645,6 +2816,15 @@
 			<key>hash</key>
 			<data>
 			QscAeHKupRvTTz4f8S3DKmqcXRI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/it.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2689,7 +2869,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n9d5ybLqnn8gYXDAy1Se+kaOuHM=
+			4ohvxK6GOFCx6IHaChS7leJVWnk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2757,6 +2937,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/ja.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/ja.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2797,7 +2986,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hZOMmBhj57ontiOHxBp53PkpvT0=
+			asFqgQ5Qt/7nGbApXk/pR0ohHq8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2865,6 +3054,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/ko.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/ko.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -2887,7 +3085,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fdFJ34X4fVsrPSqRxN4QO3YtJPQ=
+			ruqkxxVng0Yi96c70qE+dYK5GCk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2896,7 +3094,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YyyZiixGKsKrYKMbJOH+T3qczE8=
+			7i/6Pt/pHZQ4c3QL5SIaiw7KClU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2905,7 +3103,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8foyPYd1Ru3A3+kGtWKJ5Yzk9AA=
+			xtzJszjFtiHThAeIbnQ4D71lDQ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2959,7 +3157,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6Qr39UUwYnVK5GiKj4NVLkRPP1k=
+			YDM+cQ79B4z96eQq4XtIHv/dN30=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3009,6 +3207,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/nl.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/nl.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3049,7 +3256,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cAWgByTx3/vcgmR/nRt6MdFUDzA=
+			UJqjEQZ7myPOOorjQIjvL4NhkgA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3117,6 +3324,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/pl.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/pl.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3157,7 +3373,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j1c24UFkHCnZpHDdpegpq9Yy120=
+			YzNaS7XvhOKxu8c8I6Q1SYtFzzc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3220,7 +3436,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dj/QiKq3Qf+ueyvCQKgBTqgqTTU=
+			C37FW6Te+m6KGhdov/17jacRCqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/pt-BR.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3229,7 +3454,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			unjKJeLEi0TET9UBrsYtgMOO1cs=
+			8YVkOqwqDkTJXcY2IUcAJlDTM4A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3247,7 +3472,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fdFJ34X4fVsrPSqRxN4QO3YtJPQ=
+			KveCSUUU6jYGoT0FVKxhZqRawOI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3256,7 +3481,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UbQ0ucAR3sy3/3EsspB9ZRuBNzE=
+			iTfAPgV8cVAz6dDCp3tMg6J6mlI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3265,7 +3490,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4C/FtcNgVSQZmPn87stCGhWgnFI=
+			v0Rg5SyJt+LhUH14NM3oPeOjusw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3283,7 +3508,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3KHChYQ76tlPuU2VbGdpRhfG+No=
+			t3CK59JDtRDcLMAP+QL/DO0JsSQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3292,7 +3517,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Uoo1VtFpvJE3okqOFelDateepPI=
+			xM1jnxWhiE6UM4L/1QxDJ6BSmnA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3301,7 +3526,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9T6BkpYdUL4FpzGuDvO7jWEECRc=
+			AQ/Uc08Bsrez0GM4BTvKztStqsU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3310,7 +3535,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QQoWUZEp70VlZb21Xi/HBxzNjbY=
+			7KRBtSvIYuJmBsoSwjDi+ES6148=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3319,7 +3544,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			plXBcdGHJvaHegW7Kv1YHKH+CWE=
+			6uC4PzXWZGCCNcws+w3SayjmaoM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3329,6 +3554,15 @@
 			<key>hash</key>
 			<data>
 			v0PMrsVwIXkF47MPkbsOIor1J/E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/pt-PT.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3373,7 +3607,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1fmxVOKwc4ZwxEvVjZanNANaP2M=
+			6N1jhPIJNUIDB9x7sBhn02G04mw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3441,6 +3675,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/ru.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/ru.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3481,7 +3724,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rghaoY4il12a49AIE8iv0t7AvSc=
+			FJVqDp0fnMwDXUXf/sXTnt5boP8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3553,6 +3796,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/sv.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/sv.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3593,7 +3845,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XIvFrnW4qNEBjTwHhTbgitU9QJc=
+			AmB4BF5MY/HA3oPQ/TPwLvsSNWE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3709,7 +3961,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HXsewHiOYey2fWk6lqBn+f6RZWQ=
+			vy1D5ive2tK3ai8GxQcYAtIGEYo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3768,6 +4020,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/zh-Hans.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/zh-Hans.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3808,7 +4069,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sccM2edtUF38vSntcC5RKOOeWlM=
+			OnovMDySyIzNyvv7bGBmKIgwX6A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3876,6 +4137,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/zh-Hant.lproj/AdjustWidthOfColumns.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			byRIqo9M6wdiHz8Mwmuhi2o31TU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/zh-Hant.lproj/CopyPath.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3916,7 +4186,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q1J2A6MRB4C6vglBIWvhGkTc4Bg=
+			qHZPHedIYeOTN4VrsKM+k83bv50=
 			</data>
 			<key>optional</key>
 			<true/>
