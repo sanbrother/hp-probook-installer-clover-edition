@@ -3,6 +3,7 @@ set -x
 ./BackupESP "$1" "$2" "$3"
 
 CloverConfigGenerate=`/usr/libexec/PlistBuddy -c "Print :CloverConfigGenerate" /tmp/PBI.plist`
+CloverModel=`/usr/libexec/PlistBuddy -c "Print :CloverModel" /tmp/PBI.plist`
 
 if [ "$CloverConfigGenerate" != "no" ]
 then
@@ -115,6 +116,17 @@ else
 		rm ./03b_1080p+HDMI.txt
 	fi
 
+	if [ "$CloverModel" == "4x40" ]
+	then
+		rm ./4x40s_SandyBridge.txt
+	fi
+
+	if [ "$CloverModel" == "4x40sb" ]
+	then
+		rm ./4x40s_IvyBridge.txt
+	fi
+
+
 	
 	for patch in "4x30s.txt" \
 		"4x40s_IvyBridge.txt" \
@@ -181,5 +193,3 @@ else
 	./iasl -p DSDT ./DSDT.dsl
 	cp ./DSDT.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/DSDT.aml
 fi
-rm -rf /tmp/tempDSDT
-
