@@ -19,7 +19,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
-**Version 6.2.4 (August 4th 2014)**  
+**Version 6.2.5 (August 29th 2014)**
+
+* Remove EmuVariable driver.
+* Update Clover 2854, XtraFinder.
+
+**Version 6.2.4 (August 24th 2014)**  
 
 * Add HDMI Audio patch for Haswell.
 * Remove ACPIBacklight for 10.10.
@@ -161,6 +166,9 @@ The **display_color.py** script is courtesy of **Daniel Fairhead (danthedeckie)*
 **ElectronShaper**  
 **2MNY**  
 **ryman of InsanelyMac**  
+**Time2Win**  
+**Joyfult**  
+**mr-andrek**  
 ###and the users of the HP ProBook forum.  
 
 **RegexKitLite** Copyright © 2008-2010, **John Engelhart**  
