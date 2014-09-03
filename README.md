@@ -19,8 +19,15 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.6 (September 3rd 2014)**
+
+* Fix 6x70 AMD model config.
+* Update Clover 2865.
+* New GUI.
+
 **Version 6.2.5 (August 29th 2014)**
 
+* Fix 4x40s SB model detection.
 * Remove EmuVariable driver.
 * Update Clover 2854, XtraFinder.
 

@@ -31859,7 +31859,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 2838 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 2865 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -34490,7 +34490,7 @@ Credits for bcc9.</string>
 						<key>LANGUAGE</key>
 						<string>English</string>
 						<key>VALUE</key>
-						<string>HP ProBook Installer Clover Edition 6.2.5</string>
+						<string>HP ProBook Installer Clover Edition 6.2.6</string>
 					</dict>
 				</array>
 			</dict>
