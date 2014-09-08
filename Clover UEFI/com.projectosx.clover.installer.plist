@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CloverRevision</key>
-	<integer>2865</integer>
+	<integer>2892</integer>
 	<key>InstalledThemes</key>
 	<array>
 		<string>Yosemite</string>
@@ -12,8 +12,6 @@
 	<key>org.clover.bootloader.bootno</key>
 	<true/>
 	<key>org.clover.cloverprefpane</key>
-	<true/>
-	<key>org.clover.drivers64uefi.emuvariableuefi-64</key>
 	<true/>
 	<key>org.clover.drivers64uefi.osxaptiofixdrv-64</key>
 	<true/>
