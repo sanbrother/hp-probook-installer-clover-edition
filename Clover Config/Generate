@@ -286,6 +286,12 @@ then
 	printf '\t\t\t\t<key>TableId</key>\n' >> $config
 	printf '\t\t\t\t<string>IsctAsl</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config		
+	printf '\t\t\t<dict>\n' >> $config
+	printf '\t\t\t\t<key>Signature</key>\n' >> $config
+	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
+	printf '\t\t\t\t<key>TableId</key>\n' >> $config
+	printf '\t\t\t\t<string>SaSsdt</string>\n' >> $config
+	printf '\t\t\t</dict>\n' >> $config		
 	printf '\t\t</array>\n' >> $config
 	printf '\t\t<key>SSDT</key>\n' >> $config
 	printf '\t\t<dict>\n' >> $config
