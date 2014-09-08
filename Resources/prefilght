@@ -28,3 +28,8 @@ then
 		rm -rf /Volumes/ESP
 	fi
 fi
+
+if [ -d "/tmp/tempDSDT" ]
+then
+	rm -rf /tmp/tempDSDT
+fi
