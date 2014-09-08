@@ -19,6 +19,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.7 (September 8th 2014)**
+
+* Add AnyiSightCam kext.
+* Update Clover 2892.
+* Update Clover Configurator
+
 **Version 6.2.6 (September 3rd 2014)**
 
 * Fix 6x70 AMD model config.
