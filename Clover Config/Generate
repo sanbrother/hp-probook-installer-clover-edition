@@ -624,9 +624,9 @@ then
 	printf '\t\t\t\t<key>FullTitle</key>\n' >> $config
 	printf '\t\t\t\t<string>UEFI Internal</string>\n' >> $config
 	printf '\t\t\t\t<key>Hidden</key>\n' >> $config
-	printf '\t\t\t\t<false/>\n' >> $config
+	printf '\t\t\t\t<string>Always</string>\n' >> $config
 	printf '\t\t\t\t<key>Disabled</key>\n' >> $config
-	printf '\t\t\t\t<true/>\n' >> $config
+	printf '\t\t\t\t<false/>\n' >> $config
 	printf '\t\t\t\t<key>Type</key>\n' >> $config
 	printf '\t\t\t\t<string>Other</string>\n' >> $config
 	printf '\t\t\t\t</dict>\n' >> $config
