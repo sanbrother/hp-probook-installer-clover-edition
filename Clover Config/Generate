@@ -238,65 +238,11 @@ then
 	printf '\t\t\t\t<key>Signature</key>\n' >> $config
 	printf '\t\t\t\t<string>DMAR</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Signature</key>\n' >> $config
-	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
-	printf '\t\t\t\t<key>TableId</key>\n' >> $config
-	printf '\t\t\t\t<string>CpuPm</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Signature</key>\n' >> $config
-	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
-	printf '\t\t\t\t<key>TableId</key>\n' >> $config
-	printf '\t\t\t\t<string>Cpu0Ist</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Signature</key>\n' >> $config
-	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
-	printf '\t\t\t\t<key>TableId</key>\n' >> $config
-	printf '\t\t\t\t<string>AMDSGTBL</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Signature</key>\n' >> $config
-	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
-	printf '\t\t\t\t<key>TableId</key>\n' >> $config
-	printf '\t\t\t\t<string>SgTabl</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Signature</key>\n' >> $config
-	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
-	printf '\t\t\t\t<key>TableId</key>\n' >> $config
-	printf '\t\t\t\t<string>Cpu0Cst</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Signature</key>\n' >> $config
-	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
-	printf '\t\t\t\t<key>TableId</key>\n' >> $config
-	printf '\t\t\t\t<string>ApCst</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Signature</key>\n' >> $config
-	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
-	printf '\t\t\t\t<key>TableId</key>\n' >> $config
-	printf '\t\t\t\t<string>ApIst</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Signature</key>\n' >> $config
-	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
-	printf '\t\t\t\t<key>TableId</key>\n' >> $config
-	printf '\t\t\t\t<string>IsctAsl</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config		
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Signature</key>\n' >> $config
-	printf '\t\t\t\t<string>SSDT</string>\n' >> $config
-	printf '\t\t\t\t<key>TableId</key>\n' >> $config
-	printf '\t\t\t\t<string>SaSsdt</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config		
 	printf '\t\t</array>\n' >> $config
 	printf '\t\t<key>SSDT</key>\n' >> $config
 	printf '\t\t<dict>\n' >> $config
 	printf '\t\t\t<key>DropOem</key>\n' >> $config
-	printf '\t\t\t<false/>\n' >> $config
+	printf '\t\t\t<true/>\n' >> $config
 	printf '\t\t\t<key>Generate</key>\n' >> $config
 	printf '\t\t\t<dict>\n' >> $config
 	printf '\t\t\t\t<key>PStates</key>\n' >> $config
@@ -422,21 +368,6 @@ then
 		printf '\t\t\t</dict>\n' >> $config
 	elif ([ "$CloverModel" == "4x0G1" ])
 	then
-		printf '\t\t\t<dict>\n' >> $config
-		printf '\t\t\t\t<key>Name</key>\n' >> $config
-		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
-		printf '\t\t\t\t<key>Find</key>\n' >> $config
-		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tAgAAADAAAAABBRIAAAQAAIcAAAACBBIAAAQAAIcAAAD/AAEAAQAAAEAAAAAPAAAAAQEAAAQAAAA=\n' >> $config
-		printf '\t\t\t\t</data>\n' >> $config
-		printf '\t\t\t\t<key>Replace</key>\n' >> $config
-		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tAgAAADAAAAABBRIAAAQAAIcAAAACBBIAAAgAAIcAAAD/AAEAAQAAAEAAAAAPAAAAAQEAAAQAAAA=\n' >> $config
-		printf '\t\t\t\t</data>\n' >> $config
-		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Patch audio HDMI HD4400/4600 laptop 10.9.1</string>\n' >> $config
-		printf '\t\t\t</dict>\n' >> $config
-
 		printf '\t\t\t<dict>\n' >> $config
 		printf '\t\t\t\t<key>Name</key>\n' >> $config
 		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
