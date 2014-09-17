@@ -19,10 +19,16 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.8 (September 17th 2014)**
+
+* Update Clover 2911.
+* Drop all SSDT in config.plist.
+* Add 10.9.1 kexts for Haswell HDMI.
+
 **Version 6.2.7.1 (September 8th 2014)**
 
 * Update Clover 2895.
-* Update Clover Configurator
+* Update Clover Configurator.
 
 **Version 6.2.6 (September 3rd 2014)**
 
