@@ -1,0 +1,45 @@
+#!/bin/bash
+set -x
+RightNowIs=`/usr/libexec/PlistBuddy -c "Print :CurrentDateTime" /tmp/PBI.plist`
+BackupDir="$HOME/Desktop/Installer Backups/Backup $RightNowIs"
+kextdir="${3}/System/Library/Extensions"
+# removing the old kext.
+if [ -e "$kextdir/AppleIntelFramebufferAzul.kext" ]
+then
+  if [ ! -e "$BackupDir" ]
+  then
+	mkdir -p "$BackupDir"
+  fi
+  cp -Rf "$kextdir/AppleIntelFramebufferAzul.kext" "$BackupDir"
+  rm -rf "$kextdir/AppleIntelFramebufferAzul.kext"
+fi
+
+if [ -e "$kextdir/AppleIntelHD5000Graphics.kext" ]
+then
+  if [ ! -e "$BackupDir" ]
+  then
+	mkdir -p "$BackupDir"
+  fi
+  cp -Rf "$kextdir/AppleIntelHD5000Graphics.kext" "$BackupDir"
+  rm -rf "$kextdir/AppleIntelHD5000Graphics.kext"
+fi
+
+if [ -e "$kextdir/AppleIntelHD5000GraphicsGLDriver.bundle" ]
+then
+  if [ ! -e "$BackupDir" ]
+  then
+	mkdir -p "$BackupDir"
+  fi
+  cp -Rf "$kextdir/AppleIntelHD5000GraphicsGLDriver.bundle" "$BackupDir"
+  rm -rf "$kextdir/AppleIntelHD5000GraphicsGLDriver.bundle"
+fi
+
+if [ -e "$kextdir/AppleIntelHD5000GraphicsVADriver.bundle" ]
+then
+  if [ ! -e "$BackupDir" ]
+  then
+	mkdir -p "$BackupDir"
+  fi
+  cp -Rf "$kextdir/AppleIntelHD5000GraphicsVADriver.bundle" "$BackupDir"
+  rm -rf "$kextdir/AppleIntelHD5000GraphicsVADriver.bundle"
+fi
