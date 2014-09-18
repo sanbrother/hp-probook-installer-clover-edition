@@ -194,6 +194,23 @@
 			<key>idVendor</key>
 			<integer>1161</integer>
 		</dict>
+		<key>Atheros-AR3012-3004-0cf3</key>
+		<dict>
+			<key>BTController</key>
+			<string>AR3012</string>
+			<key>CFBundleIdentifier</key>
+			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>Use Linux fw</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>12292</integer>
+			<key>idVendor</key>
+			<integer>3315</integer>
+		</dict>
 		<key>Atheros-AR3012-3005-04ca</key>
 		<dict>
 			<key>BTController</key>
@@ -242,6 +259,23 @@
 			<true/>
 			<key>idProduct</key>
 			<integer>13154</integer>
+			<key>idVendor</key>
+			<integer>5075</integer>
+		</dict>
+		<key>Atheros-AR3012-3402-13d3</key>
+		<dict>
+			<key>BTController</key>
+			<string>AR3012</string>
+			<key>CFBundleIdentifier</key>
+			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>Use Linux fw</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>13314</integer>
 			<key>idVendor</key>
 			<integer>5075</integer>
 		</dict>
@@ -298,7 +332,7 @@
 			<key>idVendor</key>
 			<integer>5075</integer>
 		</dict>
-		<key>BCM-Asus-BCM4352-BT-17cf-b05 </key>
+		<key>BCM-Asus-4352-17cf-b05 </key>
 		<dict>
 			<key>BTController</key>
 			<string>BCM4352</string>
@@ -336,7 +370,45 @@
 			<key>idVendor</key>
 			<integer>2821</integer>
 		</dict>
-		<key>BCM-Dell-AW-BCM4352-3411-13d3</key>
+		<key>BCM-BCM4360CD-3413-13d3</key>
+		<dict>
+			<key>BTController</key>
+			<string>BCM4360</string>
+			<key>CFBundleIdentifier</key>
+			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
+			<key>DeviceSpecificFw</key>
+			<true/>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>UpdFwAfterSleep</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>13331</integer>
+			<key>idVendor</key>
+			<integer>5075</integer>
+		</dict>
+		<key>BCM-Belkin-BT400-065a-050d</key>
+		<dict>
+			<key>BTController</key>
+			<string>BCMSTDA</string>
+			<key>CFBundleIdentifier</key>
+			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
+			<key>DeviceSpecificFw</key>
+			<true/>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>UpdFwAfterSleep</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>1626</integer>
+			<key>idVendor</key>
+			<integer>1293</integer>
+		</dict>
+		<key>BCM-Dell-AW-4352-3411-13d3</key>
 		<dict>
 			<key>BTController</key>
 			<string>BCM4352</string>
@@ -355,7 +427,7 @@
 			<key>idVendor</key>
 			<integer>5075</integer>
 		</dict>
-		<key>BCM-Dell-DW1550-BT-8143-413c</key>
+		<key>BCM-Dell-DW1550-8143-413c</key>
 		<dict>
 			<key>BTController</key>
 			<string>BCM4352</string>
@@ -374,7 +446,7 @@
 			<key>idVendor</key>
 			<integer>16700</integer>
 		</dict>
-		<key>BCM-Dongles-BT40-BT-21E8-0A5C</key>
+		<key>BCM-Dongles-BT40-21E8-0A5C</key>
 		<dict>
 			<key>BTController</key>
 			<string>BCMSTDA</string>
@@ -393,26 +465,7 @@
 			<key>idVendor</key>
 			<integer>2652</integer>
 		</dict>
-		<key>BCM-HP-BCM4313-BT-21E3-0A5C</key>
-		<dict>
-			<key>BTController</key>
-			<string>BCM4313</string>
-			<key>CFBundleIdentifier</key>
-			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
-			<key>DeviceSpecificFw</key>
-			<true/>
-			<key>IOClass</key>
-			<string>BTFirmwareUploader</string>
-			<key>IOProviderClass</key>
-			<string>IOUSBDevice</string>
-			<key>UpdFwAfterSleep</key>
-			<true/>
-			<key>idProduct</key>
-			<integer>8675</integer>
-			<key>idVendor</key>
-			<integer>2652</integer>
-		</dict>
-		<key>BCM-HP-BCM4352-21FB-0A5C</key>
+		<key>BCM-HP-4352-21FB-0A5C</key>
 		<dict>
 			<key>BTController</key>
 			<string>BCM4352</string>
@@ -450,7 +503,26 @@
 			<key>idVendor</key>
 			<integer>2652</integer>
 		</dict>
-		<key>BCM-LiteOn-BCM4352-200A-0c4a</key>
+		<key>BCM-Lenovo-4352-ngff-e07a-0489</key>
+		<dict>
+			<key>BTController</key>
+			<string>BCM4352</string>
+			<key>CFBundleIdentifier</key>
+			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
+			<key>DeviceSpecificFw</key>
+			<true/>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>UpdFwAfterSleep</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>57466</integer>
+			<key>idVendor</key>
+			<integer>1161</integer>
+		</dict>
+		<key>BCM-LiteOn-4352-200A-0c4a</key>
 		<dict>
 			<key>BTController</key>
 			<string>BCM4352</string>
@@ -469,7 +541,7 @@
 			<key>idVendor</key>
 			<integer>1226</integer>
 		</dict>
-		<key>BCM-LiteOn-BCM4352-200B-0c4a</key>
+		<key>BCM-LiteOn-4352-200B-0c4a</key>
 		<dict>
 			<key>BTController</key>
 			<string>BCM4352</string>
@@ -488,7 +560,7 @@
 			<key>idVendor</key>
 			<integer>1226</integer>
 		</dict>
-		<key>BCM-LiteOn-BCM4352-200C-0c4a </key>
+		<key>BCM-LiteOn-4352-200C-0c4a </key>
 		<dict>
 			<key>BTController</key>
 			<string>BCM4352</string>
@@ -507,7 +579,26 @@
 			<key>idVendor</key>
 			<integer>1226</integer>
 		</dict>
-		<key>BCM-Toshiba-4352-0223-0930</key>
+		<key>BCM-Toshiba-4352-0221-0930</key>
+		<dict>
+			<key>BTController</key>
+			<string>BCM4352</string>
+			<key>CFBundleIdentifier</key>
+			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
+			<key>DeviceSpecificFw</key>
+			<true/>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>UpdFwAfterSleep</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>545</integer>
+			<key>idVendor</key>
+			<integer>2352</integer>
+		</dict>
+		<key>BCM-Toshiba-4352-ngff-0223-0930</key>
 		<dict>
 			<key>BTController</key>
 			<string>BCM4352</string>
