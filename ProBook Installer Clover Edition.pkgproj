@@ -9069,6 +9069,24 @@
 													<key>GID</key>
 													<integer>0</integer>
 													<key>PATH</key>
+													<string>OSX Support Files/CommonKexts/Extensions/BTFirmwareUploader.kext</string>
+													<key>PATH_TYPE</key>
+													<integer>1</integer>
+													<key>PERMISSIONS</key>
+													<integer>511</integer>
+													<key>TYPE</key>
+													<integer>3</integer>
+													<key>UID</key>
+													<integer>0</integer>
+												</dict>
+												<dict>
+													<key>BUNDLE_CAN_DOWNGRADE</key>
+													<true/>
+													<key>CHILDREN</key>
+													<array/>
+													<key>GID</key>
+													<integer>0</integer>
+													<key>PATH</key>
 													<string>OSX Support Files/CommonKexts/Extensions/HSSDBlockStorage.kext</string>
 													<key>PATH_TYPE</key>
 													<integer>1</integer>
@@ -9307,24 +9325,6 @@
 																			<integer>1</integer>
 																			<key>PERMISSIONS</key>
 																			<integer>493</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>BUNDLE_CAN_DOWNGRADE</key>
-																			<true/>
-																			<key>CHILDREN</key>
-																			<array/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
-																			<string>OSX Support Files/CommonKexts/Extensions/BTFirmwareUploader.kext</string>
-																			<key>PATH_TYPE</key>
-																			<integer>1</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>511</integer>
 																			<key>TYPE</key>
 																			<integer>3</integer>
 																			<key>UID</key>
@@ -32709,7 +32709,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 6x70b/8x70p and the OS X version you have installed.
+														<string>Automatically detects and installs the support files for your 2x70p/6x70b/8x70p and the OS X version you have installed.
 Supported OS X versions: Mavericks, Yosemite.</string>
 													</dict>
 												</array>
@@ -32730,7 +32730,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>6x70b/8x70p</string>
+														<string>2x70p/6x70b/8x70p</string>
 													</dict>
 												</array>
 												<key>TOOLTIP</key>
@@ -33180,7 +33180,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 																<key>LANGUAGE</key>
 																<string>English</string>
 																<key>VALUE</key>
-																<string>Select this, if you have a 6x70b/8x70p model.</string>
+																<string>Select this, if you have a 2x70p/6x70b/8x70p model.</string>
 															</dict>
 														</array>
 														<key>OPTIONS</key>
@@ -33200,7 +33200,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 																<key>LANGUAGE</key>
 																<string>English</string>
 																<key>VALUE</key>
-																<string>6x70b/8x70p</string>
+																<string>2x70p/6x70b/8x70p</string>
 															</dict>
 														</array>
 														<key>TOOLTIP</key>

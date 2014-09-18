@@ -19,6 +19,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.9 (September 18th 2014)**
+
+* Update BTFirmwareUploader and AppleIntelE1000e kexts.
+* Move BTFirmwareUploader to /S/L/E.
+* Auto disable "Wake for network access" (thanks to thesbay).
+
 **Version 6.2.8 (September 17th 2014)**
 
 * Update Clover 2911.
