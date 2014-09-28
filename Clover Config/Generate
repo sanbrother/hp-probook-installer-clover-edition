@@ -22,7 +22,7 @@ then
 	if [ "$CloverModel" == "4x0G1" ]
 	then
 		printf '\t\t<key>ig-platform-id</key>\n' >> $config
-		printf '\t\t<string>0x0a260006</string>\n' >> $config
+		printf '\t\t<string>0x0a26000a</string>\n' >> $config
 		printf '\t\t<key>Inject</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
 		printf '\t\t\t<key>Intel</key>\n' >> $config
@@ -95,7 +95,7 @@ then
 	function random_char { echo ${chars:$(($RANDOM%${#chars})):1}; }
 	boardserial="$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)"
 	case $CloverModel in 
-		4x30|6x60|4x40sb)
+		4x30|6x60)
 			boardtype="10"
 			chassistype="8"
 			chassis="MacBook-Aluminum"
@@ -108,7 +108,7 @@ then
 			prodname="MacBookPro8,1"
 			serial="C02J"$week_letter$(random_char)$(random_char)$(random_char)"DH2G"
 			;;
-		4x40|6x70*|4x0G0)
+		4x40*|6x70*|4x0G0)
 			boardtype="10"
 			chassistype="8"
 			chassis="MacBook-Aluminum"
