@@ -302,6 +302,36 @@ then
 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
 	printf '\t\t\t\t<string>Fix Bluetooth 30 seconds delay 10.9</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
+
+	printf '\t\t\t<dict>\n' >> $config
+	printf '\t\t\t\t<key>Name</key>\n' >> $config
+	printf '\t\t\t\t<string>IOGraphicsFamily</string>\n' >> $config
+	printf '\t\t\t\t<key>Find</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\thcB0XUg=\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Replace</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\tMcB0W0g=\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Comment</key>\n' >> $config
+	printf '\t\t\t\t<string>Second Stage patch 1 10.10</string>\n' >> $config
+	printf '\t\t\t</dict>\n' >> $config
+
+	printf '\t\t\t<dict>\n' >> $config
+	printf '\t\t\t\t<key>Name</key>\n' >> $config
+	printf '\t\t\t\t<string>IOGraphicsFamily</string>\n' >> $config
+	printf '\t\t\t\t<key>Find</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\tQYjE6wM=\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Replace</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\tQYjE6yM=\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Comment</key>\n' >> $config
+	printf '\t\t\t\t<string>Second Stage patch 2 10.10</string>\n' >> $config
+	printf '\t\t\t</dict>\n' >> $config
 	
 	if [ "$CloverModel" == "4x30" ] || [ "$CloverModel" == "6x60" ] || [ "$CloverModel" == "4x40sb" ]
 	then
