@@ -19,6 +19,24 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.11 (October 15th 2014)**
+
+* Add HP 8x60w AMD and 4x0 G2 support.
+* Add BT patch again in config.plist.
+* Update Clover 2955.
+* Update Clover Configurator.
+* Update ACIPIBacklight, ACPIBatteryManager, RTL8111, BTFirmwareUploader kexts.
+
+**Version 6.2.10 (October 1st 2014)**
+
+* Add HP Zbook support.
+* Add Second Stage patch for 10.10 in config.plist.
+* Fix SMBIOS 9,2 for 4x40 SandyBridge.
+* Update Clover 2932.
+* Update Clover Configurator, Kext Wizard.
+* Update ProBook, EliteBook logos.
+* Remove BT patch in config.plist.
+
 **Version 6.2.9 (September 18th 2014)**
 
 * Update BTFirmwareUploader and AppleIntelE1000e kexts.
