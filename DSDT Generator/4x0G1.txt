@@ -167,6 +167,7 @@ end;
 #    Rename all instances of GFX0 to IGPU
 into_all all code_regex GFX0 replaceall_matched begin IGPU end;
 into_all all label GFX0 set_label begin IGPU end;
+into_all all label \_SB.PCI0.GFX0 set_label begin \_SB.PCI0.IGPU end;
 
 
 #   Brightness control fix
@@ -481,6 +482,7 @@ into_all method label GBTI code_regex \(BPR, replaceall_matched begin (B1B2 (BPR
 into_all method label BTST code_regex \(BRC, replaceall_matched begin (B1B2 (BRC0, BRC1), end;
 into_all method label GBTI code_regex \(BRC, replaceall_matched begin (B1B2 (BRC0, BRC1), end;
 into_all method label GBTI code_regex \(BCR, replaceall_matched begin (B1B2 (BCR0, BCR1), end;
+into_all method label BTST code_regex \(BCR, replaceall_matched begin (B1B2 (BCR0, BCR1), end;
 into_all method label BTST code_regex \(BPV, replaceall_matched begin (B1B2 (BPV0, BPV1), end;
 into_all method label GBTI code_regex \(BPV, replaceall_matched begin (B1B2 (BPV0, BPV1), end;
 into_all method label GBTI code_regex \(BDC, replaceall_matched begin (B1B2 (BDC0, BDC1), end;

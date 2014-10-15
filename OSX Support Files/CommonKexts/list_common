@@ -1,6 +1,8 @@
 /System/Library/Extensions/ACPIBacklight.kext<=>y
 /System/Library/Extensions/ACPIBatteryManager.kext<=>y
 /System/Library/Extensions/ACPIPoller.kext<=>y
+/System/Library/Extensions/AppleHDAIDT.kext<=>y
+/System/Library/Extensions/AppleHDAALC.kext<=>y
 /System/Library/Extensions/AppleIntelE1000e.kext<=>y
 /System/Library/Extensions/FakeSMC.kext<=>y
 /System/Library/Extensions/HSSDBlockStorage.kext<=>y
