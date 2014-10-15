@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>13E28</string>
+	<string>13F34</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -23,7 +23,7 @@
 	<key>CFBundleVersion</key>
 	<string>2.6</string>
 	<key>DTCompiler</key>
-	<string></string>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
 	<string>4H1503</string>
 	<key>DTPlatformVersion</key>
@@ -313,10 +313,29 @@
 			<key>idVendor</key>
 			<integer>1161</integer>
 		</dict>
+		<key>BCM-4313-e032-0489</key>
+		<dict>
+			<key>BTController</key>
+			<string>BCMCOMBO</string>
+			<key>CFBundleIdentifier</key>
+			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
+			<key>DeviceSpecificFw</key>
+			<true/>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>UpdFwAfterSleep</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>57394</integer>
+			<key>idVendor</key>
+			<integer>1161</integer>
+		</dict>
 		<key>BCM-AZWave-CE123H-3404-13d3</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -335,7 +354,7 @@
 		<key>BCM-Asus-4352-17cf-b05 </key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -354,7 +373,7 @@
 		<key>BCM-Asus-BT400-17cb-0b05</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCMSTDA</string>
+			<string>BCMSTDAL</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -373,7 +392,7 @@
 		<key>BCM-BCM4360CD-3413-13d3</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4360</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -392,7 +411,7 @@
 		<key>BCM-Belkin-BT400-065a-050d</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCMSTDA</string>
+			<string>BCMSTDAL</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -411,7 +430,7 @@
 		<key>BCM-Dell-AW-4352-3411-13d3</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -430,7 +449,7 @@
 		<key>BCM-Dell-DW1550-8143-413c</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -449,7 +468,7 @@
 		<key>BCM-Dongles-BT40-21E8-0A5C</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCMSTDA</string>
+			<string>BCMSTDAL</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -468,7 +487,7 @@
 		<key>BCM-HP-4352-21FB-0A5C</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -487,7 +506,7 @@
 		<key>BCM-HP-BT40-21E1-0A5C</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCMSTDA</string>
+			<string>BCMSTDAL</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -506,7 +525,7 @@
 		<key>BCM-Lenovo-4352-ngff-e07a-0489</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -525,7 +544,7 @@
 		<key>BCM-LiteOn-4352-200A-0c4a</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -544,7 +563,7 @@
 		<key>BCM-LiteOn-4352-200B-0c4a</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -563,7 +582,7 @@
 		<key>BCM-LiteOn-4352-200C-0c4a </key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -582,7 +601,7 @@
 		<key>BCM-Toshiba-4352-0221-0930</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
@@ -601,7 +620,7 @@
 		<key>BCM-Toshiba-4352-ngff-0223-0930</key>
 		<dict>
 			<key>BTController</key>
-			<string>BCM4352</string>
+			<string>BCMCOMBO</string>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.BTFirmwareUploader</string>
 			<key>DeviceSpecificFw</key>
