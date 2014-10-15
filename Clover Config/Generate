@@ -49,6 +49,19 @@ then
 		printf '\t\t</dict>\n' >> $config
 		printf '\t\t<key>LoadVBios</key>\n' >> $config
 		printf '\t\t<true/>\n' >> $config
+	elif [ "$CloverModel" == "6x60wAMD" ]
+	then
+		printf '\t\t<key>Inject</key>\n' >> $config
+		printf '\t\t<dict>\n' >> $config
+		printf '\t\t\t<key>Intel</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t\t<key>ATI</key>\n' >> $config
+		printf '\t\t\t<true/>\n' >> $config
+		printf '\t\t\t<key>NVidia</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t</dict>\n' >> $config
+		printf '\t\t<key>LoadVBios</key>\n' >> $config
+		printf '\t\t<true/>\n' >> $config
 	else
 		case $CloverResolution in 
 			low)
@@ -95,7 +108,7 @@ then
 	function random_char { echo ${chars:$(($RANDOM%${#chars})):1}; }
 	boardserial="$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)"
 	case $CloverModel in 
-		4x30|6x60)
+		4x30|6x60*)
 			boardtype="10"
 			chassistype="8"
 			chassis="MacBook-Aluminum"
