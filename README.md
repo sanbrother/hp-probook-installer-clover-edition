@@ -25,6 +25,7 @@ Supported models:
 * Fix SSDTPrgen on 10.10.
 * Fix Quiet Fan patch.
 * Update Clover 2960.
+* Update Clover Configurator.
 * Retain BSN/MLB and ROM when recreating config.plist.
 
 **Version 6.2.11.2 (October 17th 2014)**
