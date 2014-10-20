@@ -19,13 +19,22 @@ Supported models:
 
 ###C h a n g e l o g   
 
-**Version 6.2.11 (October 15th 2014)**
+**Version 6.2.12.1 (October 20th 2014)**
+
+* Add Broadcom Wifi patches in config.plist.
+* Fix SSDTPrgen on 10.10.
+* Fix Quiet Fan patch.
+* Update Clover 2960.
+* Retain BSN/MLB and ROM when recreating config.plist.
+
+**Version 6.2.11.2 (October 17th 2014)**
 
 * Add HP 8x60w AMD and 4x0 G2 support.
 * Add BT patch again in config.plist.
-* Update Clover 2955.
+* Fix HD4600 on 10.10.
+* Update Clover 2959.
 * Update Clover Configurator.
-* Update ACIPIBacklight, ACPIBatteryManager, RTL8111, BTFirmwareUploader kexts.
+* Update ACIPIBacklight, ACPIBatteryManager, RTL8111, BTFirmwareUploader, GenericUSBXHCI kexts.
 
 **Version 6.2.10 (October 1st 2014)**
 
