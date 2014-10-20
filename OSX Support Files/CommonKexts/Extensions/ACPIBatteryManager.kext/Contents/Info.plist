@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>14A379a</string>
+	<string>14A389</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -27,17 +27,17 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>6A1042b</string>
+	<string>6A1046a</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>14A373</string>
+	<string>12D75</string>
 	<key>DTSDKName</key>
-	<string>macosx10.10</string>
+	<string>macosx10.8</string>
 	<key>DTXcode</key>
 	<string>0610</string>
 	<key>DTXcodeBuild</key>
-	<string>6A1042b</string>
+	<string>6A1046a</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ACPI AC Adapter</key>
@@ -67,6 +67,8 @@
 			<integer>1000</integer>
 			<key>IOProviderClass</key>
 			<string>IOACPIPlatformDevice</string>
+			<key>RM,Build</key>
+			<string>Release-RehabMan</string>
 			<key>RM,Version</key>
 			<string>ACPIBatteryManager 1.53</string>
 			<key>UseExtendedBatteryInformationMethod</key>

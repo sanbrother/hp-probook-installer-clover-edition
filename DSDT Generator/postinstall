@@ -175,6 +175,37 @@ EOT
 				break
 			fi
 		done
+
+		if [[ $GraphicCheck == '' ]]
+		then
+			for file in ./SSDT*.dsl
+			do
+				GraphicCheck=`cat $file | grep -i '\_SB.PCI0.RP05.DGFX'`
+				if [[ $GraphicCheck != '' ]]
+				then
+					if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ]
+					then
+						cp $file /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
+					else
+						./patchmatic ./DSDT.dsl ./11b2_Radeon_OFF_DSDT.txt ./DSDT.dsl			
+						./patchmatic $file ./11a_Radeon_OFF_SSDT.txt $file
+
+						if [ -f "4x0G1.txt" ]
+						then
+							./iasl -p SSDT-2 $file
+							cp ./SSDT-2.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-2.aml
+						else
+							./iasl -p SSDT-1 $file
+							cp ./SSDT-1.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
+						fi
+					fi
+
+					break
+				fi
+			done
+
+		fi
+
 		
 		rm ./DSDT.aml
 		./iasl -p DSDT ./DSDT.dsl

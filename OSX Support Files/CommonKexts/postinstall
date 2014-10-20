@@ -11,9 +11,6 @@ fi
 
 rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/*
 cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/* /Volumes/EFI/EFI/CLOVER/kexts/10.10
-rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/GenericUSBXHCI.kext
-cp -rf /Volumes/EFI/EFI/CLOVER/kexts/GenericUSBXHCI.kext /Volumes/EFI/EFI/CLOVER/kexts/10.10
-rm -rf /Volumes/EFI/EFI/CLOVER/kexts/GenericUSBXHCI.kext
 
 systemsetup -setwakeonnetworkaccess off
 /usr/libexec/PlistBuddy -c "Set :KextCacheRebuild yes" /tmp/PBI.plist
