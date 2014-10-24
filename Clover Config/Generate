@@ -187,6 +187,21 @@ then
 			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"FD58"
 			;;
 	esac
+
+	# check existing serial number
+	if [ -f /Volumes/EFI/EFI/CLOVER/config.plist ]
+	then
+		oldprodname=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:ProductName' /Volumes/EFI/EFI/CLOVER/config.plist)
+		if [ "$oldprodname" == "$prodname" ]
+		then
+			oldserial=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:SerialNumber' /Volumes/EFI/EFI/CLOVER/config.plist)
+			if ! [[ "$oldserial" == "*Does Not Exist" ]]
+			then
+				serial=$oldserial
+			fi
+		fi
+	fi
+
 	printf '\t<key>SMBIOS</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
 	printf '\t\t<key>BoardType</key>\n' >> $config
