@@ -106,6 +106,7 @@ EOT
 		if [ "$CloverModel" == "4x40sb" ]
 		then
 			rm ./4x40s_IvyBridge.txt
+			rm ./09_USB3_4x40s_Mieze.txt
 		fi
 
 		for patch in "4x30s.txt" \

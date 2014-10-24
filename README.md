@@ -24,9 +24,11 @@ Supported models:
 * Add Broadcom Wifi patches in config.plist.
 * Fix SSDTPrgen on 10.10.
 * Fix Quiet Fan patch.
-* Update Clover 2960.
+* Fix 4x40s SandyBridge model.
+* Update Clover 2972.
 * Update Clover Configurator.
-* Retain BSN/MLB and ROM when recreating config.plist.
+* Update SSDTPrGen 14.1.
+* Retain BSN/MLB, SerialNumber and ROM when recreating config.plist.
 
 **Version 6.2.11.2 (October 17th 2014)**
 
