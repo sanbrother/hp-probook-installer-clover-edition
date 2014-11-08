@@ -19,6 +19,14 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.13 (November 8th 2014)**
+
+* Update Clover 2999.
+* Update Clover Configurator.
+* Update Logo for Probook and Elitebook.
+* BTFirmwareUploader will be installed as optional.
+* Disable InjectIntel for HD3000/HD4000 in config.plist.
+
 **Version 6.2.12.1 (October 20th 2014)**
 
 * Add Broadcom Wifi patches in config.plist.

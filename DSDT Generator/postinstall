@@ -5,7 +5,7 @@ set -x
 CloverConfigGenerate=`/usr/libexec/PlistBuddy -c "Print :CloverConfigGenerate" /tmp/PBI.plist`
 CloverModel=`/usr/libexec/PlistBuddy -c "Print :CloverModel" /tmp/PBI.plist`
 
-if [ "$CloverConfigGenerate" != "no" ]
+if [ "$CloverConfigGenerate" != "no" ] && [ -f /Volumes/CLOVER/EFI/CLOVER/config.plist ]
 then
 	./Generate
 	cp /tmp/config.plist /Volumes/EFI/EFI/CLOVER/
@@ -50,15 +50,15 @@ if [ ! [ -f ./DSDT.dsl ] ]
 then
 /usr/bin/osascript <<EOT
 tell application "Finder"
-	activate
-	set myReply to button returned of (display dialog "If you see this warning message, that means:
+    activate
+    display dialog "If you see this warning message, that means:
 
 You haven't pressed F4 at Clover screen.
 
 If you want to make yourself a new patched DSDT, you should do the following:
 
 Press F4 at Clover screen
-Run PBI Clover Edition again and select correct DSDT options." )
+Run PBI Clover Edition again and select correct DSDT options." buttons {"OK"} default button "OK" with icon note with title "Non-vanilla DSDT!"
 end tell
 EOT
 else
@@ -68,18 +68,18 @@ else
 	if [ "$VanillaCheck" == "" ]
 	then
 		/usr/bin/osascript <<EOT
-	tell application "Finder"
-		activate
-		set myReply to button returned of (display dialog "If you see this warning message, that means:
+tell application "Finder"
+    activate
+    display dialog "If you see this warning message, that means:
 
 	1. You haven't pressed F4 at Clover screen.
 	2. You haven't selected the right main model-specific patch.
 
-	If you want to make yourself a new patched DSDT, you should do the following:
+If you want to make yourself a new patched DSDT, you should do the following:
 
-	Press F4 at Clover screen
-	Run PBI Clover Edition again and select correct DSDT options." )
-	end tell
+Press F4 at Clover screen
+Run PBI Clover Edition again and select correct DSDT options." buttons {"OK"} default button "OK" with icon note with title "Non-vanilla DSDT!"
+end tell
 EOT
 	else
 		cp ./*.aml /Volumes/EFI/EFI/CLOVER/acpi/origin/
@@ -213,18 +213,18 @@ EOT
 		if [ ! -f  "DSDT.aml" ]
 		then
 		/usr/bin/osascript <<EOT
-	tell application "Finder"
-		activate
-		set myReply to button returned of (display dialog "If you see this warning message, that means:
+tell application "Finder"
+    activate
+    display dialog "If you see this warning message, that means:
 
 	1. You haven't pressed F4 at Clover screen.
 	2. You haven't selected the right main model-specific patch.
 
-	If you want to make yourself a new patched DSDT, you should do the following:
+If you want to make yourself a new patched DSDT, you should do the following:
 
-	Press F4 at Clover screen
-	Run PBI Clover Edition again and select correct DSDT options." )
-	end tell
+Press F4 at Clover screen
+Run PBI Clover Edition again and select correct DSDT options." buttons {"OK"} default button "OK" with icon note with title "Non-vanilla DSDT!"
+end tell
 EOT
 		else
 			cp ./DSDT.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/DSDT.aml
