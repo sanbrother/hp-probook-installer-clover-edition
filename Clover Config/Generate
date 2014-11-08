@@ -431,6 +431,22 @@ then
 	printf '\t\t\t\t<string>Broadcom Airport Extreme</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
 
+	printf '\t\t\t<dict>\n' >> $config
+	printf '\t\t\t\t<key>Name</key>\n' >> $config
+	printf '\t\t\t\t<string>IOBluetoothFamily</string>\n' >> $config
+	printf '\t\t\t\t<key>Find</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\ti4eMAQAA\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Replace</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\tuA8AAACQ\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Comment</key>\n' >> $config
+	printf '\t\t\t\t<string>Handoff Fix</string>\n' >> $config
+	printf '\t\t\t</dict>\n' >> $config
+
+
 	
 	if [ "$CloverModel" == "4x30" ] || [ "$CloverModel" == "6x60" ] || [ "$CloverModel" == "4x40sb" ]
 	then
