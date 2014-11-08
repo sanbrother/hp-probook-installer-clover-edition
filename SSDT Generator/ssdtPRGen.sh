@@ -1090,11 +1090,11 @@ printf "$strippedData" > acpiTableExtract.zip
 #
 # Unzipping command line tool.
 #
-unzip -qu acpiTableExtract.zip -d /usr/local/bin/
+unzip -qu acpiTableExtract.zip -d .
 #
 # Extracting ACPI tables.
 #
-/usr/local/bin/acpiTableExtract
+./acpiTableExtract
 
 #
 #--------------------------------------------------------------------------------
