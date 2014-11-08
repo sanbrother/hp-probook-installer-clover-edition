@@ -21,6 +21,7 @@ Supported models:
 
 **Version 6.2.13 (November 8th 2014)**
 
+* Add Handoff fix in config.plist.
 * Update Clover 2999.
 * Update Clover Configurator.
 * Update Logo for Probook and Elitebook.
