@@ -2,22 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BuildMachineOSBuild</key>
+	<string>13A598</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Based on ToledaARPT 1.0.0 Copyright © 2013 toleda and AirPortAtherosInjector 0.9 Copyright © 2013 RehabMan.</string>
+	<string>Based on ToledaARPT 1.0.0 Copyright Â© 2013 toleda and AirPortAtherosInjector 0.9 Copyright Â© 2013 RehabMan.</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.driver.WifiInjector</string>
+	<string>com.apple.driver.ProBookARPT</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>WifiInjector</string>
+	<string>ProBookARPT</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>1.0.3</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>AppleUSBMergeNub_aw-ce123h</key>
@@ -76,7 +80,6 @@
 			<array>
 				<string>pci168c,2e</string>
 				<string>pci168c,2b</string>
-				<string>pci168c,2d</string>
 			</array>
 			<key>IOProbeScore</key>
 			<integer>600</integer>
@@ -95,14 +98,13 @@
 			<array>
 				<string>pci168c,2b</string>
 				<string>pci168c,2e</string>
-				<string>pci168c,2d</string>
 			</array>
 			<key>IOProbeScore</key>
 			<integer>590</integer>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
 		</dict>
-		<key>BCM43225HMB0BluetoothHCIController-21e1 2</key>
+		<key>BCM20702A0BluetoothHCIController-21e1</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport</string>
@@ -111,7 +113,20 @@
 			<key>IOProviderClass</key>
 			<string>IOUSBDevice</string>
 			<key>idProduct</key>
-			<integer>8602</integer>
+			<integer>8673</integer>
+			<key>idVendor</key>
+			<integer>2652</integer>
+		</dict>
+		<key>BCM20702A0BluetoothHCIController-21fb</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport</string>
+			<key>IOClass</key>
+			<string>BroadcomBluetoothHostControllerUSBTransport</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>idProduct</key>
+			<integer>8699</integer>
 			<key>idVendor</key>
 			<integer>2652</integer>
 		</dict>
@@ -150,9 +165,39 @@
 			<key>idVendor</key>
 			<integer>2652</integer>
 		</dict>
+		<key>Broadcom2046FamilyUSBBluetoothHCIController_aw-ce123h</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport</string>
+			<key>IOClass</key>
+			<string>BroadcomBluetoothHostControllerUSBTransport</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>LMPLoggingEnabled</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>13316</integer>
+			<key>idVendor</key>
+			<integer>5075</integer>
+		</dict>
+		<key>Broadcom2046FamilyUSBBluetoothHCIController_bcm4352</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport</string>
+			<key>IOClass</key>
+			<string>BroadcomBluetoothHostControllerUSBTransport</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>LMPLoggingEnabled</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>6095</integer>
+			<key>idVendor</key>
+			<integer>2821</integer>
+		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Based on ToledaARPT 1.0.0 Copyright © 2013 toleda and AirPortAtherosInjector 0.9 Copyright © 2013 RehabMan.</string>
+	<string>Based on ToledaARPT 1.0.0 Copyright Â© 2013 toleda and AirPortAtherosInjector 0.9 Copyright Â© 2013 RehabMan.</string>
 	<key>OSBundleRequired</key>
 	<string>Network-Root</string>
 </dict>
