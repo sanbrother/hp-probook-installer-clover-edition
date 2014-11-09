@@ -5,7 +5,7 @@ set -x
 CloverConfigGenerate=`/usr/libexec/PlistBuddy -c "Print :CloverConfigGenerate" /tmp/PBI.plist`
 CloverModel=`/usr/libexec/PlistBuddy -c "Print :CloverModel" /tmp/PBI.plist`
 
-if [ "$CloverConfigGenerate" != "no" ] && [ -f /Volumes/CLOVER/EFI/CLOVER/config.plist ]
+if [ "$CloverConfigGenerate" != "no" ] || [ ! -f /Volumes/CLOVER/EFI/CLOVER/config.plist ]
 then
 	./Generate
 	cp /tmp/config.plist /Volumes/EFI/EFI/CLOVER/
@@ -25,7 +25,9 @@ elif [ -f /Volumes/EFI/EFI/CLOVER/ACPI/origin/DSDT.aml ]
 then
 	# get original DSDT from EFI partition
 	cp /Volumes/EFI/EFI/CLOVER/ACPI/origin/DSDT.aml .
-	cp /Volumes/EFI/EFI/CLOVER/ACPI/origin/SSDT*.aml .		
+	cp /Volumes/EFI/EFI/CLOVER/ACPI/origin/SSDT*.aml .
+else
+	./patchmatic -extract
 fi
 
 ./iasl -da *.aml
@@ -46,7 +48,7 @@ then
 	./iasl -da $list
 fi
 
-if [ ! [ -f ./DSDT.dsl ] ]
+if [ ! -f ./DSDT.dsl ]
 then
 /usr/bin/osascript <<EOT
 tell application "Finder"
