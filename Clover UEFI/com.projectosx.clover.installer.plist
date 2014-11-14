@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CloverRevision</key>
-	<integer>2999</integer>
+	<integer>3023</integer>
 	<key>InstalledThemes</key>
 	<array>
 		<string>Yosemite</string>
@@ -13,10 +13,14 @@
 	<true/>
 	<key>org.clover.cloverprefpane</key>
 	<true/>
-	<key>org.clover.drivers64uefi.osxaptiofixdrv-64</key>
+	<key>org.clover.drivers64uefi.osxaptiofix2drv-64</key>
 	<true/>
 	<key>org.clover.rc.scripts.on.target</key>
 	<true/>
+	<key>org.clover.special.themes.christmas</key>
+	<false/>
+	<key>org.clover.special.themes.newyear</key>
+	<false/>
 	<key>org.clover.target.esp</key>
 	<true/>
 	<key>org.clover.uefi.only</key>

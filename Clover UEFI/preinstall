@@ -7,6 +7,7 @@ if [ -d /Volumes/EFI/EFI ]
 then
 	rm /Volumes/EFI/EFI/Clover/drivers64UEFI/VBoxHfs*
 	rm /Volumes/EFI/EFI/Clover/drivers64UEFI/EmuVariableUefi-64.efi
+	rm /Volumes/EFI/EFI/Clover/drivers64UEFI/OsxAptioFixDrv-64.efi
 	rm -rf /Volumes/EFI/EFI/CLOVER/themes/Universe
 	rm -rf /Volumes/EFI/EFI/Boot/BOOTX64.efi
 	rm -rf /Volumes/EFI/EFI/CLOVER/CLOVERX64.efi
