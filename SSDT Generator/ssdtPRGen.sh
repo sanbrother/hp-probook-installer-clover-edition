@@ -3,7 +3,7 @@
 # Script (ssdtPRGen.sh) to create ssdt-pr.dsl for Apple Power Management Support.
 #
 # Version 0.9 - Copyright (c) 2012 by RevoGirl
-# Version 14.1 - Copyright (c) 2014 by Pike <PikeRAlpha@yahoo.com>
+# Version 14.3 - Copyright (c) 2014 by Pike <PikeRAlpha@yahoo.com>
 #
 # Updates:
 #			- 		Added support for Ivy Bridge (Pike, January 2013)
@@ -172,6 +172,11 @@
 #			-		Support for Yosemite added (no longer using ioreg to get ACPI table data).
 #			-		Commit text/version information copied from Github (partly/too much work).
 #			- v14.1	low frequency mode fixed for the Intel i5-3317U (Pike, October 2014).
+#			- v14.2 low frequency mode changed for some of the Intel E3-1200 series (Pike, November 2014).
+#			-		Ivy Bridge workarounds (default value) now set based on the version of OS X.
+#			-		Typo fixed (tr -d -> tr -D).
+#			- v14.3	Error fixed, thanks to 'ginsbu' for reporting it on Github issues (Pike, November 2014).
+#			-		Ivy Bridge workaround detection scheme changed.
 #
 # Contributors:
 #			- Thanks to Dave, toleda and Francis for their help (bug fixes and other improvements).
@@ -194,6 +199,7 @@
 #			- Thanks to 't2m' for (blog) for reporting the omision of the Intel E5-1600 product family.
 #			- Thanks to 'arkanisman' for reporting the missing data of the Intel E5-2650.
 #			- Thanks to 'dsaltos' on Github issues for reporting the omision of the Intel i5-4400S.
+#			- Thanks to 'open1010' on Github issues for reporting the Ivy Bridge LFM frequency errors.
 #
 # Bugs:
 #			- Bug reports can be filed at https://github.com/Piker-Alpha/RevoBoot/issues
@@ -212,7 +218,7 @@
 #
 # Script version info.
 #
-gScriptVersion=14.1
+gScriptVersion=14.3
 
 #
 # Initial xcpm mode. Default value is -1 (uninitialised).
@@ -267,7 +273,7 @@ let gCallOpen=0
 # 1 = inject debug data.
 # 3 = inject debug data and execute _debugPrint statements.
 #
-let gDebug=0
+let gDebug=1
 
 #
 # Get user id
@@ -638,17 +644,17 @@ i3-2310E,35,800,2100,0,2,4
 
 gServerIvyBridgeCPUList=(
 # E3-1200 Xeon Processor Series
-'E3-1290 v2',87,1200,3700,4100,4,8
-'E3-1280 v2',69,1200,3600,4000,4,8
-'E3-1275 v2',77,1200,3500,3900,4,8
-'E3-1270 v2',69,1200,3500,3900,4,8
-'E3-1265L v2',45,1200,2500,3500,4,8
-'E3-1245 v2',77,1200,3400,3800,4,8
-'E3-1240 v2',69,1200,3400,3800,4,8
-'E3-1230 v2',69,1200,3300,3700,4,8
-'E3-1225 v2',77,1200,3200,3600,4,4
-'E3-1220 v2',69,1200,3100,3500,4,4
-'E3-1220L v2',17,1200,2300,3500,2,4
+'E3-1290 v2',87,1600,3700,4100,4,8
+'E3-1280 v2',69,1600,3600,4000,4,8
+'E3-1275 v2',77,1600,3500,3900,4,8
+'E3-1270 v2',69,1600,3500,3900,4,8
+'E3-1265L v2',45,1600,2500,3500,4,8
+'E3-1245 v2',77,1600,3400,3800,4,8
+'E3-1240 v2',69,1600,3400,3800,4,8
+'E3-1230 v2',69,1600,3300,3700,4,8
+'E3-1225 v2',77,1600,3200,3600,4,4
+'E3-1220 v2',69,1600,3100,3500,4,4
+'E3-1220L v2',17,1600,2300,3500,2,4
 # E5-1600 Xeon Processor Series
 'E5-1620 v2',130,1200,3700,3900,4,8
 'E5-1650 v2',130,1200,3500,3900,6,12
@@ -3511,7 +3517,7 @@ function _checkForXCPM()
       #
       # Check OS version (the 'machdep.xcpm' class is introduced in 10.8.5)
       #
-      if [[ $gOSVersion > 1084 ]];
+      if [[ $gOSVersion -gt 1084 ]];
         then
           #
           # Yes. Update global variable.
@@ -4476,6 +4482,18 @@ function main()
              else
                echo -e "         Now using 1600 MHz for Server/Desktop processors\n"
                let gBaseFrequency=1600
+          fi
+      fi
+      #
+      # Check Ivy Bridge, XCPM mode and if -w argument is used.
+      #
+      if [[ $gBridgeType -eq $IVY_BRIDGE && $gXcpm -eq -1 && $gIvyWorkAround -eq 0 ]];
+        then
+          if [[ $gOSVersion -gt 10100 ]];
+            then
+              let gIvyWorkAround=3;
+            else
+              let gIvyWorkAround=2;
           fi
       fi
     else
