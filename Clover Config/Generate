@@ -264,14 +264,14 @@ then
 	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] 
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>-xcpm kext-dev-mode=1</string>\n' >> $config
+		printf '\t\t<string>-xcpm kext-dev-mode=1 dart=0</string>\n' >> $config
 	elif [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ]
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1</string>\n' >> $config
+		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1 dart=0</string>\n' >> $config
 	else
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>kext-dev-mode=1</string>\n' >> $config
+		printf '\t\t<string>kext-dev-mode=1 dart=0</string>\n' >> $config
 	fi
 
 	printf '\t\t<key>Legacy</key>\n' >> $config
@@ -279,7 +279,7 @@ then
 	printf '\t\t<key>Log</key>\n' >> $config
 	printf '\t\t<false/>\n' >> $config
 	printf '\t\t<key>NeverHibernate</key>\n' >> $config
-	printf '\t\t<true/>\n' >> $config
+	printf '\t\t<false/>\n' >> $config
 	printf '\t\t<key>Timeout</key>\n' >> $config
 	printf '\t\t<integer>5</integer>\n' >> $config
 	printf '\t\t<key>XMPDetection</key>\n' >> $config
