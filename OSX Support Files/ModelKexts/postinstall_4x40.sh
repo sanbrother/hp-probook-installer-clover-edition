@@ -278,13 +278,9 @@ case $gBridgeType in
 		  
           ;;
        4)  bridgeTypeString="Ivy Bridge"
-		  	if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/GenericUSBXHCI.kext ]
+		  	if [ -d /System/Library/Extensions/ACPI_SMC_PlatformPlugin_MacBookPro9_2.kext ]
 			then
-				rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/GenericUSBXHCI.kext
-			fi
-			if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/GenericUSBXHCI.kext ]
-			then
-				rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/GenericUSBXHCI.kext
+				rm -rf /System/Library/Extensions/ACPI_SMC_PlatformPlugin_MacBookPro9_2.kext
 			fi
           ;;
        *)  bridgeTypeString="Unknown"
@@ -303,4 +299,14 @@ fi
 if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/AppleIntelE1000e.kext ]
 then
 	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/AppleIntelE1000e.kext
+fi
+
+if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/GenericUSBXHCI.kext ]
+then
+	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/GenericUSBXHCI.kext
+fi
+
+if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/GenericUSBXHCI.kext ]
+then
+	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/GenericUSBXHCI.kext
 fi
