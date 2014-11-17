@@ -34944,7 +34944,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 3023 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 3027 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -36547,67 +36547,6 @@ Credits for RevoGirl and PikeRAlpha.</string>
 												<key>LANGUAGE</key>
 												<string>English</string>
 												<key>VALUE</key>
-												<string>Enable sleep mode (sleep to RAM).</string>
-											</dict>
-										</array>
-										<key>OPTIONS</key>
-										<dict>
-											<key>HIDDEN</key>
-											<false/>
-											<key>STATE</key>
-											<integer>2</integer>
-										</dict>
-										<key>PACKAGE_UUID</key>
-										<string>575BEECA-158F-4A49-AD5A-65CBA33D47E6</string>
-										<key>REQUIREMENTS</key>
-										<array/>
-										<key>TITLE</key>
-										<array/>
-										<key>TOOLTIP</key>
-										<array/>
-										<key>TYPE</key>
-										<integer>0</integer>
-										<key>UUID</key>
-										<string>E7012988-AD86-44B2-85CB-FF5643E30834</string>
-									</dict>
-									<dict>
-										<key>DESCRIPTION</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
-												<string>Enable hibernate mode (sleep to Disk).
-Note that the boot right after hibernate may fail with bootable drive not detected error, you have to restart again.</string>
-											</dict>
-										</array>
-										<key>OPTIONS</key>
-										<dict>
-											<key>HIDDEN</key>
-											<false/>
-											<key>STATE</key>
-											<integer>2</integer>
-										</dict>
-										<key>PACKAGE_UUID</key>
-										<string>DEC61D41-EBC6-4228-BA1A-0391170C1EF0</string>
-										<key>REQUIREMENTS</key>
-										<array/>
-										<key>TITLE</key>
-										<array/>
-										<key>TOOLTIP</key>
-										<array/>
-										<key>TYPE</key>
-										<integer>0</integer>
-										<key>UUID</key>
-										<string>507B4A7D-F0FB-4E4A-8EA9-D8B0C7051CA9</string>
-									</dict>
-									<dict>
-										<key>DESCRIPTION</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
 												<string>Install BTFirmwareUploader.kext to enable Bluetooth.
 Caution: the kext may cause some sleep problem.</string>
 											</dict>
@@ -37258,6 +37197,37 @@ Trim Enabler can also analyze your drive and show information about it’s healt
 								<key>UUID</key>
 								<string>610740F5-589B-4C95-96B4-DD359FDE61E0</string>
 							</dict>
+							<key>575BEECA-158F-4A49-AD5A-65CBA33D47E6</key>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Enable sleep mode (sleep to RAM).</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>575BEECA-158F-4A49-AD5A-65CBA33D47E6</string>
+								<key>REQUIREMENTS</key>
+								<array/>
+								<key>TITLE</key>
+								<array/>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>E7012988-AD86-44B2-85CB-FF5643E30834</string>
+							</dict>
 							<key>5D570C49-3223-47BE-B54B-021BC5145F50</key>
 							<dict>
 								<key>DESCRIPTION</key>
@@ -37570,6 +37540,38 @@ WARNING: Do not use it, if there is no WiFi hardware installed in the miniPCIe s
 								<integer>0</integer>
 								<key>UUID</key>
 								<string>14F65F96-74F7-478D-A2E2-679DBA90F10B</string>
+							</dict>
+							<key>DEC61D41-EBC6-4228-BA1A-0391170C1EF0</key>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Enable hibernate mode (sleep to Disk).
+Note that the boot right after hibernate may fail with bootable drive not detected error, you have to restart again.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>DEC61D41-EBC6-4228-BA1A-0391170C1EF0</string>
+								<key>REQUIREMENTS</key>
+								<array/>
+								<key>TITLE</key>
+								<array/>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>507B4A7D-F0FB-4E4A-8EA9-D8B0C7051CA9</string>
 							</dict>
 							<key>EFB0F356-BA01-4B1F-8829-BEBBEF7769FD</key>
 							<dict>

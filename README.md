@@ -19,12 +19,13 @@ Supported models:
 
 ###C h a n g e l o g   
 
-**Version 6.2.14 (November 14th 2014)**
+**Version 6.2.14 (November 17th 2014)**
 
 * Add dart=0 to config.plist.
-* Update Clover 3023.
+* Add Broadcom 43224 whitelist patch to config.plist.
+* Remove Bluetooth 30 seconds patch in config.plist.
+* Update Clover 3027.
 * Update Clover Configurator.
-* Switch from OsxAptioFixDrv-64.efi to OsxAptioFix2Drv-64.efi to enable Hibernate (may result it unbootable Clover, please let me know).
 * Switch from GenericUSBXHCI to vanilla kext in Haswell laptops.
 * Fix 4x40s Sandy Bridge model.
 
