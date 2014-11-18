@@ -530,7 +530,7 @@ then
 		printf '\t\t\t\t<data>\n' >> $config
 		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAAAQAAYAAAAABA2QoAANkKAAAA\n' >> $config
 		printf '\t\t\t\tAAAAAAAAAAAAEAACAAAAMAAAAAEFEgAACAAAhwAAAAIE\n' >> $config
-		printf '\t\t\t\tEgAABAAAhwAAAP8AAQABAAAAQAAAAA8AAAABAQAABAAA\n' >> $config
+		printf '\t\t\t\tEgAACAAAhwAAAP8AAQABAAAAQAAAAA8AAAABAQAABAAA\n' >> $config
 		printf '\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAA=\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
