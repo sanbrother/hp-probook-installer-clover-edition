@@ -19,6 +19,11 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.14.1 (November 18th 2014)**
+
+* Update HDMI Audio patch for HD4400/4600 in config.plist.
+* Add fan patches for Haswell laptops.
+
 **Version 6.2.14 (November 17th 2014)**
 
 * Add dart=0 to config.plist.

@@ -24787,22 +24787,6 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>DSDT Generator/04c_FanSpeed.txt</string>
-											<key>PATH_TYPE</key>
-											<integer>1</integer>
-											<key>PERMISSIONS</key>
-											<integer>420</integer>
-											<key>TYPE</key>
-											<integer>3</integer>
-											<key>UID</key>
-											<integer>0</integer>
-										</dict>
-										<dict>
-											<key>CHILDREN</key>
-											<array/>
-											<key>GID</key>
-											<integer>0</integer>
-											<key>PATH</key>
 											<string>DSDT Generator/12_Brightness_Haswell.txt</string>
 											<key>PATH_TYPE</key>
 											<integer>1</integer>
@@ -29012,22 +28996,6 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>DSDT Generator/04c_FanSpeed.txt</string>
-											<key>PATH_TYPE</key>
-											<integer>1</integer>
-											<key>PERMISSIONS</key>
-											<integer>420</integer>
-											<key>TYPE</key>
-											<integer>3</integer>
-											<key>UID</key>
-											<integer>0</integer>
-										</dict>
-										<dict>
-											<key>CHILDREN</key>
-											<array/>
-											<key>GID</key>
-											<integer>0</integer>
-											<key>PATH</key>
 											<string>DSDT Generator/12_Brightness_Haswell.txt</string>
 											<key>PATH_TYPE</key>
 											<integer>1</integer>
@@ -32657,22 +32625,6 @@
 											<integer>0</integer>
 											<key>PATH</key>
 											<string>DSDT Generator/03c_Haswell.txt</string>
-											<key>PATH_TYPE</key>
-											<integer>1</integer>
-											<key>PERMISSIONS</key>
-											<integer>420</integer>
-											<key>TYPE</key>
-											<integer>3</integer>
-											<key>UID</key>
-											<integer>0</integer>
-										</dict>
-										<dict>
-											<key>CHILDREN</key>
-											<array/>
-											<key>GID</key>
-											<integer>0</integer>
-											<key>PATH</key>
-											<string>DSDT Generator/04c_FanSpeed.txt</string>
 											<key>PATH_TYPE</key>
 											<integer>1</integer>
 											<key>PERMISSIONS</key>
