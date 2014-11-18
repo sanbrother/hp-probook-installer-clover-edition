@@ -90,8 +90,6 @@ EOT
 		then
 			rm ./03a_HDMI.txt
 			rm ./03b_1080p+HDMI.txt
-			rm ./04a_FanPatch.txt
-			rm ./04b_FanQuiet.txt
 		fi
 
 		if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ]
