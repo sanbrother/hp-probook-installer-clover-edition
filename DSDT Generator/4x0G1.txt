@@ -539,94 +539,69 @@ If (CondRefOf(CFGD))\n
 }\n
 end;
 
+#Maintained by: RehabMan for: HP Probook 4x30s/4x40s
+# 02b_EHCI_4x40s.txt
 
-# inject "compatible" with recognized series-8 LPC device-id
-into method label _DSM parent_adr 0x001F0000 remove_entry;
-into device name_adr 0x001F0000 insert
-begin
-Method (_DSM, 4, NotSerialized)\n
-{\n
-If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
-Return (Package()\n
-{\n
-"compatible", "pci8086,9c43",\n
-})\n
-}\n
-end;
+# USB property injection for 4x40s (HM76)
 
-# remove _PRW methods to prevent instant wake
-into method label _PRW parent_adr 0x001D0000 remove_entry;
-into method label _PRW parent_adr 0x001A0000 remove_entry;
-into method label _PRW parent_adr 0x00140000 remove_entry;
-into method label _PRW parent_adr 0x001B0000 remove_entry;
-# rename XHC to XHC1
-into device label XHC set_label begin XHC1 end;
-into_all all code_regex XHC\. replaceall_matched begin XHC1. end;
-into_all all code_regex XHC_\. replaceall_matched begin XHC1. end;
-into_all all code_regex \.XHC, replaceall_matched begin .XHC1, end;
-#Maintained by: RehabMan for: Laptop Patches
-#usb_USB_7-series.txt
-# USB property injection for 7-series boards (originally HM76)
-# Insert Apple USB properties into EHC1
+#   Insert Apple USB properties into EHC1
 into method label _DSM parent_adr 0x001D0000 remove_entry;
 into device name_adr 0x001D0000 insert
 begin
 Method (_DSM, 4, NotSerialized)\n
 {\n
-If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
-Return (Package()\n
-{\n
-"subsystem-id", Buffer() { 0x70, 0x72, 0x00, 0x00 },\n
-"subsystem-vendor-id", Buffer() { 0x86, 0x80, 0x00, 0x00 },\n
-"AAPL,current-available", 2100,\n
-"AAPL,current-extra", 2200,\n
-"AAPL,current-extra-in-sleep", 1600,\n
-"AAPL,device-internal", 0x02,\n
-"AAPL,max-port-current-in-sleep", 2100,\n
-})\n
+    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+    Return (Package()\n
+    {\n
+        "AAPL,clock-id", Buffer() { 0x01 },\n
+        "subsystem-id", Buffer() { 0x70, 0x72, 0x00, 0x00 },\n
+        "subsystem-vendor-id", Buffer() { 0x86, 0x80, 0x00, 0x00 },\n
+        "AAPL,current-available", 2100,\n
+        "AAPL,current-extra", 2200,\n
+        "AAPL,current-extra-in-sleep", 1600,\n
+        "AAPL,device-internal", 0x02,\n
+        "AAPL,max-port-current-in-sleep", 2100,\n
+    })\n
 }\n
 end;
+
 # Insert Apple USB properties into EHC2
 into method label _DSM parent_adr 0x001A0000 remove_entry;
 into device name_adr 0x001A0000 insert
 begin
 Method (_DSM, 4, NotSerialized)\n
 {\n
-If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
-Return (Package()\n
-{\n
-"subsystem-id", Buffer() { 0x70, 0x72, 0x00, 0x00 },\n
-"subsystem-vendor-id", Buffer() { 0x86, 0x80, 0x00, 0x00 },\n
-"AAPL,current-available", 2100,\n
-"AAPL,current-extra", 2200,\n
-"AAPL,current-extra-in-sleep", 1600,\n
-"AAPL,device-internal", 0x02,\n
-"AAPL,max-port-current-in-sleep", 2100,\n
-})\n
+    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+    Return (Package()\n
+    {\n
+        "AAPL,clock-id", Buffer() { 0x01 },\n
+        "subsystem-id", Buffer() { 0x70, 0x72, 0x00, 0x00 },\n
+        "subsystem-vendor-id", Buffer() { 0x86, 0x80, 0x00, 0x00 },\n
+        "AAPL,current-available", 2100,\n
+        "AAPL,current-extra", 2200,\n
+        "AAPL,current-extra-in-sleep", 1600,\n
+        "AAPL,device-internal", 0x02,\n
+        "AAPL,max-port-current-in-sleep", 2100,\n
+    })\n
 }\n
 end;
+
 # Insert Apple USB properties into USB 3.0 XHC
 into method label _DSM parent_adr 0x00140000 remove_entry;
 into device name_adr 0x00140000 insert
 begin
 Method (_DSM, 4, NotSerialized)\n
 {\n
-If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
-Return (Package()\n
-{\n
-"subsystem-id", Buffer() { 0x70, 0x72, 0x00, 0x00 },\n
-"subsystem-vendor-id", Buffer() { 0x86, 0x80, 0x00, 0x00 },\n
-"AAPL,current-available", 2100,\n
-"AAPL,current-extra", 2200,\n
-"AAPL,current-extra-in-sleep", 1600,\n
-"AAPL,device-internal", 0x02,\n
-"AAPL,max-port-current-in-sleep", 2100,\n
-})\n
+    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+    Return (Package()\n
+    {\n
+        "subsystem-id", Buffer() { 0x70, 0x72, 0x00, 0x00 },\n
+        "subsystem-vendor-id", Buffer() { 0x86, 0x80, 0x00, 0x00 },\n
+        "AAPL,current-available", 2100,\n
+        "AAPL,current-extra", 2200,\n
+        "AAPL,current-extra-in-sleep", 1600,\n
+        "AAPL,device-internal", 0x02,\n
+        "AAPL,max-port-current-in-sleep", 2100,\n
+    })\n
 }\n
 end;
-
-
-into_all all label \_SB.PCI0.XHC.RHUB.HS07 set_label begin \_SB.PCI0.XHC1.RHUB.HS07 end;
-into_all all label \_SB.PCI0.XHC.RHUB.HS03 set_label begin \_SB.PCI0.XHC1.RHUB.HS03 end;
-into_all all label \_SB.PCI0.XHC.RHUB.SSP3 set_label begin \_SB.PCI0.XHC1.RHUB.SSP3 end;
-into_all all label \_SB.PCI0.XHC set_label begin \_SB.PCI0.XHC1 end;
