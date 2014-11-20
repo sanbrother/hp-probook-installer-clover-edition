@@ -1,0 +1,18 @@
+#!/bin/bash
+set -x
+RightNowIs=`/usr/libexec/PlistBuddy -c "Print :CurrentDateTime" /tmp/PBI.plist`
+BackupDir="$HOME/Desktop/Installer Backups/Backup $RightNowIs"
+
+# Patch libCLVMIGILPlugin for HD4400 OpenCL / OpenGL
+osxver=$(/usr/libexec/PlistBuddy -c 'Print ProductVersion' "${3}"/System/Library/CoreServices/SystemVersion.plist 2>null)
+
+if [[ "$osxver" == 10.10* ]]
+then
+
+cp -Rf "/System/Library/Frameworks/OpenCL.framework" "$BackupDir"
+
+perl -i.bak -pe 's|([\xFF\xFC\x3D])\x86\x80\x12\x04|$1\x86\x80\x16\x0A|sg' /System/Library/Frameworks/OpenCL.framework/Libraries/libCLVMIGILPlugin.dylib
+
+codesign -f -s - /System/Library/Frameworks/OpenCL.framework/Libraries/libCLVMIGILPlugin.dylib
+
+fi
