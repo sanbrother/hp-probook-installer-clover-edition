@@ -804,7 +804,7 @@ then
 	printf '\t<key>Devices</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
 
-	if [ "$CloverHD4600" == "yes" ] && [ "$osxver" == "10.10" ]
+	if [ "$CloverHD4600" == "yes" ] && [[ "$osxver" == 10.10* ]]
 	then
 		printf '\t\t<key>FakeID</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
