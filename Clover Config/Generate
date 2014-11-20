@@ -116,12 +116,12 @@ then
 
 	if [ -f /Volumes/EFI/EFI/CLOVER/config.plist ]
 	then
-		mlb=$(/usr/libexec/PlistBuddy -c 'Print :RtVariables:MLB' /Volumes/EFI/EFI/CLOVER/config.plist)
-		rom=$(/usr/libexec/PlistBuddy -c 'Print :RtVariables:ROM' /Volumes/EFI/EFI/CLOVER/config.plist)
-		boardserial=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:BoardSerialNumber' /Volumes/EFI/EFI/CLOVER/config.plist)
-		if [[ "$boardserial" == "*Does Not Exist" ]]
+		mlb=$(/usr/libexec/PlistBuddy -c 'Print :RtVariables:MLB' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
+		rom=$(/usr/libexec/PlistBuddy -c 'Print :RtVariables:ROM' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
+		boardserial=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:BoardSerialNumber' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
+		if [[ "$boardserial" == "" ]]
 		then
-			if [[ "$mlb" == "*Does Not Exist" ]]
+			if [[ "$mlb" == "" ]]
 			then
 				boardserial="$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)"
 			else
@@ -191,11 +191,11 @@ then
 	# check existing serial number
 	if [ -f /Volumes/EFI/EFI/CLOVER/config.plist ]
 	then
-		oldprodname=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:ProductName' /Volumes/EFI/EFI/CLOVER/config.plist)
+		oldprodname=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:ProductName' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
 		if [ "$oldprodname" == "$prodname" ]
 		then
-			oldserial=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:SerialNumber' /Volumes/EFI/EFI/CLOVER/config.plist)
-			if ! [[ "$oldserial" == "*Does Not Exist" ]]
+			oldserial=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:SerialNumber' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
+			if ! [[ "$oldserial" == "" ]]
 			then
 				serial=$oldserial
 			fi
@@ -558,7 +558,7 @@ then
 		printf '\t\t\t</dict>\n' >> $config
 	fi
 
-	if [ "$CloverHD4600" == "yes" ] && [ "$osxver" == "10.10" ]
+	if [ "$CloverHD4600" == "yes" ] && [[ "$osxver" == 10.10* ]]
 	then
 		printf '\t\t\t<dict>\n' >> $config
 		printf '\t\t\t\t<key>Name</key>\n' >> $config
@@ -745,11 +745,7 @@ then
 	CurrentTheme=''
 	if [ -f /Volumes/EFI/EFI/CLOVER/config.plist ]
 	then
-		CurrentTheme=$(/usr/libexec/PlistBuddy -c 'Print :GUI:Theme' /Volumes/EFI/EFI/CLOVER/config.plist)
-		if [[ "$CurrentTheme" == "*Does Not Exist" ]]
-		then
-			CurrentTheme=''
-		fi
+		CurrentTheme=$(/usr/libexec/PlistBuddy -c 'Print :GUI:Theme' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
 	fi
 
 	if ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] ) && [ "$CloverResolution" == "high" ] )
