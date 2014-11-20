@@ -13,16 +13,21 @@ Supported models:
 
 * 6-series laptop: HP Probook 4x30s, 6x60b, Elitebook 8x60p, 2x60p
 * 7-series laptop: HP Probook 4x40s, 4x0 G0, 6x70b, Elitebook 8x70p, 2x70p, 9470m
-* 8-series laptop: HP Probook 4x0 G1, Elitebook 8x0 G1
+* 8-series laptop: HP Probook 4x0 G1/G2, Elitebook 8x0 G1, ZBook
 
 [Guide to install OS X on HP Probook](http://www.tonymacx86.com/hp-probook-mavericks/112383-guide-install-mavericks-clover-bootloader.html)  
 
 ###C h a n g e l o g   
 
+**Version 6.2.14.2 (November 20th 2014)**
+
+* Switch back to GenericUSBXHCI for Haswell laptops.
+
 **Version 6.2.14.1 (November 18th 2014)**
 
 * Update HDMI Audio patch for HD4400/4600 in config.plist.
 * Add fan patches for Haswell laptops.
+* Add HD4400/4600 OpenCL patches by the-darkvoid and vbo.
 
 **Version 6.2.14 (November 17th 2014)**
 
