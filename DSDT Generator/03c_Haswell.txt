@@ -19,6 +19,9 @@ Method (_DSM, 4, NotSerialized)\n
 }\n
 end;
 
+#    Rename all instances of GFX0 to IGPU
+into_all all code_regex GFX0 replaceall_matched begin IGPU end;
+into_all all label GFX0 set_label begin IGPU end;
 
 # enable HDMI audio
 into device label B0D3 set_label begin HDAU end;
@@ -33,6 +36,7 @@ If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
 Return (Package()\n
 {\n
 "hda-gfx", Buffer() { "onboard-1" },\n
+"RM,device-id", Buffer() { 0x0a, 0x0c, 0x00, 0x00 },\n
 })\n
 }\n
 end;
