@@ -1,0 +1,44 @@
+#!/bin/bash
+set -x
+RightNowIs=`/usr/libexec/PlistBuddy -c "Print :CurrentDateTime" /tmp/PBI.plist`
+BackupDir="$HOME/Desktop/Installer Backups/Backup $RightNowIs"
+
+if [ -e "/System/Library/Extensions/BTFirmwareUploader.kext" ]
+then
+	if [ ! -e "$BackupDir" ]
+	then
+		mkdir -p "$BackupDir"
+	fi
+	cp -Rf "/System/Library/Extensions/BTFirmwareUploader.kext" "$BackupDir"
+	rm -rf "/System/Library/Extensions/BTFirmwareUploader.kext"
+fi
+
+if [ -e "/System/Library/Extensions/BrcmPatchRAM.kext" ]
+then
+	if [ ! -e "$BackupDir" ]
+	then
+		mkdir -p "$BackupDir"
+	fi
+	cp -Rf "/System/Library/Extensions/BrcmPatchRAM.kext" "$BackupDir"
+	rm -rf "/System/Library/Extensions/BrcmPatchRAM.kext"
+fi
+
+if [ -e "/System/Library/Extensions/BrcmPatchRAM.kext" ]
+then
+	if [ ! -e "$BackupDir" ]
+	then
+		mkdir -p "$BackupDir"
+	fi
+	cp -Rf "/System/Library/Extensions/BrcmPatchRAM.kext" "$BackupDir"
+	rm -rf "/System/Library/Extensions/BrcmPatchRAM.kext"
+fi
+
+if [ -e "/System/Library/Extensions/IOath3kfrmwr.kext" ]
+then
+	if [ ! -e "$BackupDir" ]
+	then
+		mkdir -p "$BackupDir"
+	fi
+	cp -Rf "/System/Library/Extensions/IOath3kfrmwr.kext" "$BackupDir"
+	rm -rf "/System/Library/Extensions/IOath3kfrmwr.kext"
+fi
