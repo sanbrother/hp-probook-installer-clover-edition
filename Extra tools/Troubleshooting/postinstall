@@ -1,0 +1,19 @@
+#!/bin/bash
+
+RightNowIs=`/usr/libexec/PlistBuddy -c "Print :CurrentDateTime" /tmp/PBI.plist`
+BackupDir="$HOME/Desktop/Troubleshooting $RightNowIs"
+
+if [ ! -d "$BackupDir" ];
+then
+	mkdir -p "$BackupDir"
+	chown "$USER" "$BackupDir"
+fi
+
+rsync -ar /Volumes/EFI/EFI/CLOVER "$BackupDir"
+cp /var/log/install.log "$BackupDir"
+unzip "./pci.ids.zip"
+chmod -R 755 DirectHW.kext
+chown -R 0:0 DirectHW.kext
+/sbin/kextload DirectHW.kext
+./lspci -i pci.ids -nnvv > "$BackupDir/PCI.txt"
+/sbin/kextunload DirectHW.kext
