@@ -3,7 +3,16 @@
 GenEDID () {
 /usr/libexec/PlistBuddy -c "Print :$1" /tmp/display.plist
 rm -f /tmp/EDID.bin
-/usr/libexec/PlistBuddy -x -c 'Print "0"' /tmp/display.plist|tr -d '\n\t'|grep -o 'IODisplayEDID</key><data>[^<]*'|sed 's/.*IODisplayEDID<\/key><data>//'|base64 -D|xxd -p|tr -d '\n\t\s'|sed s/./9/41|sed s/./0/42|xxd -r -p >> /tmp/EDID.bin
+#/usr/libexec/PlistBuddy -x -c 'Print "0"' /tmp/display.plist|tr -d '\n\t'|grep -o 'IODisplayEDID</key><data>[^<]*'|sed 's/.*IODisplayEDID<\/key><data>//'|base64 -D|xxd -p|tr -d '\n\t\s'|sed s/./9/41|sed s/./0/42|xxd -r -p >> /tmp/EDID.bin
+EDID=$(/usr/libexec/PlistBuddy -x -c 'Print "0"' /tmp/display.plist|tr -d '\n\t'|grep -o 'IODisplayEDID</key><data>[^<]*'|sed 's/.*IODisplayEDID<\/key><data>//'|base64 -D|xxd -p|tr -d '\n\t\s')
+version=${EDID:38:2}
+basicparams=${EDID:40:2}
+checksum=${EDID:254:2}
+
+newchecksum=$(printf '%x' $((0x$checksum + 0x$version +0x$basicparams - 0x04 - 0x90)) | tail -c 2 )
+newedid=${EDID:0:38}0490${EDID:42:212}$newchecksum
+
+echo $newedid|xxd -r -p >> /tmp/EDID.bin
 
 if [ $? -eq 0 ]
 then
@@ -16,7 +25,7 @@ then
 	GenDir="${3}/System/Library/Displays/Overrides/DisplayVendorID-$VenIDhex"
 	GenFile="DisplayProductID-$ProdIDhex"
 	
-	if [ "$RegName" == "AppleBacklightDisplay" -o "$DisplayFlags" == "`echo AAgAAA== | base64 -D`" ]
+	if [ "$RegName" == "AppleBacklightDisplay" -o "$DisplayFlags" == "`echo AAgAAA== | base64 -D`" ] || [ "$RegName" == "AppleDisplay" -o "$DisplayFlags" == "`echo AAgAAA== | base64 -D`" ]
 	then
 		if [ ! -e "$GenDir" ]
 		then
