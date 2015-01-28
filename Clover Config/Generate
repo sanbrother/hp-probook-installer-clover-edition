@@ -64,6 +64,37 @@ then
 		printf '\t\t</dict>\n' >> $config
 		printf '\t\t<key>LoadVBios</key>\n' >> $config
 		printf '\t\t<true/>\n' >> $config
+	elif [ "$CloverModel" == "6x60pAMD" ]
+	then
+		case $CloverResolution in 
+			low)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>0</integer>\n' >> $config
+				;;
+			high)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>1</integer>\n' >> $config
+				;;
+		esac
+		printf '\t\t<key>FBName</key>\n' >> $config
+		printf '\t\t<string>Elodea</string>\n' >> $config
+		printf '\t\t<key>Inject</key>\n' >> $config
+		printf '\t\t<dict>\n' >> $config
+		printf '\t\t\t<key>Intel</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t\t<key>ATI</key>\n' >> $config
+		printf '\t\t\t<true/>\n' >> $config
+		printf '\t\t\t<key>NVidia</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t</dict>\n' >> $config
+		printf '\t\t<key>LoadVBios</key>\n' >> $config
+		printf '\t\t<true/>\n' >> $config
+		printf '\t\t<key>InjectEDID</key>\n' >> $config
+		printf '\t\t<true/>\n' >> $config
+		printf '\t\t<key>VRAM</key>\n' >> $config
+		printf '\t\t<integer>1024</integer>\n' >> $config
+		printf '\t\t<key>VideoPorts</key>\n' >> $config
+		printf '\t\t<integer>5</integer>\n' >> $config
 	else
 		case $CloverResolution in 
 			low)
@@ -306,6 +337,13 @@ then
 	printf '\t\t\t\t<key>Signature</key>\n' >> $config
 	printf '\t\t\t\t<string>DMAR</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
+	if [ "$CloverModel" == "6x60pAMD" ] || [ "$CloverModel" == "6x60wAMD" ]
+	then
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Signature</key>\n' >> $config
+		printf '\t\t\t\t<string>MCFG</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+	fi
 	printf '\t\t</array>\n' >> $config
 	printf '\t\t<key>SSDT</key>\n' >> $config
 	printf '\t\t<dict>\n' >> $config
@@ -324,6 +362,24 @@ then
 	# kernel and kext patches section
 	printf '\t<key>KernelAndKextPatches</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
+
+	if [ "$CloverModel" == "6x60pAMD" ]
+	then
+		printf '\t\t<key>ATIConnectorsController</key>\n' >> $config
+		printf '\t\t<string>6000</string>\n' >> $config
+		printf '\t\t<key>ATIConnectorsData</key>\n' >> $config
+		printf '\t\t<string>0200000000010000090100001204030300040000040300000001000010000505000400000403000000010000110201010004000000010000000910002103020200040000000100000009100022050404</string>\n' >> $config
+		printf '\t\t<key>ATIConnectorsPatch</key>\n' >> $config
+		printf '\t\t<string>0200000040000000090100001001010500040000040300000001000011020204000400000403000000010000210303020004000004030000000100001204040310000000100000000001000000000001</string>\n' >> $config
+	elif [ "$CloverModel" == "6x70AMD" ]
+	then
+		printf '\t\t<key>ATIConnectorsController</key>\n' >> $config
+		printf '\t\t<string>6000</string>\n' >> $config
+		printf '\t\t<key>ATIConnectorsData</key>\n' >> $config
+		printf '\t\t<string>0004000004030000000101001102040100040000040300000001020021030502000400000001000000090300100002050004000000010000000904002001030604000000140200000001050002040103</string>\n' >> $config
+		printf '\t\t<key>ATIConnectorsPatch</key>\n' >> $config
+		printf '\t\t<string>0200000040000000090100001001000100040000040300000001020011020105000400000402000000010200210202020004000004020000000100001200030310000000100000000001000000000408</string>\n' >> $config
+	fi
 	
 	printf '\t\t<key>AppleRTC</key>\n' >> $config
 	printf '\t\t<true/>\n' >> $config
