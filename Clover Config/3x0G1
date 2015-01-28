@@ -1,0 +1,3 @@
+#!/bin/sh
+# triggering kext cache rebuilding
+/usr/libexec/PlistBuddy -c "Set :CloverModel 3x0G1" /tmp/PBI.plist

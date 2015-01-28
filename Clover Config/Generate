@@ -21,7 +21,7 @@ then
 	printf '\t<key>Graphics</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
 
-	if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ]
+	if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "3x0G1" ]
 	then
 		printf '\t\t<key>ig-platform-id</key>\n' >> $config
 		printf '\t\t<string>0x0a260006</string>\n' >> $config
@@ -265,7 +265,7 @@ then
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
 		printf '\t\t<string>-xcpm kext-dev-mode=1 dart=0</string>\n' >> $config
-	elif [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ]
+	elif [ "$CloverModel" == "4x0G1" ]|| [ "$CloverModel" == "3x0G1" ]
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
 		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1 dart=0</string>\n' >> $config
@@ -329,7 +329,7 @@ then
 	printf '\t\t<true/>\n' >> $config
 
 	
-	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "6x70AMD" ]
+	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "6x70AMD" ]
 	then
 		printf '\t\t<key>KernelPm</key>\n' >> $config
 		printf '\t\t<true/>\n' >> $config
@@ -514,7 +514,7 @@ then
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HDMI-DP port HD4000 1600x900 #2</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config
-	elif ([ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ])
+	elif ([ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ])
 	then
 		printf '\t\t\t<dict>\n' >> $config
 		printf '\t\t\t\t<key>Name</key>\n' >> $config
@@ -653,6 +653,22 @@ then
 			printf '\t\t\t\t</data>\n' >> $config
 			printf '\t\t\t\t<key>Comment</key>\n' >> $config
 			printf '\t\t\t\t<string>IDT 76E0</string>\n' >> $config
+			printf '\t\t\t</dict>\n' >> $config
+			;;
+		3x0G1)
+			printf '\t\t\t<dict>\n' >> $config
+			printf '\t\t\t\t<key>Name</key>\n' >> $config
+			printf '\t\t\t\t<string>AppleHDA</string>\n' >> $config
+			printf '\t\t\t\t<key>Find</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\thBnUEQ==\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Replace</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\tlXYdEQ==\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Comment</key>\n' >> $config
+			printf '\t\t\t\t<string>IDT 7695</string>\n' >> $config
 			printf '\t\t\t</dict>\n' >> $config
 			;;
 		4x0G2)
@@ -804,7 +820,7 @@ then
 	printf '\t<key>Devices</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
 
-	if [ "$CloverHD4600" == "yes" ] && [[ "$osxver" == 10.10* ]]
+	if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "3x0G1" ]
 	then
 		printf '\t\t<key>FakeID</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
