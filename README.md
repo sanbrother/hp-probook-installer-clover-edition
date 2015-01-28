@@ -19,6 +19,20 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.15 (January 28th 2015)**
+
+* Add HP 3x0 G1 model.
+* Add 6x60b/8x60p with AMD 6470M (experiment) thanks to vusun123.
+* Add FakePCIIID_HDMI_Audio to fix HDMI Freeze on Haswell laptops.
+* Replace BTFirmwareUploader by IOath3kfrmwr and BrcmPatchRAM.
+* Replace GenericUSBXHCI in 6-series laptops by AppleUSBXHCI patches.
+* Replace HD4600 patches in 10.10 by RehabMan’s FakePCIID.
+* Update Clover 3142.
+* Update Handoff/Broadcom patch for 10.10.2.
+* Update Clover Configurator.
+* Update XtraFinder.
+* Update HP logos.
+
 **Version 6.2.14.2 (November 20th 2014)**
 
 * Switch back to GenericUSBXHCI for Haswell laptops.

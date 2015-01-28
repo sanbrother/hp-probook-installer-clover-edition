@@ -1,9 +1,10 @@
 #!/bin/bash
 set -x
-./BackupESP "$1" "$2" "$3"
 
 CloverConfigGenerate=`/usr/libexec/PlistBuddy -c "Print :CloverConfigGenerate" /tmp/PBI.plist`
 CloverModel=`/usr/libexec/PlistBuddy -c "Print :CloverModel" /tmp/PBI.plist`
+
+exitcode=0
 
 if [ "$CloverConfigGenerate" != "no" ] || [ ! -f /Volumes/CLOVER/EFI/CLOVER/config.plist ]
 then
@@ -30,7 +31,7 @@ else
 	./patchmatic -extract
 fi
 
-./iasl -da *.aml
+./iasl -da DSDT.aml SSDT*.aml
 
 if [[ ! -f ./DSDT.dsl ]]
 then
@@ -63,9 +64,11 @@ Press F4 at Clover screen
 Run PBI Clover Edition again and select correct DSDT options." buttons {"OK"} default button "OK" with icon note with title "Non-vanilla DSDT!"
 end tell
 EOT
+exitcode=1
 else
+	cp ./DSDT.dsl /Volumes/EFI/EFI/CLOVER/acpi/patched/DSDT_origin.dsl
 
-	VanillaCheck=`cat ./DSDT.dsl | grep 'Device (WMID)\|If (CondRefOf (FPED))\|External (_SB_.ISCT, UnknownObj)'`
+	VanillaCheck=`cat ./DSDT.dsl | grep 'Device (WMID)\|If (CondRefOf (FPED))'`
 
 	if [ "$VanillaCheck" == "" ]
 	then
@@ -83,10 +86,11 @@ Press F4 at Clover screen
 Run PBI Clover Edition again and select correct DSDT options." buttons {"OK"} default button "OK" with icon note with title "Non-vanilla DSDT!"
 end tell
 EOT
+exitcode=1
 	else
 		cp ./*.aml /Volumes/EFI/EFI/CLOVER/acpi/origin/
 
-		if [ -f "4x0G1.txt" ]
+		if [ -f "4x0G1.txt" ] || [ -f "3x0G1.txt" ]
 		then
 			rm ./03a_HDMI.txt
 			rm ./03b_1080p+HDMI.txt
@@ -108,12 +112,18 @@ EOT
 			rm ./4x40s_IvyBridge.txt
 		fi
 
+		if [ "$CloverModel" == "3x0G1" ]
+		then
+			rm ./04*.txt
+		fi
+
 		for patch in "4x30s.txt" \
 			"4x40s_IvyBridge.txt" \
 			"4x40s_SandyBridge.txt" \
 			"6x60_AMD.txt" \
 			"6x70_AMD.txt" \
 			"4x0G1.txt" \
+			"3x0G1.txt" \
 			"03a_HDMI.txt" \
 			"03b_1080p+HDMI.txt" \
 			"03c_Haswell.txt" \
@@ -134,14 +144,18 @@ EOT
 			./patchmatic ./DSDT.dsl ./$patch ./DSDT.dsl
 		done
 
-		if [ -f "4x0G1.txt" ]
+		if [ -f "4x0G1.txt" ] || [ -f "3x0G1.txt" ]
 		then
 			for file in ./SSDT*.dsl
 			do
 				B0D3Check=`cat $file | grep -i 'Device (B0D3)'`
 				if [[ $B0D3Check != '' ]]
-				then		
+				then
 					./patchmatic $file ./03c_Haswell.txt $file
+					if [ -f "3x0G1.txt" ]
+					then
+						./patchmatic $file ./12_Brightness_Haswell.txt $file
+					fi
 					./iasl -p SSDT-1 $file
 					cp ./SSDT-1.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
 					break
@@ -162,7 +176,7 @@ EOT
 					./patchmatic ./DSDT.dsl ./11b_Radeon_OFF_DSDT.txt ./DSDT.dsl			
 					./patchmatic $file ./11a_Radeon_OFF_SSDT.txt $file
 
-					if [ -f "4x0G1.txt" ]
+					if [ -f "4x0G1.txt" ] || [ -f "3x0G1.txt" ]
 					then
 						./iasl -p SSDT-2 $file
 						cp ./SSDT-2.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-2.aml
@@ -190,7 +204,7 @@ EOT
 						./patchmatic ./DSDT.dsl ./11b2_Radeon_OFF_DSDT.txt ./DSDT.dsl			
 						./patchmatic $file ./11a_Radeon_OFF_SSDT.txt $file
 
-						if [ -f "4x0G1.txt" ]
+						if [ -f "4x0G1.txt" ] || [ -f "3x0G1.txt" ]
 						then
 							./iasl -p SSDT-2 $file
 							cp ./SSDT-2.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-2.aml
@@ -208,7 +222,15 @@ EOT
 
 		
 		rm ./DSDT.aml
+		cp ./DSDT.dsl /Volumes/EFI/EFI/CLOVER/acpi/patched/DSDT.dsl
+		
 		./iasl -p DSDT ./DSDT.dsl
+		
+		if [ ! -f  "DSDT.aml" ]
+		then
+			./iasl4 -p DSDT ./DSDT.dsl
+		fi
+
 		if [ ! -f  "DSDT.aml" ]
 		then
 		/usr/bin/osascript <<EOT
@@ -225,9 +247,12 @@ Press F4 at Clover screen
 Run PBI Clover Edition again and select correct DSDT options." buttons {"OK"} default button "OK" with icon note with title "Non-vanilla DSDT!"
 end tell
 EOT
+exitcode=1
 		else
 			cp ./DSDT.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/DSDT.aml
 		fi
 	fi
 fi
 rm -rf /tmp/tempDSDT
+
+exit $exitcode

@@ -3,7 +3,7 @@
 # generate Clover config file
 CloverModel=`/usr/libexec/PlistBuddy -c "Print :CloverModel" /tmp/PBI.plist`
 CloverResolution=`/usr/libexec/PlistBuddy -c "Print :CloverResolution" /tmp/PBI.plist`
-CloverHD4600=`/usr/libexec/PlistBuddy -c "Print :CloverHD4600" /tmp/PBI.plist`
+#CloverHD4600=`/usr/libexec/PlistBuddy -c "Print :CloverHD4600" /tmp/PBI.plist`
 osxver=`/usr/libexec/PlistBuddy -c 'Print ProductVersion' "${3}"/System/Library/CoreServices/SystemVersion.plist`
 
 if [ "$CloverModel" != "no" ]
@@ -36,8 +36,16 @@ then
 		printf '\t\t</dict>\n' >> $config
 	elif [ "$CloverModel" == "6x70AMD" ]
 	then
-		printf '\t\t<key>DualLink</key>\n' >> $config
-		printf '\t\t<integer>1</integer>\n' >> $config
+		case $CloverResolution in 
+			low)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>0</integer>\n' >> $config
+				;;
+			high)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>1</integer>\n' >> $config
+				;;
+		esac
 		printf '\t\t<key>FBName</key>\n' >> $config
 		printf '\t\t<string>Typha</string>\n' >> $config
 		printf '\t\t<key>Inject</key>\n' >> $config
@@ -53,6 +61,16 @@ then
 		printf '\t\t<true/>\n' >> $config
 	elif [ "$CloverModel" == "6x60wAMD" ]
 	then
+		case $CloverResolution in 
+			low)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>0</integer>\n' >> $config
+				;;
+			high)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>1</integer>\n' >> $config
+				;;
+		esac
 		printf '\t\t<key>Inject</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
 		printf '\t\t\t<key>Intel</key>\n' >> $config
@@ -142,6 +160,7 @@ then
 	boardserial=""
 	mlb=""
 	rom=""
+	ModelY=""
 
 	function random_char { echo ${chars:$(($RANDOM%${#chars})):1}; }
 
@@ -150,22 +169,36 @@ then
 		mlb=$(/usr/libexec/PlistBuddy -c 'Print :RtVariables:MLB' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
 		rom=$(/usr/libexec/PlistBuddy -c 'Print :RtVariables:ROM' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
 		boardserial=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:BoardSerialNumber' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
-		if [[ "$boardserial" == "" ]]
+		if [[ "$boardserial" == "" ]] || [[ "$boardserial" == Error* ]]
 		then
-			if [[ "$mlb" == "" ]]
+			if [[ "$mlb" == "" ]] || [[ "$mlb" == Error* ]]
 			then
-				boardserial="$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)"
-			else
+				boardserial=""
+			else 
 				boardserial="$mlb"
 			fi
 		fi
 	else
-		boardserial="$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)$(random_char)"
+		boardserial=""
 	fi
 	
 	
 	case $CloverModel in 
-		4x30|6x60*)
+		6x60pAMD|6x60wAMD)
+			boardtype="10"
+			chassistype="8"
+			chassis="MacBook-Aluminum"
+			family="MacBook Pro"
+			mobile="true"
+
+			biosdate="10/14/11"
+			biosversion="MBP81.88Z.0047.B24.1110141131"
+			boardprod="Mac-94245A3940C91C80"
+			prodname="MacBookPro8,2"
+			serial="C02J"$week_letter$(random_char)$(random_char)$(random_char)"DF8X"
+			ModelY="1"
+			;;
+		4x30|6x60)
 			boardtype="10"
 			chassistype="8"
 			chassis="MacBook-Aluminum"
@@ -177,6 +210,7 @@ then
 			boardprod="Mac-94245B3640C91C81"
 			prodname="MacBookPro8,1"
 			serial="C02J"$week_letter$(random_char)$(random_char)$(random_char)"DH2G"
+			ModelY="1"
 			;;
 		4x40*|6x70*|4x0G0)
 			boardtype="10"
@@ -190,6 +224,7 @@ then
 			boardprod="Mac-6F01561E16C75D06"
 			prodname="MacBookPro9,2"
 			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"DTY3"
+			ModelY="2"
 			;;		
 		9470)
 			boardtype="10"
@@ -203,8 +238,9 @@ then
 			boardprod="Mac-2E6FAB96566FE58C"
 			prodname="MacBookAir5,2"
 			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"DRVC"
+			ModelY="2"
 			;;
-		4x0G1|4x0G2)
+		4x0G1|4x0G2|3x0G1)
 			boardtype="10"
 			chassistype="8"
 			chassis="MacBook-Aluminum"
@@ -216,6 +252,7 @@ then
 			boardprod="Mac-3CBD00234E554E41"
 			prodname="MacBookPro11,2"
 			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"FD58"
+			ModelY="3"
 			;;
 	esac
 
@@ -226,7 +263,7 @@ then
 		if [ "$oldprodname" == "$prodname" ]
 		then
 			oldserial=$(/usr/libexec/PlistBuddy -c 'Print :SMBIOS:SerialNumber' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
-			if ! [[ "$oldserial" == "" ]]
+			if [[ "$oldserial" != "" ]] && [[ "$oldserial" != Error* ]]
 			then
 				serial=$oldserial
 			fi
@@ -264,11 +301,39 @@ then
 	printf '\t\t<key>ProductName</key>\n' >> $config
 	printf '\t\t<string>'"$prodname"'</string>\n' >> $config
 
-	if ! [[ "$boardserial" == '' ]]
-		then
-			printf '\t\t<key>BoardSerialNumber</key>\n' >> $config
-			printf '\t\t<string>'"$boardserial"'</string>\n' >> $config
-		fi
+	if [[ "$boardserial" == '' ]]
+	then
+
+		WeekN=$(echo $[ ( $RANDOM % 53 ) ])
+		while [  $WeekN -eq 0 ]; do
+			WeekN=$(echo $[ ( $RANDOM % 53 ) ])
+		done
+		WeekNU=$(printf "%02d" $WeekN)
+
+		rm temp
+		BASE62=($(echo {0..9} {a..z} {A..Z}))
+		NUM=$(($RANDOM*7584284))
+		ProductionN=$(echo $NUM | cut -c 1-5)
+		for i in $(bc <<< "obase=36; $ProductionN"); do
+			echo ${BASE62[$(( 10#$i ))]} | tr "\\n" "," | tr -d , >> temp
+		done
+		SSS=$(cat temp | tr '[:lower:]' '[:upper:]')
+
+		rm tempy
+		NUMB=$(($RANDOM*7584284))
+		PartN=$(echo $NUMB | cut -c 1-8)
+		for m in $(bc <<< "obase=36; $PartN"); do
+			echo ${BASE62[$(( 10#$m ))]} | tr "\\n" "," | tr -d , >> tempy
+		done
+		CCCC=$(cat tempy | cut -c 1-4 | tr '[:lower:]' '[:upper:]')
+
+
+		boardserial="C02"$ModelY$WeekNU$SSS$CCCC
+	fi
+
+	printf '\t\t<key>BoardSerialNumber</key>\n' >> $config
+	printf '\t\t<string>'"$boardserial"'</string>\n' >> $config
+
 	
 	printf '\t\t<key>Mobile</key>\n' >> $config
 	printf '\t\t<'"$mobile"'/>\n' >> $config
@@ -278,7 +343,7 @@ then
 	
 	# RTVariables section
 
-	if ! [[ "$rom" == "*Does Not Exist" ]]
+	if ! [[ "$rom" == "*Does Not Exist" ]] && [[ "$rom" != '' ]]
 	then
 		printf '\t<key>RtVariables</key>\n' >> $config
 		printf '\t<dict>\n' >> $config
@@ -300,6 +365,10 @@ then
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
 		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1 dart=0</string>\n' >> $config
+	elif [ "$CloverModel" == "4x0G2" ]
+	then
+		printf '\t\t<key>Arguments</key>\n' >> $config
+		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1 dart=0 darkwake=0</string>\n' >> $config
 	else
 		printf '\t\t<key>Arguments</key>\n' >> $config
 		printf '\t\t<string>kext-dev-mode=1 dart=0</string>\n' >> $config
@@ -417,29 +486,14 @@ then
 	printf '\t\t\t\t<string>IOGraphicsFamily</string>\n' >> $config
 	printf '\t\t\t\t<key>Find</key>\n' >> $config
 	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\thcB0XUg=\n' >> $config
+	printf '\t\t\t\tAQAAdRc=\n' >> $config
 	printf '\t\t\t\t</data>\n' >> $config
 	printf '\t\t\t\t<key>Replace</key>\n' >> $config
 	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tMcB0W0g=\n' >> $config
+	printf '\t\t\t\tAQAAdBc=\n' >> $config
 	printf '\t\t\t\t</data>\n' >> $config
 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
-	printf '\t\t\t\t<string>Second Stage patch 1 10.10</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
-
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Name</key>\n' >> $config
-	printf '\t\t\t\t<string>IOGraphicsFamily</string>\n' >> $config
-	printf '\t\t\t\t<key>Find</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tQYjE6wM=\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Replace</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tQYjE6yM=\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Comment</key>\n' >> $config
-	printf '\t\t\t\t<string>Second Stage patch 2 10.10</string>\n' >> $config
+	printf '\t\t\t\t<string>Second Stage patch 10.10</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
 
 	findsmbios=$(printf "Mac-2E6FAB96566FE58C" | base64)
@@ -465,41 +519,27 @@ then
 	printf '\t\t\t\t<string>AirPortBrcm4360</string>\n' >> $config
 	printf '\t\t\t\t<key>Find</key>\n' >> $config
 	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tWFQAKxgsIQAg\n' >> $config
+	printf '\t\t\t\tWFQAMxkwIQAA\n' >> $config
 	printf '\t\t\t\t</data>\n' >> $config
 	printf '\t\t\t\t<key>Replace</key>\n' >> $config
 	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tWFQICjYcRwAK\n' >> $config
+	printf '\t\t\t\tWFQAV6g6tgAJ\n' >> $config
 	printf '\t\t\t\t</data>\n' >> $config
 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
 	printf '\t\t\t\t<string>Broadcom 5Ghz XT</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
 
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Name</key>\n' >> $config
-	printf '\t\t\t\t<string>AirPortBrcm4360</string>\n' >> $config
-	printf '\t\t\t\t<key>Find</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\taxAAAHUN\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Replace</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\taxAAAJCQ\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Comment</key>\n' >> $config
-	printf '\t\t\t\t<string>Broadcom Airport Extreme</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
 
 	printf '\t\t\t<dict>\n' >> $config
 	printf '\t\t\t\t<key>Name</key>\n' >> $config
 	printf '\t\t\t\t<string>IOBluetoothFamily</string>\n' >> $config
 	printf '\t\t\t\t<key>Find</key>\n' >> $config
 	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\ti4eMAQAA\n' >> $config
+	printf '\t\t\t\tSIXAdFwPt0g=\n' >> $config
 	printf '\t\t\t\t</data>\n' >> $config
 	printf '\t\t\t\t<key>Replace</key>\n' >> $config
 	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tuA8AAACQ\n' >> $config
+	printf '\t\t\t\tQb4PAAAA61k=\n' >> $config
 	printf '\t\t\t\t</data>\n' >> $config
 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
 	printf '\t\t\t\t<string>Handoff Fix</string>\n' >> $config
@@ -521,8 +561,24 @@ then
 		printf '\t\t\t\tAQIDABAHAAAQBwAABgIAAAABAAAJAAAABQMAAAIAAAAwAAAABAYAAAAIAAAJAAAAAAAAAAAAAAAAAAAA\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Patch VGA port HD3000</string>\n' >> $config
+		printf '\t\t\t\t<string>Patch VGA port HD3000 (disable this if you use HDMI)</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>disabled:AppleIntelSNBGraphicsFB</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tBAYAAAAEAAAJAAAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tBAYAAAAIAAAJAAAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Patch HDMI Audio HD3000 (disable this if you use VGA patch)</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+
 	elif ([ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ]) && [ "$CloverResolution" == "low" ]
 	then
 		printf '\t\t\t<dict>\n' >> $config
@@ -584,68 +640,156 @@ then
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAAAQAAYAAAAABA2QoAANkKAAAA\n' >> $config
+		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAAAQAAkAAAAABA2QoAANkKAAAA\n' >> $config
 		printf '\t\t\t\tAAAAAAAAAAAAEAACAAAAMAAAAAEFEgAACAAAhwAAAAIE\n' >> $config
 		printf '\t\t\t\tEgAACAAAhwAAAP8AAQABAAAAQAAAAA8AAAABAQAABAAA\n' >> $config
 		printf '\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAA=\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch audio HDMI HD4400/4600 laptop</string>\n' >> $config
-		printf '\t\t\t</dict>\n' >> $config
-	elif ([ "$CloverModel" == "6x70AMD" ])
-	then
-		printf '\t\t\t<dict>\n' >> $config
-		printf '\t\t\t\t<key>Name</key>\n' >> $config
-		printf '\t\t\t\t<string>AMD6000Controller</string>\n' >> $config
-		printf '\t\t\t\t<key>Find</key>\n' >> $config
-		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tAAQAAAQDAAAAAQEAEQIEAQAEAAAEAwAAAAECACEDBQIA
-                BAAAAAEAAAAJAwAQAAIFAAQAAAABAAAACQQAIAEDBgQA
-                AAAUAgAAAAEFAAIEAQM=\n' >> $config
-		printf '\t\t\t\t</data>\n' >> $config
-		printf '\t\t\t\t<key>Replace</key>\n' >> $config
-		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tAgAAAEAAAAAJAQAAEAEAAQAEAAAEAwAAAAECABECAQUA
-                BAAABAIAAAABAgAhAgICAAQAAAQCAAAAAQAAEgADAxAA
-                AAAQAAAAAAEAAAAABAg=\n' >> $config
-		printf '\t\t\t\t</data>\n' >> $config
-		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Patch AMD port</string>\n' >> $config
-		printf '\t\t\t</dict>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config	
 	fi
 
-	if [ "$CloverHD4600" == "yes" ] && [[ "$osxver" == 10.10* ]]
+	if [ "$CloverModel" == "4x30" ] || [[ $CloverModel == 6x60* ]]
 	then
 		printf '\t\t\t<dict>\n' >> $config
 		printf '\t\t\t\t<key>Name</key>\n' >> $config
-		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
+		printf '\t\t\t\t<string>AppleUSBXHCI</string>\n' >> $config
 		printf '\t\t\t\t<key>Find</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tPYaAEgQ=\n' >> $config
+		printf '\t\t\t\t9oDUAAAAgHU6\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tPYaAFgQ=\n' >> $config
+		printf '\t\t\t\t9oDUAAAAgOs6\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Patch HD4600 10.10</string>\n' >> $config
+		printf '\t\t\t\t<string>USB 3.0 Disable Intel USB3 controller check 10.9</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config
 
 		printf '\t\t\t<dict>\n' >> $config
 		printf '\t\t\t\t<key>Name</key>\n' >> $config
-		printf '\t\t\t\t<string>AppleIntelHD5000Graphics</string>\n' >> $config
+		printf '\t\t\t\t<string>AppleUSBXHCI</string>\n' >> $config
 		printf '\t\t\t\t<key>Find</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tPYaAEgR0EOtd\n' >> $config
+		printf '\t\t\t\t9oDUAAAAgHU0\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tPYaAFgR0EOtd\n' >> $config
+		printf '\t\t\t\t9oDUAAAAgOs0\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Patch HD4600 10.10</string>\n' >> $config
+		printf '\t\t\t\t<string>USB 3.0 Disable Intel USB3 controller check 10.10</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleUSBXHCI</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tZj0AAQ==\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tZj0AAA==\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>USB 3.0 Disable XHCI 1.0 check 10.9</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleUSBXHCI</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tQbzHAgDgPQABAAA=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tQbzHAgDgPQAAAAA=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>USB 3.0 Disable XHCI 1.0 check 10.10</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleUSBXHCI</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tgUkIAABAAA==\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tgUkIAAAAAA==\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>USB 3.0 Patch MSI or pin interrupts #1</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleUSBXHCI</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tQcdHCAAAQAA=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tQcdHCAAAAAA=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>USB 3.0 Patch MSI or pin interrupts #2</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleUSBXHCI</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tdU1Ii7voAQAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\t601Ii7voAQAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>USB 3.0 Enable PCI power management</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config
 	fi
+
+	# if [ "$CloverHD4600" == "yes" ] && [[ "$osxver" == 10.10* ]]
+	# then
+	# 	printf '\t\t\t<dict>\n' >> $config
+	# 	printf '\t\t\t\t<key>Name</key>\n' >> $config
+	# 	printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
+	# 	printf '\t\t\t\t<key>Find</key>\n' >> $config
+	# 	printf '\t\t\t\t<data>\n' >> $config
+	# 	printf '\t\t\t\tPYaAEgQ=\n' >> $config
+	# 	printf '\t\t\t\t</data>\n' >> $config
+	# 	printf '\t\t\t\t<key>Replace</key>\n' >> $config
+	# 	printf '\t\t\t\t<data>\n' >> $config
+	# 	printf '\t\t\t\tPYaAFgQ=\n' >> $config
+	# 	printf '\t\t\t\t</data>\n' >> $config
+	# 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
+	# 	printf '\t\t\t\t<string>Patch HD4600 10.10</string>\n' >> $config
+	# 	printf '\t\t\t</dict>\n' >> $config
+
+	# 	printf '\t\t\t<dict>\n' >> $config
+	# 	printf '\t\t\t\t<key>Name</key>\n' >> $config
+	# 	printf '\t\t\t\t<string>AppleIntelHD5000Graphics</string>\n' >> $config
+	# 	printf '\t\t\t\t<key>Find</key>\n' >> $config
+	# 	printf '\t\t\t\t<data>\n' >> $config
+	# 	printf '\t\t\t\tPYaAEgR0EOtd\n' >> $config
+	# 	printf '\t\t\t\t</data>\n' >> $config
+	# 	printf '\t\t\t\t<key>Replace</key>\n' >> $config
+	# 	printf '\t\t\t\t<data>\n' >> $config
+	# 	printf '\t\t\t\tPYaAFgR0EOtd\n' >> $config
+	# 	printf '\t\t\t\t</data>\n' >> $config
+	# 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
+	# 	printf '\t\t\t\t<string>Patch HD4600 10.10</string>\n' >> $config
+	# 	printf '\t\t\t</dict>\n' >> $config
+	# fi
 	
 	case $CloverModel in 
 		4x30)
@@ -822,7 +966,7 @@ then
 
 	if ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] ) && [ "$CloverResolution" == "high" ] )
 	then
-		if [[ "$CurrentTheme" == '' ]]
+		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
 		then
 			CurrentTheme='Yosemite'
 		fi
@@ -830,7 +974,7 @@ then
 		printf '\t\t<key>Theme</key>\n' >> $config
 		printf '\t\t<string>'"$CurrentTheme"'</string>\n' >> $config
 	else
-		if [[ "$CurrentTheme" == '' ]]
+		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
 		then
 			CurrentTheme='Yosemite S'
 		fi
@@ -859,14 +1003,14 @@ then
 	printf '\t\t\t<key>Entries</key>\n' >> $config
 	printf '\t\t\t<array>\n' >> $config
 	printf '\t\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>FullTitle</key>\n' >> $config
-	printf '\t\t\t\t<string>UEFI Internal</string>\n' >> $config
-	printf '\t\t\t\t<key>Hidden</key>\n' >> $config
-	printf '\t\t\t\t<string>Always</string>\n' >> $config
-	printf '\t\t\t\t<key>Disabled</key>\n' >> $config
-	printf '\t\t\t\t<false/>\n' >> $config
-	printf '\t\t\t\t<key>Type</key>\n' >> $config
-	printf '\t\t\t\t<string>Other</string>\n' >> $config
+	printf '\t\t\t\t\t<key>FullTitle</key>\n' >> $config
+	printf '\t\t\t\t\t<string>UEFI Internal</string>\n' >> $config
+	printf '\t\t\t\t\t<key>Hidden</key>\n' >> $config
+	printf '\t\t\t\t\t<string>Always</string>\n' >> $config
+	printf '\t\t\t\t\t<key>Disabled</key>\n' >> $config
+	printf '\t\t\t\t\t<false/>\n' >> $config
+	printf '\t\t\t\t\t<key>Type</key>\n' >> $config
+	printf '\t\t\t\t\t<string>Other</string>\n' >> $config
 	printf '\t\t\t\t</dict>\n' >> $config
 	printf '\t\t\t</array>\n' >> $config
 	printf '\t\t</dict>\n' >> $config

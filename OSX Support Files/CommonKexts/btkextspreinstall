@@ -23,16 +23,6 @@ then
 	rm -rf "/System/Library/Extensions/BrcmPatchRAM.kext"
 fi
 
-if [ -e "/System/Library/Extensions/BrcmPatchRAM.kext" ]
-then
-	if [ ! -e "$BackupDir" ]
-	then
-		mkdir -p "$BackupDir"
-	fi
-	cp -Rf "/System/Library/Extensions/BrcmPatchRAM.kext" "$BackupDir"
-	rm -rf "/System/Library/Extensions/BrcmPatchRAM.kext"
-fi
-
 if [ -e "/System/Library/Extensions/IOath3kfrmwr.kext" ]
 then
 	if [ ! -e "$BackupDir" ]
