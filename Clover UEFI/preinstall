@@ -2,6 +2,12 @@
 set -x
 
 ./BackupESP "$1" "$2" "$3"
+exitcode=$?
+
+if [ "$exitcode" != "0" ]
+then
+	exit 1
+fi
 
 if [ -d /Volumes/EFI/EFI ]
 then
@@ -19,3 +25,4 @@ then
 fi
 
 mkdir -p /Library/Logs/CloverEFI
+
