@@ -519,11 +519,11 @@ then
 	printf '\t\t\t\t<string>AirPortBrcm4360</string>\n' >> $config
 	printf '\t\t\t\t<key>Find</key>\n' >> $config
 	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tWFQAMxkwIQAA\n' >> $config
+	printf '\t\t\t\tWFQAXRlUIQAA\n' >> $config
 	printf '\t\t\t\t</data>\n' >> $config
 	printf '\t\t\t\t<key>Replace</key>\n' >> $config
 	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tWFQAV6g6tgAJ\n' >> $config
+	printf '\t\t\t\tWFQAjahetgAJ\n' >> $config
 	printf '\t\t\t\t</data>\n' >> $config
 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
 	printf '\t\t\t\t<string>Broadcom 5Ghz XT</string>\n' >> $config
