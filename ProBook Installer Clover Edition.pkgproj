@@ -8746,24 +8746,6 @@
 																			<key>GID</key>
 																			<integer>0</integer>
 																			<key>PATH</key>
-																			<string>OSX Support Files/CommonKexts/Extensions/GenericUSBXHCI.kext</string>
-																			<key>PATH_TYPE</key>
-																			<integer>1</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>493</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>BUNDLE_CAN_DOWNGRADE</key>
-																			<true/>
-																			<key>CHILDREN</key>
-																			<array/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
 																			<string>OSX Support Files/CommonKexts/Extensions/ProBookARPT.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
@@ -38383,7 +38365,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 3142 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 3156 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>

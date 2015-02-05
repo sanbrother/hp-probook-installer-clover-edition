@@ -19,6 +19,13 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.15.1 (February 5th 2015)**
+
+* Remove GenericUSBXHCI in Haswell models.
+* Update Clover 3156.
+* Update Broadcom 5Ghz patch for 10.10.2.
+* Update Clover Configurator.
+
 **Version 6.2.15 (January 28th 2015)**
 
 * Add HP 3x0 G1 model.

@@ -36,7 +36,7 @@ If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
 Return (Package()\n
 {\n
 "hda-gfx", Buffer() { "onboard-1" },\n
-"RM,device-id", Buffer() { 0x0a, 0x0c, 0x00, 0x00 },\n
+"RM,device-id", Buffer() { 0x0c, 0x0a, 0x00, 0x00 },\n
 })\n
 }\n
 end;
