@@ -34,6 +34,19 @@ then
 		printf '\t\t\t<key>NVidia</key>\n' >> $config
 		printf '\t\t\t<false/>\n' >> $config
 		printf '\t\t</dict>\n' >> $config
+	elif [ "$CloverModel" == "ZBook" ]
+	then
+		printf '\t\t<key>ig-platform-id</key>\n' >> $config
+		printf '\t\t<string>0x0a26000a</string>\n' >> $config
+		printf '\t\t<key>Inject</key>\n' >> $config
+		printf '\t\t<dict>\n' >> $config
+		printf '\t\t\t<key>Intel</key>\n' >> $config
+		printf '\t\t\t<true/>\n' >> $config
+		printf '\t\t\t<key>ATI</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t\t<key>NVidia</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t</dict>\n' >> $config
 	elif [ "$CloverModel" == "6x70AMD" ]
 	then
 		case $CloverResolution in 
@@ -240,18 +253,18 @@ then
 			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"DRVC"
 			ModelY="2"
 			;;
-		4x0G1|4x0G2|3x0G1)
+		4x0G1|4x0G2|3x0G1|ZBook)
 			boardtype="10"
 			chassistype="8"
 			chassis="MacBook-Aluminum"
 			family="MacBook Pro"
 			mobile="true"
 
-			biosdate="10/18/13"
-			biosversion="MBP112.88Z.0138.B02.1310181745"
-			boardprod="Mac-3CBD00234E554E41"
-			prodname="MacBookPro11,2"
-			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"FD58"
+			biosdate="10/29/13"
+			biosversion="MBP111.88Z.0138.B03.1310291227"
+			boardprod="Mac-189A3D4F975D5FFC"
+			prodname="MacBookPro11,1"
+			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"FGYY"
 			ModelY="3"
 			;;
 	esac
@@ -361,7 +374,7 @@ then
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
 		printf '\t\t<string>-xcpm kext-dev-mode=1 dart=0</string>\n' >> $config
-	elif [ "$CloverModel" == "4x0G1" ]|| [ "$CloverModel" == "3x0G1" ]
+	elif [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "ZBook" ] 
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
 		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1 dart=0</string>\n' >> $config
@@ -454,7 +467,7 @@ then
 	printf '\t\t<true/>\n' >> $config
 
 	
-	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "6x70AMD" ]
+	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "ZBook" ] 
 	then
 		printf '\t\t<key>KernelPm</key>\n' >> $config
 		printf '\t\t<true/>\n' >> $config
@@ -633,10 +646,7 @@ then
 		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
 		printf '\t\t\t\t<key>Find</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAwAQAAYAAAAABg2QoAANkKAAAA\n' >> $config
-		printf '\t\t\t\tAAAAAAAAAAAACAACAAAAMAAAAAEFCQAABAAAhwAAAAIE\n' >> $config
-		printf '\t\t\t\tCQAABAAAhwAAAP8AAAABAAAAQAAAAA8AAAABAQAABAAA\n' >> $config
-		printf '\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAA=\n' >> $config
+		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAwAQAAYAA=\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
@@ -646,7 +656,22 @@ then
 		printf '\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAA=\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Patch audio HDMI HD4400/4600 laptop</string>\n' >> $config
+		printf '\t\t\t\t<string>Patch HD4400/4600 9mb Cursor bytes</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config	
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAwAQAAYAA=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tAQUJAAAEAACHAAAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Patch HD4400/4600 HDMI Freeze</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config	
 	fi
 
@@ -824,7 +849,7 @@ then
 			printf '\t\t\t\t<string>IDT 76D9</string>\n' >> $config
 			printf '\t\t\t</dict>\n' >> $config
 			;;		
-		4x0G0|9470|4x0G1)
+		4x0G0|9470|4x0G1|ZBook)
 			printf '\t\t\t<dict>\n' >> $config
 			printf '\t\t\t\t<key>Name</key>\n' >> $config
 			printf '\t\t\t\t<string>AppleHDA</string>\n' >> $config
@@ -964,7 +989,7 @@ then
 		CurrentTheme=$(/usr/libexec/PlistBuddy -c 'Print :GUI:Theme' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
 	fi
 
-	if ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] ) && [ "$CloverResolution" == "high" ] )
+	if ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "ZBook" ]  || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] ) && [ "$CloverResolution" == "high" ] )
 	then
 		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
 		then
@@ -1020,7 +1045,7 @@ then
 	printf '\t<key>Devices</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
 
-	if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "3x0G1" ]
+	if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "ZBook" ]  || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "3x0G1" ]
 	then
 		printf '\t\t<key>FakeID</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
