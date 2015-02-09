@@ -19,6 +19,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.15.2 (February 9th 2015)**
+
+* Change ig-platform-id for ZBook models.
+* Update Clover 3167.
+* Update Clover Configurator.
+
 **Version 6.2.15.1 (February 5th 2015)**
 
 * Remove GenericUSBXHCI in Haswell models.
