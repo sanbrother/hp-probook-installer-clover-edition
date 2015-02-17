@@ -21,23 +21,10 @@ then
 	printf '\t<key>Graphics</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
 
-	if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "3x0G1" ]
+	if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "ZBook" ]
 	then
 		printf '\t\t<key>ig-platform-id</key>\n' >> $config
 		printf '\t\t<string>0x0a260006</string>\n' >> $config
-		printf '\t\t<key>Inject</key>\n' >> $config
-		printf '\t\t<dict>\n' >> $config
-		printf '\t\t\t<key>Intel</key>\n' >> $config
-		printf '\t\t\t<true/>\n' >> $config
-		printf '\t\t\t<key>ATI</key>\n' >> $config
-		printf '\t\t\t<false/>\n' >> $config
-		printf '\t\t\t<key>NVidia</key>\n' >> $config
-		printf '\t\t\t<false/>\n' >> $config
-		printf '\t\t</dict>\n' >> $config
-	elif [ "$CloverModel" == "ZBook" ]
-	then
-		printf '\t\t<key>ig-platform-id</key>\n' >> $config
-		printf '\t\t<string>0x0a26000a</string>\n' >> $config
 		printf '\t\t<key>Inject</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
 		printf '\t\t\t<key>Intel</key>\n' >> $config
@@ -639,7 +626,7 @@ then
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HDMI-DP port HD4000 1600x900 #2</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config
-	elif ([ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ])
+	elif ([ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "ZBook" ])
 	then
 		printf '\t\t\t<dict>\n' >> $config
 		printf '\t\t\t\t<key>Name</key>\n' >> $config
@@ -650,29 +637,29 @@ then
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAAAQAAkAAAAABA2QoAANkKAAAA\n' >> $config
-		printf '\t\t\t\tAAAAAAAAAAAAEAACAAAAMAAAAAEFEgAACAAAhwAAAAIE\n' >> $config
-		printf '\t\t\t\tEgAACAAAhwAAAP8AAQABAAAAQAAAAA8AAAABAQAABAAA\n' >> $config
-		printf '\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAA=\n' >> $config
+		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAwAQAAkAA=\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HD4400/4600 9mb Cursor bytes</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config	
 
-		printf '\t\t\t<dict>\n' >> $config
-		printf '\t\t\t\t<key>Name</key>\n' >> $config
-		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
-		printf '\t\t\t\t<key>Find</key>\n' >> $config
-		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAwAQAAYAA=\n' >> $config
-		printf '\t\t\t\t</data>\n' >> $config
-		printf '\t\t\t\t<key>Replace</key>\n' >> $config
-		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tAQUJAAAEAACHAAAA\n' >> $config
-		printf '\t\t\t\t</data>\n' >> $config
-		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Patch HD4400/4600 HDMI Freeze</string>\n' >> $config
-		printf '\t\t\t</dict>\n' >> $config	
+		if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ]
+		then
+			printf '\t\t\t<dict>\n' >> $config
+			printf '\t\t\t\t<key>Name</key>\n' >> $config
+			printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
+			printf '\t\t\t\t<key>Find</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\tAQUJAAAEAACHAAAA\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Replace</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\tAQUSAAAIAACHAAAA\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Comment</key>\n' >> $config
+			printf '\t\t\t\t<string>Patch HD4400/4600 HDMI Freeze</string>\n' >> $config
+			printf '\t\t\t</dict>\n' >> $config	
+		fi
 	fi
 
 	if [ "$CloverModel" == "4x30" ] || [[ $CloverModel == 6x60* ]]
