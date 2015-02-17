@@ -38948,7 +38948,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 3167 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 3168 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -40084,44 +40084,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 																<key>LANGUAGE</key>
 																<string>English</string>
 																<key>VALUE</key>
-																<string>Select this, if you have a 6x0/8x0 G1 model.</string>
-															</dict>
-														</array>
-														<key>OPTIONS</key>
-														<dict>
-															<key>HIDDEN</key>
-															<false/>
-															<key>STATE</key>
-															<integer>2</integer>
-														</dict>
-														<key>PACKAGE_UUID</key>
-														<string>2A5E38B0-EBFA-42C1-A600-685E1580F492</string>
-														<key>REQUIREMENTS</key>
-														<array/>
-														<key>TITLE</key>
-														<array>
-															<dict>
-																<key>LANGUAGE</key>
-																<string>English</string>
-																<key>VALUE</key>
-																<string>6x0/8x0 G1</string>
-															</dict>
-														</array>
-														<key>TOOLTIP</key>
-														<array/>
-														<key>TYPE</key>
-														<integer>0</integer>
-														<key>UUID</key>
-														<string>F64340F4-FB0E-457A-8DE6-3038968BC29F</string>
-													</dict>
-													<dict>
-														<key>DESCRIPTION</key>
-														<array>
-															<dict>
-																<key>LANGUAGE</key>
-																<string>English</string>
-																<key>VALUE</key>
-																<string>Select this, if you have a ZBook model.</string>
+																<string>Select this, if you have a 6x0/8x0/ZBook model.</string>
 															</dict>
 														</array>
 														<key>OPTIONS</key>
@@ -40141,7 +40104,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 																<key>LANGUAGE</key>
 																<string>English</string>
 																<key>VALUE</key>
-																<string>ZBook</string>
+																<string>6x0/8x0/ZBook</string>
 															</dict>
 														</array>
 														<key>TOOLTIP</key>
@@ -41302,6 +41265,44 @@ NOTE: RESTART IS REQUIRED FOR THIS OPTION.</string>
 								<integer>0</integer>
 								<key>UUID</key>
 								<string>4B353E0A-6196-4CBE-91C6-88E7A961C602</string>
+							</dict>
+							<key>2A5E38B0-EBFA-42C1-A600-685E1580F492</key>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Select this, if you have a 6x0/8x0 G1 model.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>2A5E38B0-EBFA-42C1-A600-685E1580F492</string>
+								<key>REQUIREMENTS</key>
+								<array/>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>6x0/8x0 G1</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>F64340F4-FB0E-457A-8DE6-3038968BC29F</string>
 							</dict>
 							<key>4DEA5949-22FD-4E06-AA69-89C2ADE2CA57</key>
 							<dict>
