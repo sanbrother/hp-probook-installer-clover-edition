@@ -13,11 +13,18 @@ Supported models:
 
 * 6-series laptop: HP Probook 4x30s, 6x60b, Elitebook 8x60p, 2x60p
 * 7-series laptop: HP Probook 4x40s, 4x0 G0, 6x70b, Elitebook 8x70p, 2x70p, 9470m
-* 8-series laptop: HP Probook 4x0 G1/G2, Elitebook 8x0 G1, ZBook
+* 8-series laptop: HP 3x0, Probook 4x0 G1/G2, Elitebook 8x0 G1, ZBook
 
 [Guide to install OS X on HP Probook](http://www.tonymacx86.com/hp-probook-mavericks/112383-guide-install-mavericks-clover-bootloader.html)  
 
 ###C h a n g e l o g   
+
+**Version 6.2.15.4 (March 12th 2015)**
+
+* Add 8x70w nVidia model.
+* Update Clover 3193.
+* Update ACPIBatteryManager, VoodooPS2Controller, BrcmPatchRAM.
+* Update Clover Configurator.
 
 **Version 6.2.15.2 (February 9th 2015)**
 
