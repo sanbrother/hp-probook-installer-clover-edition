@@ -59,6 +59,30 @@ then
 		printf '\t\t</dict>\n' >> $config
 		printf '\t\t<key>LoadVBios</key>\n' >> $config
 		printf '\t\t<true/>\n' >> $config
+	elif [ "$CloverModel" == "6x70NVIDIA" ]
+	then
+		case $CloverResolution in 
+			low)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>0</integer>\n' >> $config
+				;;
+			high)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>1</integer>\n' >> $config
+				;;
+		esac
+		
+		printf '\t\t<key>Inject</key>\n' >> $config
+		printf '\t\t<dict>\n' >> $config
+		printf '\t\t\t<key>Intel</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t\t<key>ATI</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t\t<key>NVidia</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t</dict>\n' >> $config
+		printf '\t\t<key>LoadVBios</key>\n' >> $config
+		printf '\t\t<true/>\n' >> $config
 	elif [ "$CloverModel" == "6x60wAMD" ]
 	then
 		case $CloverResolution in 
@@ -454,7 +478,7 @@ then
 	printf '\t\t<true/>\n' >> $config
 
 	
-	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "ZBook" ] 
+	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ] || [ "$CloverModel" == "ZBook" ] 
 	then
 		printf '\t\t<key>KernelPm</key>\n' >> $config
 		printf '\t\t<true/>\n' >> $config
@@ -499,51 +523,54 @@ then
 	findsmbios=$(printf "Mac-2E6FAB96566FE58C" | base64)
 	patchsmbios=$(printf "$boardprod" | base64)
 
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Name</key>\n' >> $config
-	printf '\t\t\t\t<string>AirPortBrcm4360</string>\n' >> $config
-	printf '\t\t\t\t<key>Find</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\t'"$findsmbios"'\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Replace</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\t'"$patchsmbios"'\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Comment</key>\n' >> $config
-	printf '\t\t\t\t<string>Broadcom 43224 whitelist</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
+	if [ "$CloverModel" != "4x30" ]
+	then
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AirPortBrcm4360</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\t'"$findsmbios"'\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\t'"$patchsmbios"'\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Broadcom 43224 whitelist</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
 
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Name</key>\n' >> $config
-	printf '\t\t\t\t<string>AirPortBrcm4360</string>\n' >> $config
-	printf '\t\t\t\t<key>Find</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tWFQAXRlUIQAA\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Replace</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tWFQAjahetgAJ\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Comment</key>\n' >> $config
-	printf '\t\t\t\t<string>Broadcom 5Ghz XT</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AirPortBrcm4360</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tWFQAXRlUIQAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tWFQAjahetgAJ\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Broadcom 5Ghz XT</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
 
 
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Name</key>\n' >> $config
-	printf '\t\t\t\t<string>IOBluetoothFamily</string>\n' >> $config
-	printf '\t\t\t\t<key>Find</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tSIXAdFwPt0g=\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Replace</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tQb4PAAAA61k=\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Comment</key>\n' >> $config
-	printf '\t\t\t\t<string>Handoff Fix</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>IOBluetoothFamily</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tSIXAdFwPt0g=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tQb4PAAAA61k=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Handoff Fix</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+	fi
 
 
 	
@@ -976,7 +1003,7 @@ then
 		CurrentTheme=$(/usr/libexec/PlistBuddy -c 'Print :GUI:Theme' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
 	fi
 
-	if ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "ZBook" ]  || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] ) && [ "$CloverResolution" == "high" ] )
+	if ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "ZBook" ]  || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] || || [ "$CloverModel" == "6x70NVIDIA" ] ) && [ "$CloverResolution" == "high" ] )
 	then
 		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
 		then

@@ -96,7 +96,7 @@ exitcode=1
 			rm ./03b_1080p+HDMI.txt
 		fi
 
-		if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ]
+		if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ]
 		then
 			rm ./03a_HDMI.txt
 			rm ./03b_1080p+HDMI.txt
@@ -169,7 +169,7 @@ exitcode=1
 			GraphicCheck=`cat $file | grep -i '\_SB.PCI0.PEGP.DGFX'`
 			if [[ $GraphicCheck != '' ]]
 			then
-				if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ]
+				if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ]
 				then
 					cp $file /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
 				else
@@ -197,7 +197,7 @@ exitcode=1
 				GraphicCheck=`cat $file | grep -i '\_SB.PCI0.RP05.DGFX'`
 				if [[ $GraphicCheck != '' ]]
 				then
-					if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ]
+					if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ] || || [ "$CloverModel" == "6x70NVIDIA" ]
 					then
 						cp $file /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
 					else
