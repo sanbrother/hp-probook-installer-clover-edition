@@ -229,8 +229,8 @@ then
 			family="MacBook Pro"
 			mobile="true"
 
-			biosdate="04/22/11"
-			biosversion="MBP81.88Z.0047.B0E.1104221557"
+			biosdate="01/24/12"
+			biosversion="MBP81.88Z.0047.B27.1201241646"
 			boardprod="Mac-94245B3640C91C81"
 			prodname="MacBookPro8,1"
 			serial="C02J"$week_letter$(random_char)$(random_char)$(random_char)"DH2G"
@@ -505,20 +505,20 @@ then
 	printf '\t\t\t\t<string>Enable Trim on SSD</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
 	
-	printf '\t\t\t<dict>\n' >> $config
-	printf '\t\t\t\t<key>Name</key>\n' >> $config
-	printf '\t\t\t\t<string>IOGraphicsFamily</string>\n' >> $config
-	printf '\t\t\t\t<key>Find</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tAQAAdRc=\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Replace</key>\n' >> $config
-	printf '\t\t\t\t<data>\n' >> $config
-	printf '\t\t\t\tAQAAdBc=\n' >> $config
-	printf '\t\t\t\t</data>\n' >> $config
-	printf '\t\t\t\t<key>Comment</key>\n' >> $config
-	printf '\t\t\t\t<string>Second Stage patch 10.10</string>\n' >> $config
-	printf '\t\t\t</dict>\n' >> $config
+	# printf '\t\t\t<dict>\n' >> $config
+	# printf '\t\t\t\t<key>Name</key>\n' >> $config
+	# printf '\t\t\t\t<string>IOGraphicsFamily</string>\n' >> $config
+	# printf '\t\t\t\t<key>Find</key>\n' >> $config
+	# printf '\t\t\t\t<data>\n' >> $config
+	# printf '\t\t\t\tAQAAdRc=\n' >> $config
+	# printf '\t\t\t\t</data>\n' >> $config
+	# printf '\t\t\t\t<key>Replace</key>\n' >> $config
+	# printf '\t\t\t\t<data>\n' >> $config
+	# printf '\t\t\t\tAQAAdBc=\n' >> $config
+	# printf '\t\t\t\t</data>\n' >> $config
+	# printf '\t\t\t\t<key>Comment</key>\n' >> $config
+	# printf '\t\t\t\t<string>Second Stage patch 10.10</string>\n' >> $config
+	# printf '\t\t\t</dict>\n' >> $config
 
 	findsmbios=$(printf "Mac-2E6FAB96566FE58C" | base64)
 	patchsmbios=$(printf "$boardprod" | base64)
@@ -669,6 +669,21 @@ then
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HD4400/4600 9mb Cursor bytes</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config	
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleUSBXHCI</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\txoDIAAAAAQ==\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\txoDIAAAAAA==\n' >> $config
+		printf '\t\t\t\t</data>\n' >> config
+		printf '\t\t\t\t<key>Comment</key>\n' >> config
+		printf '\t\t\t\t<string>Enable USB3 after wake for Intel 8</string>\n' >> config
+		printf '\t\t\t</dict>\n' >> $config
 
 		if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ]
 		then
@@ -1003,7 +1018,7 @@ then
 		CurrentTheme=$(/usr/libexec/PlistBuddy -c 'Print :GUI:Theme' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
 	fi
 
-	if ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "ZBook" ]  || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] || || [ "$CloverModel" == "6x70NVIDIA" ] ) && [ "$CloverResolution" == "high" ] )
+	if ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "ZBook" ]  || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ] ) && [ "$CloverResolution" == "high" ] )
 	then
 		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
 		then

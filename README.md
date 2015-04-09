@@ -19,10 +19,20 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.15.5 (April 9th 2015)**
+
+* Remove Second Stage Patch.
+* Fix USB Sleep for Haswell model.
+
+**Version 6.2.15.4.3 (March 25th 2015)**
+
+* Update Clover 3193.
+* Update Macbook Pro 8,1 SMBIOS.
+
 **Version 6.2.15.4 (March 12th 2015)**
 
 * Add 8x70w nVidia model.
-* Update Clover 3193.
+* Update Clover 3192.
 * Update ACPIBatteryManager, VoodooPS2Controller, BrcmPatchRAM.
 * Update Clover Configurator.
 

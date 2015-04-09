@@ -197,7 +197,7 @@ exitcode=1
 				GraphicCheck=`cat $file | grep -i '\_SB.PCI0.RP05.DGFX'`
 				if [[ $GraphicCheck != '' ]]
 				then
-					if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ] || || [ "$CloverModel" == "6x70NVIDIA" ]
+					if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ]
 					then
 						cp $file /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
 					else
