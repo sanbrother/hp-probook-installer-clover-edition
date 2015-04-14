@@ -19,6 +19,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.15.6 (April 14th 2015)**
+
+* Update Clover Configurator.
+* Update Second Stage patch.
+* Fix config for Haswell model.
+
 **Version 6.2.15.5 (April 9th 2015)**
 
 * Remove Second Stage Patch.
