@@ -505,20 +505,20 @@ then
 	printf '\t\t\t\t<string>Enable Trim on SSD</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
 	
-	# printf '\t\t\t<dict>\n' >> $config
-	# printf '\t\t\t\t<key>Name</key>\n' >> $config
-	# printf '\t\t\t\t<string>IOGraphicsFamily</string>\n' >> $config
-	# printf '\t\t\t\t<key>Find</key>\n' >> $config
-	# printf '\t\t\t\t<data>\n' >> $config
-	# printf '\t\t\t\tAQAAdRc=\n' >> $config
-	# printf '\t\t\t\t</data>\n' >> $config
-	# printf '\t\t\t\t<key>Replace</key>\n' >> $config
-	# printf '\t\t\t\t<data>\n' >> $config
-	# printf '\t\t\t\tAQAAdBc=\n' >> $config
-	# printf '\t\t\t\t</data>\n' >> $config
-	# printf '\t\t\t\t<key>Comment</key>\n' >> $config
-	# printf '\t\t\t\t<string>Second Stage patch 10.10</string>\n' >> $config
-	# printf '\t\t\t</dict>\n' >> $config
+	printf '\t\t\t<dict>\n' >> $config
+	printf '\t\t\t\t<key>Name</key>\n' >> $config
+	printf '\t\t\t\t<string>IOGraphicsFamily</string>\n' >> $config
+	printf '\t\t\t\t<key>Find</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\tQYjE6xE=\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Replace</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\tQYjE6zE=\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Comment</key>\n' >> $config
+	printf '\t\t\t\t<string>Second Stage patch 10.10</string>\n' >> $config
+	printf '\t\t\t</dict>\n' >> $config
 
 	findsmbios=$(printf "Mac-2E6FAB96566FE58C" | base64)
 	patchsmbios=$(printf "$boardprod" | base64)
