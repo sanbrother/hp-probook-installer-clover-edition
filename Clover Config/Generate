@@ -680,9 +680,9 @@ then
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
 		printf '\t\t\t\txoDIAAAAAA==\n' >> $config
-		printf '\t\t\t\t</data>\n' >> config
-		printf '\t\t\t\t<key>Comment</key>\n' >> config
-		printf '\t\t\t\t<string>Enable USB3 after wake for Intel 8</string>\n' >> config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Enable USB3 after wake for Intel 8</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config
 
 		if [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ]
