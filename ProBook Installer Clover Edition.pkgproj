@@ -16440,6 +16440,24 @@
 													<key>GID</key>
 													<integer>0</integer>
 													<key>PATH</key>
+													<string>OSX Support Files/CommonKexts/Extensions/AppleGraphicsPowerManagement_MacBookPro9_2.kext</string>
+													<key>PATH_TYPE</key>
+													<integer>1</integer>
+													<key>PERMISSIONS</key>
+													<integer>493</integer>
+													<key>TYPE</key>
+													<integer>3</integer>
+													<key>UID</key>
+													<integer>0</integer>
+												</dict>
+												<dict>
+													<key>BUNDLE_CAN_DOWNGRADE</key>
+													<true/>
+													<key>CHILDREN</key>
+													<array/>
+													<key>GID</key>
+													<integer>0</integer>
+													<key>PATH</key>
 													<string>OSX Support Files/ModelKexts/AppleHDAIDT/IDT 76d9/AppleHDAIDT.kext</string>
 													<key>PATH_TYPE</key>
 													<integer>1</integer>
@@ -39515,7 +39533,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 3193 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 3202 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>

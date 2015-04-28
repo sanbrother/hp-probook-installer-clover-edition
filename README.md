@@ -19,6 +19,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.15.7 (April 29th 2015)**
+
+* Update Clover 3202.
+* Update Clover Configurator.
+* Add AGPM fix for Sandy 7-series.
+
 **Version 6.2.15.6 (April 14th 2015)**
 
 * Update Clover Configurator.

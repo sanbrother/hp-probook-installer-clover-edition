@@ -281,6 +281,7 @@ case $gBridgeType in
 		  	if [ -d /System/Library/Extensions/ACPI_SMC_PlatformPlugin_MacBookPro9_2.kext ]
 			then
 				rm -rf /System/Library/Extensions/ACPI_SMC_PlatformPlugin_MacBookPro9_2.kext
+				rm -rf /System/Library/Extensions/AppleGraphicsPowerManagement_MacBookPro9_2.kext
 			fi
           ;;
        *)  bridgeTypeString="Unknown"
