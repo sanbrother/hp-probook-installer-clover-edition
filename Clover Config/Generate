@@ -545,14 +545,14 @@ then
 		printf '\t\t\t\t<string>AirPortBrcm4360</string>\n' >> $config
 		printf '\t\t\t\t<key>Find</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tWFQAXRlUIQAA\n' >> $config
+		printf '\t\t\t\tQYP8/3QsSA==\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tWFQAjahetgAJ\n' >> $config
+		printf '\t\t\t\tZscGVVPrKw==\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Broadcom 5Ghz XT</string>\n' >> $config
+		printf '\t\t\t\t<string>Broadcom 5Ghz US</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config
 
 
