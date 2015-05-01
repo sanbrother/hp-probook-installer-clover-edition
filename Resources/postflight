@@ -3,6 +3,7 @@
 RebuildOn=`/usr/libexec/PlistBuddy -c "Print :KextCacheRebuild" /tmp/PBI.plist`
 if [ "$RebuildOn" == "yes" ]
 then
+	diskutil repairPermissions / 
 	touch "${3}/System/Library/Extensions"
 fi
 # setting the Installer Backups folder's owner to the current user
