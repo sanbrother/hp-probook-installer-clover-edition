@@ -19,6 +19,11 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.16 (May 1st 2015)**
+
+* Install kexts to both EFI folder and /S/L/E
+* Change to 5Ghz US patch 
+
 **Version 6.2.15.7 (April 29th 2015)**
 
 * Update Clover 3202.
