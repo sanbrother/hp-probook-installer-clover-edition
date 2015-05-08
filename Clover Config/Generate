@@ -106,6 +106,29 @@ then
 		printf '\t\t</dict>\n' >> $config
 		printf '\t\t<key>LoadVBios</key>\n' >> $config
 		printf '\t\t<true/>\n' >> $config
+	elif [ "$CloverModel" == "6x60wNVIDIA" ]
+	then
+		case $CloverResolution in 
+			low)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>0</integer>\n' >> $config
+				;;
+			high)
+				printf '\t\t<key>DualLink</key>\n' >> $config
+				printf '\t\t<integer>1</integer>\n' >> $config
+				;;
+		esac
+		printf '\t\t<key>Inject</key>\n' >> $config
+		printf '\t\t<dict>\n' >> $config
+		printf '\t\t\t<key>Intel</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t\t<key>ATI</key>\n' >> $config
+		printf '\t\t\t<false/>\n' >> $config
+		printf '\t\t\t<key>NVidia</key>\n' >> $config
+		printf '\t\t\t<true/>\n' >> $config
+		printf '\t\t</dict>\n' >> $config
+		printf '\t\t<key>LoadVBios</key>\n' >> $config
+		printf '\t\t<true/>\n' >> $config
 	elif [ "$CloverModel" == "6x60pAMD" ]
 	then
 		case $CloverResolution in 
@@ -221,6 +244,20 @@ then
 			prodname="MacBookPro8,2"
 			serial="C02J"$week_letter$(random_char)$(random_char)$(random_char)"DF8X"
 			ModelY="1"
+			;;
+		6x60wNVIDIA)
+			boardtype="10"
+			chassistype="8"
+			chassis="MacBook-Aluminum"
+			family="MacBook Pro"
+			mobile="true"
+
+			biosdate="12/21/12"
+			biosversion="MBP101.88Z.00EE.B03.1212211437"
+			boardprod="Mac-C3EC7CD22292981F"
+			prodname="MacBookPro10,1"
+			serial="C02J"$week_letter$(random_char)$(random_char)$(random_char)"DKQ1"
+			ModelY="2"
 			;;
 		4x30|6x60)
 			boardtype="10"
@@ -430,7 +467,7 @@ then
 	printf '\t\t\t\t<key>Signature</key>\n' >> $config
 	printf '\t\t\t\t<string>DMAR</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
-	if [ "$CloverModel" == "6x60pAMD" ] || [ "$CloverModel" == "6x60wAMD" ]
+	if [ "$CloverModel" == "6x60pAMD" ] || [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x60wNVIDIA" ]
 	then
 		printf '\t\t\t<dict>\n' >> $config
 		printf '\t\t\t\t<key>Signature</key>\n' >> $config
