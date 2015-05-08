@@ -17,10 +17,11 @@ rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID_HD4600_HD4400.kext
 osxver=`/usr/libexec/PlistBuddy -c 'Print ProductVersion' "${3}"/System/Library/CoreServices/SystemVersion.plist`
 case $osxver in
 10.9*)	echo "OS X Mavericks $osxver detected."
-		cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/*  /System/Library/Extensions/
+		cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/*  /System/Library/Extensions/;;
 10.10*)	echo "OS X Yosemite $osxver detected."
-		cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/*  /System/Library/Extensions/
+		cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/*  /System/Library/Extensions/;;
 *)		echo "Unknown or unsupported OS X version, aborting.";;
+esac
 
 systemsetup -setwakeonnetworkaccess off
 /usr/libexec/PlistBuddy -c "Set :KextCacheRebuild yes" /tmp/PBI.plist
