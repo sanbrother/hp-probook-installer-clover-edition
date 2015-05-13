@@ -8692,6 +8692,24 @@
 																			<key>GID</key>
 																			<integer>0</integer>
 																			<key>PATH</key>
+																			<string>OSX Support Files/CommonKexts/Extensions/FakePCIID_BCM94352Z_as_BCM94360CS2.kext</string>
+																			<key>PATH_TYPE</key>
+																			<integer>1</integer>
+																			<key>PERMISSIONS</key>
+																			<integer>493</integer>
+																			<key>TYPE</key>
+																			<integer>3</integer>
+																			<key>UID</key>
+																			<integer>0</integer>
+																		</dict>
+																		<dict>
+																			<key>BUNDLE_CAN_DOWNGRADE</key>
+																			<true/>
+																			<key>CHILDREN</key>
+																			<array/>
+																			<key>GID</key>
+																			<integer>0</integer>
+																			<key>PATH</key>
 																			<string>OSX Support Files/CommonKexts/Extensions/FakePCIID_HD4600_HD4400.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
@@ -8746,7 +8764,7 @@
 																			<key>GID</key>
 																			<integer>0</integer>
 																			<key>PATH</key>
-																			<string>OSX Support Files/CommonKexts/Extensions/ProBookARPT.kext</string>
+																			<string>OSX Support Files/CommonKexts/Extensions/ProBookAtheros.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
 																			<key>PERMISSIONS</key>

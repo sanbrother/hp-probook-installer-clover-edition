@@ -19,6 +19,11 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.2.17.5 (May 13th 2015)**
+
+* Change ProbookARPT to ProbookAtheros.
+* Add FakePCIID for Broadcom wifi.
+
 **Version 6.2.17 (May 8th 2015)**
 
 * Update VoodooPS2Controller, BrcmPatchRAM kext.
