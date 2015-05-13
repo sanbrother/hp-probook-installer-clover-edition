@@ -24,4 +24,5 @@
 /System/Library/Extensions/FakePCIID.kext<=>y
 /System/Library/Extensions/FakePCIID_Intel_HDMI_Audio.kext<=>y
 /System/Library/Extensions/FakePCIID_HD4600_HD4400.kext<=>y
+/System/Library/Extensions/FakePCIID_BCM94352Z_as_BCM94360CS2.kext<=>y
 /System/Library/Extensions/AppleGraphicsPowerManagement_MacBookPro9_2.kext<=>y
