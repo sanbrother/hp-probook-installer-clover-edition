@@ -6,13 +6,19 @@ then
 	osxver=`/usr/libexec/PlistBuddy -c 'Print ProductVersion' "${3}"/System/Library/CoreServices/SystemVersion.plist`
 	case $osxver in
 	10.9*)	echo "OS X Mavericks $osxver detected."
-			cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/*  /System/Library/Extensions/;;
+			cd /Volumes/EFI/EFI/CLOVER/kexts/10.9/;;
 	10.10*)	echo "OS X Yosemite $osxver detected."
-			cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/*  /System/Library/Extensions/;;
+			cd /Volumes/EFI/EFI/CLOVER/kexts/10.10/;;
 	*)		echo "Unknown or unsupported OS X version, aborting.";;
 	esac
+
+	for file in *.kext; do
+		cp -rf $file /System/Library/Extensions/
+		chmod -R 755 /System/Library/Extensions/$file 
+		chown -R root:wheel /System/Library/Extensions/$file
+	done	
 	
-	diskutil repairPermissions / 
+	#diskutil repairPermissions / 
 	touch "${3}/System/Library/Extensions"
 fi
 # setting the Installer Backups folder's owner to the current user
