@@ -19,6 +19,13 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.0 (June 17th 2015)**
+
+* Ready for OS X El Capitan.
+* Clover 3227.
+* Replace AppleIntelE1000e.kext by IntelMausiEthernet.kext.
+* XtraFinder.
+
 **Version 6.2.17.5 (May 13th 2015)**
 
 * Change ProbookARPT to ProbookAtheros.
