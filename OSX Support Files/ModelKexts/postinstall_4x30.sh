@@ -1,47 +1,30 @@
 #!/bin/bash
 set -x
 
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/AppleIntelE1000e.kext ]
+Kexts=("IntelMausiEthernet.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "FakePCIID.kext" "FakePCIID_BCM94352Z_as_BCM94360CS2.kext")
+for kext in ${Kexts[@]}; 
+do
+if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.9/$kext" ]
 then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/AppleIntelE1000e.kext
+  rm -rf "/Volumes/EFI/EFI/CLOVER/kexts/10.9/$kext"
 fi
+done
 
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/AppleIntelE1000e.kext ]
+Kexts=("IntelMausiEthernet.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "FakePCIID.kext" "FakePCIID_BCM94352Z_as_BCM94360CS2.kext")
+for kext in ${Kexts[@]}; 
+do
+if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.10/$kext" ]
 then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/AppleIntelE1000e.kext
+  rm -rf "/Volumes/EFI/EFI/CLOVER/kexts/10.10/$kext"
 fi
+done
 
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID_HD4600_HD4400.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID_HD4600_HD4400.kext
-fi
 
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID.kext ]
+Kexts=("IntelMausiEthernet.kext" "ACPIBacklight.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "FakePCIID.kext" "FakePCIID_BCM94352Z_as_BCM94360CS2.kext")
+for kext in ${Kexts[@]}; 
+do
+if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]
 then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID.kext
+  rm -rf "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext"
 fi
-
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID.kext
-fi
-
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID_Intel_HDMI_Audio.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID_Intel_HDMI_Audio.kext
-fi
-
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID_Intel_HDMI_Audio.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID_Intel_HDMI_Audio.kext
-fi
-
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/GenericUSBXHCI.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/GenericUSBXHCI.kext
-fi
-
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/GenericUSBXHCI.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/GenericUSBXHCI.kext
-fi
+done

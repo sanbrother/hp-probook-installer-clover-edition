@@ -1,11 +1,29 @@
 #!/bin/bash
 
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/RealtekRTL8111.kext ]
+Kexts=("RealtekRTL8111.kext")
+for kext in ${Kexts[@]}; 
+do
+if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.9/$kext" ]
 then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/RealtekRTL8111.kext
+  rm -rf "/Volumes/EFI/EFI/CLOVER/kexts/10.9/$kext"
 fi
+done
 
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/RealtekRTL8111.kext ]
+Kexts=("RealtekRTL8111.kext")
+for kext in ${Kexts[@]}; 
+do
+if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.10/$kext" ]
 then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/RealtekRTL8111.kext
+  rm -rf "/Volumes/EFI/EFI/CLOVER/kexts/10.10/$kext"
 fi
+done
+
+
+Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext")
+for kext in ${Kexts[@]}; 
+do
+if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]
+then
+  rm -rf "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext"
+fi
+done
