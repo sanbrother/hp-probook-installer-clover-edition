@@ -298,7 +298,7 @@ then
 			biosversion="MBA51.88Z.00EF.B00.1205221442"
 			boardprod="Mac-2E6FAB96566FE58C"
 			prodname="MacBookAir5,2"
-			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"DRVC"
+			serial="CK2"$week_letter2$(random_char)$(random_char)$(random_char)"DRVC"
 			ModelY="2"
 			;;
 		4x0G1|4x0G2|3x0G1|ZBook)
@@ -421,18 +421,18 @@ then
 	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] 
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>-xcpm kext-dev-mode=1 dart=0</string>\n' >> $config
+		printf '\t\t<string>-xcpm kext-dev-mode=1 rootless=0 dart=0</string>\n' >> $config
 	elif [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "ZBook" ] 
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1 dart=0</string>\n' >> $config
+		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1 rootless=0 dart=0</string>\n' >> $config
 	elif [ "$CloverModel" == "4x0G2" ]
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1 dart=0 darkwake=0</string>\n' >> $config
+		printf '\t\t<string>-gux_defer_usb2 kext-dev-mode=1 rootless=0 dart=0 darkwake=0</string>\n' >> $config
 	else
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>kext-dev-mode=1 dart=0</string>\n' >> $config
+		printf '\t\t<string>kext-dev-mode=1 rootless=0 dart=0</string>\n' >> $config
 	fi
 
 	printf '\t\t<key>Legacy</key>\n' >> $config
@@ -882,6 +882,22 @@ then
 	# 	printf '\t\t\t</dict>\n' >> $config
 	# fi
 	
+	printf '\t\t\t<dict>\n' >> $config
+	printf '\t\t\t\t<key>Name</key>\n' >> $config
+	printf '\t\t\t\t<string>AppleHDA</string>\n' >> $config
+	printf '\t\t\t\t<key>Find</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\tgxnUEQ==\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Replace</key>\n' >> $config
+	printf '\t\t\t\t<data>\n' >> $config
+	printf '\t\t\t\tAAAAAA==\n' >> $config
+	printf '\t\t\t\t</data>\n' >> $config
+	printf '\t\t\t\t<key>Comment</key>\n' >> $config
+	printf '\t\t\t\t<string>AppleHDA Patch 10.11</string>\n' >> $config
+	printf '\t\t\t</dict>\n' >> $config
+	;;
+
 	case $CloverModel in 
 		4x30)
 			printf '\t\t\t<dict>\n' >> $config
