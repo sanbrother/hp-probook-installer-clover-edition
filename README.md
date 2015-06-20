@@ -19,6 +19,10 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.1 (June 20th 2015)**
+
+* Bug fix.
+
 **Version 6.3.0 (June 17th 2015)**
 
 * Ready for OS X El Capitan.
