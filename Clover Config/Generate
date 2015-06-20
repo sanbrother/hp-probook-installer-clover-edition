@@ -896,7 +896,7 @@ then
 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
 	printf '\t\t\t\t<string>AppleHDA Patch 10.11</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
-	;;
+	
 
 	case $CloverModel in 
 		4x30)

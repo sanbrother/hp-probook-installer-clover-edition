@@ -9,8 +9,6 @@ then
 	chown "$USER" "$BackupDir"
 fi
 
-./MountESP
-
 rsync -ar /Volumes/EFI/EFI/CLOVER "$BackupDir"
 cp /var/log/install.log "$BackupDir"
 unzip "./pci.ids.zip"
