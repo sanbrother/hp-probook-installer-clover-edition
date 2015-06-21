@@ -20,7 +20,7 @@ fi
 done
 
 
-Kexts=("RealtekRTL8111.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext")
+Kexts=("RealtekRTL8111.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "AppleUSBXHCIPCIPortInjector.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]

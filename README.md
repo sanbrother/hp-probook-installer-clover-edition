@@ -19,6 +19,10 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.3 (June 22nd 2015)**
+
+* Fix El Capitan USB 3.0 on 7-series model.
+
 **Version 6.3.2 (June 21st 2015)**
 
 * Fix for El Capitan.

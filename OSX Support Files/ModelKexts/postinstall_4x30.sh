@@ -20,7 +20,7 @@ fi
 done
 
 
-Kexts=("IntelMausiEthernet.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "FakePCIID.kext" "FakePCIID_BCM94352Z_as_BCM94360CS2.kext")
+Kexts=("IntelMausiEthernet.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "FakePCIID.kext" "FakePCIID_BCM94352Z_as_BCM94360CS2.kext" "AppleUSBXHCIPCIPortInjector.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]

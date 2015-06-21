@@ -20,7 +20,7 @@ fi
 done
 
 
-Kexts=("RealtekRTL8111.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext")
+Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "AppleUSBXHCIPCIPortInjector.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]
@@ -73,27 +73,7 @@ then
 	cp -rf ./AppleBacklightInjector.kext /Volumes/EFI/EFI/CLOVER/kexts/10.10
 fi
 
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID_HD4600_HD4400.kext ]
+if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.11 ]
 then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID_HD4600_HD4400.kext
-fi
-
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID.kext
-fi
-
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID.kext
-fi
-
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID_Intel_HDMI_Audio.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID_Intel_HDMI_Audio.kext
-fi
-
-if [ -d /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID_Intel_HDMI_Audio.kext ]
-then
-	rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/FakePCIID_Intel_HDMI_Audio.kext
+	cp -rf ./AppleBacklightInjector.kext /Volumes/EFI/EFI/CLOVER/kexts/10.11
 fi
