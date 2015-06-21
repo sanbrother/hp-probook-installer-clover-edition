@@ -19,7 +19,7 @@ fi
 done
 
 
-Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext")
+Kexts=("RealtekRTL8111.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]

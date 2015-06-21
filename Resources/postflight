@@ -9,6 +9,8 @@ then
 			cd /Volumes/EFI/EFI/CLOVER/kexts/10.9/;;
 	10.10*)	echo "OS X Yosemite $osxver detected."
 			cd /Volumes/EFI/EFI/CLOVER/kexts/10.10/;;
+	10.11*)	echo "OS X El Capitan $osxver detected."
+			cd /Volumes/EFI/EFI/CLOVER/kexts/10.11/;;
 	*)		echo "Unknown or unsupported OS X version, aborting.";;
 	esac
 

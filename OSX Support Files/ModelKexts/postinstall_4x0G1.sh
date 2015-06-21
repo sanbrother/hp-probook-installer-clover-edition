@@ -20,7 +20,7 @@ fi
 done
 
 
-Kexts=("IntelMausiEthernet.kext" "ACPIBacklight.kext")
+Kexts=("IntelMausiEthernet.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]
