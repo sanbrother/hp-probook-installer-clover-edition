@@ -19,6 +19,11 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.2 (June 21st 2015)**
+
+* Fix for El Capitan.
+* Clover 3237.
+
 **Version 6.3.1 (June 20th 2015)**
 
 * Bug fix.
