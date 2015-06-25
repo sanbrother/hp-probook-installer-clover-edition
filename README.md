@@ -19,6 +19,14 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.4 (June 25th 2015)**
+
+* Remove USB sleep patch for 8-series in config.plist.
+* Add USB sleep DSDT patch for 8-series.
+* Change ig-platform-id to 0x0d260007 for 6x0/8x0/Zbook to enable DP port
+* Set SMBIOS Trust=True to fix El Capitan boot for 8-series.
+* Update Clover Configurator.
+
 **Version 6.3.3 (June 22nd 2015)**
 
 * Fix El Capitan USB 3.0 on 7-series model.
