@@ -1,4 +1,4 @@
-#Maintained by: RehabMan for: HP Probook 4x30s/4x40s
+#Maintained by: pokenguyen for: HP Probook 3x0
 # 00_Optimize.txt
 
 # Optimize (get rid of stuff that is WMI/BIOS related)
@@ -652,3 +652,28 @@ into method label GBTI code_regex \(CBT1, replaceall_matched begin (B1B2(BT10,BT
 # fix 32-bit methods
 into method label GBTI code_regex \(BTY0, replaceall_matched begin (B1B4(TY00,TY01,TY02,TY03), end;
 into method label GBTI code_regex \(BTY1, replaceall_matched begin (B1B4(TY10,TY11,TY12,TY13), end;
+
+# set _PRW methods to return 0
+
+into method label _PRW parent_adr 0x001D0000 code_regex Return[^(]*\([^(]*\(([^,]*)[^)]*[^,]* replace_matched
+begin
+Return (Package(){%1,0})
+end;
+into method label _PRW parent_adr 0x001A0000 code_regex Return[^(]*\([^(]*\(([^,]*)[^)]*[^,]* replace_matched
+begin
+Return (Package(){%1,0})
+end;
+into method label _PRW parent_adr 0x00140000 code_regex Return[^(]*\([^(]*\(([^,]*)[^)]*[^,]* replace_matched
+begin
+Return (Package(){%1,0})
+end;
+into method label _PRW parent_adr 0x00190000 code_regex Return[^(]*\([^(]*\(([^,]*)[^)]*[^,]* replace_matched
+begin
+Return (Package(){%1,0})
+end;
+
+into method label _PRW parent_adr 0x00190000 code_regex (Return\s+\(.*) replace_matched
+begin
+Store (0x00, Index (Local0, 0x01))\n
+%1
+end;
