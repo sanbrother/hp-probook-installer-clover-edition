@@ -7,7 +7,7 @@
   
 
  
-OS X support: Mavericks, Yosemite
+OS X support: Mavericks, Yosemite, El Capitan
 
 Supported models:  
 
@@ -15,9 +15,15 @@ Supported models:
 * 7-series laptop: HP Probook 4x40s, 4x0 G0, 6x70b, Elitebook 8x70p, 2x70p, 9470m
 * 8-series laptop: HP 3x0, Probook 4x0 G1/G2, Elitebook 8x0 G1, ZBook
 
-[Guide to install OS X on HP Probook](http://www.tonymacx86.com/hp-probook-mavericks/112383-guide-install-mavericks-clover-bootloader.html)  
+[Guide to install OS X Mavericks on HP Probook](http://www.tonymacx86.com/hp-probook-mavericks/112383-guide-install-mavericks-clover-bootloader.html)  
+[Guide to install OS X Yosemite on HP Probook](http://www.tonymacx86.com/hp-probook-yosemite/143675-guide-install-yosemite-hp-laptops-clover-uefi.html)  
 
 ###C h a n g e l o g   
+
+**Version 6.3.5 (June 27th 2015)**
+
+* Update Clover 3241.
+* Disable hibernation completely.
 
 **Version 6.3.4 (June 25th 2015)**
 

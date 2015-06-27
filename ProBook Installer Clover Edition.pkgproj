@@ -40118,7 +40118,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 3202 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 3241 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -40469,7 +40469,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>6x60b/8x60p</string>
+														<string>2x60p/6x60b/8x60p</string>
 													</dict>
 												</array>
 												<key>TOOLTIP</key>
