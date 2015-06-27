@@ -453,7 +453,7 @@ then
 	printf '\t\t<key>Log</key>\n' >> $config
 	printf '\t\t<false/>\n' >> $config
 	printf '\t\t<key>NeverHibernate</key>\n' >> $config
-	printf '\t\t<false/>\n' >> $config
+	printf '\t\t<true/>\n' >> $config
 	printf '\t\t<key>Timeout</key>\n' >> $config
 	printf '\t\t<integer>5</integer>\n' >> $config
 	printf '\t\t<key>XMPDetection</key>\n' >> $config
