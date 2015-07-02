@@ -766,7 +766,37 @@ then
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HD4400/4600 HDMI Freeze</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config	
-		
+	elif [ "$CloverModel" == "ZBook" ]
+	then
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAwAQAAYAA=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tBgAmCgEDAwMAAAACAAAwAQAAkAA=\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Patch HD4400/4600 9mb Cursor bytes</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config
+
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tAgQJAAAEAACHAAAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tAwYDAAAEAACHAAAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Patch HD4400/4600 DP</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config		
 	fi
 
 	if [ "$CloverModel" == "4x30" ] || [[ $CloverModel == 6x60* ]]
