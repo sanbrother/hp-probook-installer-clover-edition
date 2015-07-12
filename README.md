@@ -20,6 +20,16 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.6 (July 12th 2015)**
+
+* Update Atheros Bluetooth.
+
+**Version 6.3.5.5 (July 1st 2015)**
+
+* UpdateSSDT Generator.
+* Revert ig-platform-id for 6x0/8x0/ZBook to 0x0a260006.
+* Add DP port patch (non-4K) for 6x0/8x0 series.
+
 **Version 6.3.5 (June 27th 2015)**
 
 * Update Clover 3241.

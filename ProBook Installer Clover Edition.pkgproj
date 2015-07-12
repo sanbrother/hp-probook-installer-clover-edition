@@ -10031,7 +10031,7 @@
 						<key>GID</key>
 						<integer>0</integer>
 						<key>PATH</key>
-						<string>SSDT Generator/iasl</string>
+						<string>SSDT Generator/Data</string>
 						<key>PATH_TYPE</key>
 						<integer>1</integer>
 						<key>PERMISSIONS</key>
@@ -10052,6 +10052,22 @@
 						<integer>1</integer>
 						<key>PERMISSIONS</key>
 						<integer>420</integer>
+						<key>TYPE</key>
+						<integer>3</integer>
+						<key>UID</key>
+						<integer>0</integer>
+					</dict>
+					<dict>
+						<key>CHILDREN</key>
+						<array/>
+						<key>GID</key>
+						<integer>0</integer>
+						<key>PATH</key>
+						<string>SSDT Generator/Tools</string>
+						<key>PATH_TYPE</key>
+						<integer>1</integer>
+						<key>PERMISSIONS</key>
+						<integer>493</integer>
 						<key>TYPE</key>
 						<integer>3</integer>
 						<key>UID</key>
@@ -14892,7 +14908,7 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>SSDT Generator/iasl</string>
+											<string>SSDT Generator/Tools/iasl</string>
 											<key>PATH_TYPE</key>
 											<integer>1</integer>
 											<key>PERMISSIONS</key>
