@@ -616,20 +616,41 @@ then
 		printf '\t\t\t</dict>\n' >> $config
 
 
-		printf '\t\t\t<dict>\n' >> $config
-		printf '\t\t\t\t<key>Name</key>\n' >> $config
-		printf '\t\t\t\t<string>IOBluetoothFamily</string>\n' >> $config
-		printf '\t\t\t\t<key>Find</key>\n' >> $config
-		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tSIXAdFwPt0g=\n' >> $config
-		printf '\t\t\t\t</data>\n' >> $config
-		printf '\t\t\t\t<key>Replace</key>\n' >> $config
-		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tQb4PAAAA61k=\n' >> $config
-		printf '\t\t\t\t</data>\n' >> $config
-		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Handoff Fix</string>\n' >> $config
-		printf '\t\t\t</dict>\n' >> $config
+		if [[ "$osxver" == 10.10* ]]
+		then
+			printf '\t\t\t<dict>\n' >> $config
+			printf '\t\t\t\t<key>Name</key>\n' >> $config
+			printf '\t\t\t\t<string>IOBluetoothFamily</string>\n' >> $config
+			printf '\t\t\t\t<key>Find</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\tSIXAdFwPt0g=\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Replace</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\tQb4PAAAA61k=\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Comment</key>\n' >> $config
+			printf '\t\t\t\t<string>Handoff Fix</string>\n' >> $config
+			printf '\t\t\t</dict>\n' >> $config
+		elif [[ "$osxver" == 10.11* ]]
+		then
+			printf '\t\t\t<dict>\n' >> $config
+			printf '\t\t\t\t<key>Name</key>\n' >> $config
+			printf '\t\t\t\t<string>IOBluetoothFamily</string>\n' >> $config
+			printf '\t\t\t\t<key>Find</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\tSIX/dEdIiwc=\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Replace</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\tQb4PAAAA60Q=\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Comment</key>\n' >> $config
+			printf '\t\t\t\t<string>Handoff Fix</string>\n' >> $config
+			printf '\t\t\t</dict>\n' >> $config
+		fi
+
+
 	fi
 
 
