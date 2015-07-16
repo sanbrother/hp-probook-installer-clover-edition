@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext")
+Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "FakePCIID_XHCIMux.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.9/$kext" ]
@@ -10,7 +10,7 @@ then
 fi
 done
 
-Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext")
+Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "FakePCIID_XHCIMux.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.10/$kext" ]
@@ -20,7 +20,7 @@ fi
 done
 
 
-Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "AppleUSBXHCIPCIPortInjector.kext")
+Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext" "USBXHCI_4x40s.kext" "FakePCIID_XHCIMux.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]
@@ -44,6 +44,7 @@ cp -R "/System/Library/Extensions/AppleBacklight.kext" ./AppleBacklightInjector.
 /usr/libexec/PlistBuddy -c "Merge /tmp/org.rehabman.merge.plist ':IOKitPersonalities:AppleIntelPanelA'" $plist
 #/usr/libexec/PlistBuddy -c "Copy ':ApplePanelsBackup:Default' ':IOKitPersonalities:AppleIntelPanelA:ApplePanels:Default'" $plist
 #/usr/libexec/PlistBuddy -c "Delete ':ApplePanelsBackup'" $plist
+/usr/libexec/PlistBuddy -c "Delete ':CFBundleExecutable'" $plist
 /usr/libexec/PlistBuddy -c "Delete ':BuildMachineOSBuild'" $plist
 /usr/libexec/PlistBuddy -c "Delete ':DTCompiler'" $plist
 /usr/libexec/PlistBuddy -c "Delete ':DTPlatformBuild'" $plist

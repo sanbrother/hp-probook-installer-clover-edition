@@ -6,6 +6,10 @@
 /System/Library/Extensions/AppleIntelE1000e.kext<=>y
 /System/Library/Extensions/IntelMausiEthernet.kext<=>y
 /System/Library/Extensions/FakeSMC.kext<=>y
+/System/Library/Extensions/FakeSMC_ACPISensors.kext<=>y
+/System/Library/Extensions/FakeSMC_CPUSensors.kext<=>y
+/System/Library/Extensions/FakeSMC_GPUSensors.kext<=>y
+/System/Library/Extensions/FakeSMC_LPCSensors.kext<=>y
 /System/Library/Extensions/HSSDBlockStorage.kext<=>y
 /System/Library/Extensions/BTFirmwareUploader.kext<=>y
 /System/Library/Extensions/JMB38X.kext<=>y
@@ -23,8 +27,13 @@
 /System/Library/Extensions/RadeonX.kext<=>y
 /System/Library/Extensions/RealtekRTL81xx.kext<=>y
 /System/Library/Extensions/ACPI_SMC_PlatformPlugin_MacBookPro9_2.kext<=>y
+/System/Library/Extensions/ACPI_SMC_PlatformPlugin_MacBookPro10_1.kext<=>y
 /System/Library/Extensions/FakePCIID.kext<=>y
 /System/Library/Extensions/FakePCIID_Intel_HDMI_Audio.kext<=>y
 /System/Library/Extensions/FakePCIID_HD4600_HD4400.kext<=>y
 /System/Library/Extensions/FakePCIID_BCM94352Z_as_BCM94360CS2.kext<=>y
 /System/Library/Extensions/AppleGraphicsPowerManagement_MacBookPro9_2.kext<=>y
+/System/Library/Extensions/FakePCIID_XHCIMux.kext<=>y
+/System/Library/Extensions/USBXHCI_4x40s.kext<=>y
+/System/Library/Extensions/AppleUSBXHCIPCIPortInjector.kext<=>y
+/System/Library/Extensions/AppleBacklightInjector.kext<=>y

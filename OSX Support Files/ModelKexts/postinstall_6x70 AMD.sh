@@ -45,6 +45,7 @@ cp -R "/System/Library/Extensions/AppleBacklight.kext" ./AppleBacklightInjector.
 /usr/libexec/PlistBuddy -c "Merge /tmp/org.rehabman.merge.plist ':IOKitPersonalities:AppleIntelPanelA'" $plist
 #/usr/libexec/PlistBuddy -c "Copy ':ApplePanelsBackup:Default' ':IOKitPersonalities:AppleIntelPanelA:ApplePanels:Default'" $plist
 #/usr/libexec/PlistBuddy -c "Delete ':ApplePanelsBackup'" $plist
+/usr/libexec/PlistBuddy -c "Delete ':CFBundleExecutable'" $plist
 /usr/libexec/PlistBuddy -c "Delete ':BuildMachineOSBuild'" $plist
 /usr/libexec/PlistBuddy -c "Delete ':DTCompiler'" $plist
 /usr/libexec/PlistBuddy -c "Delete ':DTPlatformBuild'" $plist

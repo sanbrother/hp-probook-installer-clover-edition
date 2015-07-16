@@ -20,7 +20,7 @@ fi
 done
 
 
-Kexts=("IntelMausiEthernet.kext" "AppleUSBXHCIPCIPortInjector.kext")
+Kexts=("IntelMausiEthernet.kext" "USBXHCI_4x40s.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]

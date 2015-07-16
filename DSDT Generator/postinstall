@@ -3,6 +3,7 @@ set -x
 
 CloverConfigGenerate=`/usr/libexec/PlistBuddy -c "Print :CloverConfigGenerate" /tmp/PBI.plist`
 CloverModel=`/usr/libexec/PlistBuddy -c "Print :CloverModel" /tmp/PBI.plist`
+osxver=`/usr/libexec/PlistBuddy -c 'Print ProductVersion' "${3}"/System/Library/CoreServices/SystemVersion.plist`
 
 exitcode=0
 
@@ -117,6 +118,14 @@ exitcode=1
 			rm ./04*.txt
 		fi
 
+		# if [[ "$osxver" == 10.9* ]]
+		# then
+		# 	rm ./09_USB3_4x40s_10_11.txt
+		# else
+		# 	rm ./09_USB3_4x40s_Mieze.txt
+		# fi
+		rm ./09_USB3_4x40s_Mieze.txt
+
 		for patch in "4x30s.txt" \
 			"4x40s_IvyBridge.txt" \
 			"4x40s_SandyBridge.txt" \
@@ -132,6 +141,7 @@ exitcode=1
 			"04c_FanSpeed.txt" \
 			"08a_AR9285.txt" \
 			"08b_BCM4322x.txt" \
+			"09_USB3_4x40s_10_11.txt" \
 			"09_USB3_4x40s_Mieze.txt" \
 			"10_LPC_4x40s_Sandy_SL.txt" \
 			"12_Brightness.txt" \

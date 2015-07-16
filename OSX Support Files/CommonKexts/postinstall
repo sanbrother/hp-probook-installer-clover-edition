@@ -9,18 +9,24 @@ then
 	mkdir -p /Volumes/EFI/EFI/CLOVER/kexts/10.10
 fi
 
+if [ ! -d /Volumes/EFI/EFI/CLOVER/kexts/10.10 ]
+then
+	mkdir -p /Volumes/EFI/EFI/CLOVER/kexts/10.11
+fi
+
 rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/*
+rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.11/*
+
 cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/* /Volumes/EFI/EFI/CLOVER/kexts/10.10
 cp -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/* /Volumes/EFI/EFI/CLOVER/kexts/10.11
 
-rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/AppleUSBXHCIPCIPortInjector.kext
-rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/AppleUSBXHCIPCIPortInjector.kext
-
 rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID_HD4600_HD4400.kext
+rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/USBXHCI_4x40s.kext
+#rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID_XHCIMux.kext
 
-rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.11/ACPIBacklight.kext
 
-#rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID.kext
+rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/USBXHCI_4x40s.kext
+
 
 
 systemsetup -setwakeonnetworkaccess off

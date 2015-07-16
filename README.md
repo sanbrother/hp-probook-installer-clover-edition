@@ -20,6 +20,17 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.7.5 (July 16th 2015)**
+
+* Update ACPIBacklight.
+
+**Version 6.3.7 (July 15th 2015)**
+
+* Some fixes for El Capitan.
+* Update FakeSMC, FakePCIID and VoodooPS2Controller.
+* 7-series laptops: switch to FakePCIID_XHCIMux.kext for USB 3.0 instead of Multiplex DSDT patch (10.10 and 10.11).
+* 8-series laptops: add FakePCIID_XHCIMux.kext for USB 3.0 (10.10 and 10.11).
+
 **Version 6.3.6 (July 12th 2015)**
 
 * Update Atheros Bluetooth.
