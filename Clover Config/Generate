@@ -108,6 +108,8 @@ then
 				printf '\t\t<integer>1</integer>\n' >> $config
 				;;
 		esac
+		printf '\t\t<key>FBName</key>\n' >> $config
+		printf '\t\t<string>Cattail</string>\n' >> $config
 		printf '\t\t<key>Inject</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
 		printf '\t\t\t<key>Intel</key>\n' >> $config
@@ -514,6 +516,14 @@ then
 		printf '\t\t<string>0200000000010000090100001204030300040000040300000001000010000505000400000403000000010000110201010004000000010000000910002103020200040000000100000009100022050404</string>\n' >> $config
 		printf '\t\t<key>ATIConnectorsPatch</key>\n' >> $config
 		printf '\t\t<string>0200000040000000090100001001010500040000040300000001000011020204000400000403000000010000210303020004000004030000000100001204040310000000100000000001000000000001</string>\n' >> $config
+	elif [ "$CloverModel" == "6x60wAMD" ]
+	then
+		printf '\t\t<key>ATIConnectorsController</key>\n' >> $config
+		printf '\t\t<string>6000</string>\n' >> $config
+		printf '\t\t<key>ATIConnectorsData</key>\n' >> $config
+		printf '\t\t<string>020000004000000029050000000000050004000004030000000100001102010100040000000100000009100021030202</string>\n' >> $config
+		printf '\t\t<key>ATIConnectorsPatch</key>\n' >> $config
+		printf '\t\t<string>100000001000000000010000000000020200000040000000290500001000010500040000040300000001000012040203</string>\n' >> $config
 	elif [ "$CloverModel" == "6x70AMD" ]
 	then
 		printf '\t\t<key>ATIConnectorsController</key>\n' >> $config
