@@ -22,7 +22,7 @@ Supported models:
 
 **Version 6.3.7.5 (July 16th 2015)**
 
-* Update ACPIBacklight.
+* Update ACPIBacklight, BrcmPatchRAM.
 
 **Version 6.3.7 (July 15th 2015)**
 
