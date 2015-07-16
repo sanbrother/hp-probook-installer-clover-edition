@@ -1,3 +1,15 @@
 #!/bin/bash
 
+osxver=`/usr/libexec/PlistBuddy -c 'Print ProductVersion' "${3}"/System/Library/CoreServices/SystemVersion.plist`
+case $osxver in
+10.9*|10.10*)	echo "OS X Mavericks or Yosemite $osxver detected."
+		rm -rf /System/Library/Extensions/BrcmBluetoothInjector.kext
+		;;
+10.11*)	echo "OS X El Capitan $osxver detected."
+		rm -rf /System/Library/Extensions/BrcmPatchRAM.kext
+		;;
+*)		echo "Unknown or unsupported OS X version, aborting."
+		;;
+esac
+
 /usr/libexec/PlistBuddy -c "Set :KextCacheRebuild yes" /tmp/PBI.plist

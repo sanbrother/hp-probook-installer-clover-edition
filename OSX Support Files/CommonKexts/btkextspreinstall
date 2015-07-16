@@ -3,32 +3,16 @@ set -x
 RightNowIs=`/usr/libexec/PlistBuddy -c "Print :CurrentDateTime" /tmp/PBI.plist`
 BackupDir="$HOME/Desktop/Installer Backups/Backup $RightNowIs"
 
-if [ -e "/System/Library/Extensions/BTFirmwareUploader.kext" ]
+Kexts=("BTFirmwareUploader.kext" "BrcmPatchRAM.kext" "IOath3kfrmwr.kext" "BrcmBluetoothInjector.kext")
+for kext in ${Kexts[@]}; 
+do
+if [ -e "/System/Library/Extensions/$kext" ]
 then
 	if [ ! -e "$BackupDir" ]
 	then
 		mkdir -p "$BackupDir"
 	fi
-	cp -Rf "/System/Library/Extensions/BTFirmwareUploader.kext" "$BackupDir"
-	rm -rf "/System/Library/Extensions/BTFirmwareUploader.kext"
+	cp -Rf "/System/Library/Extensions/$kext" "$BackupDir"
+	rm -rf "/System/Library/Extensions/$kext"
 fi
-
-if [ -e "/System/Library/Extensions/BrcmPatchRAM.kext" ]
-then
-	if [ ! -e "$BackupDir" ]
-	then
-		mkdir -p "$BackupDir"
-	fi
-	cp -Rf "/System/Library/Extensions/BrcmPatchRAM.kext" "$BackupDir"
-	rm -rf "/System/Library/Extensions/BrcmPatchRAM.kext"
-fi
-
-if [ -e "/System/Library/Extensions/IOath3kfrmwr.kext" ]
-then
-	if [ ! -e "$BackupDir" ]
-	then
-		mkdir -p "$BackupDir"
-	fi
-	cp -Rf "/System/Library/Extensions/IOath3kfrmwr.kext" "$BackupDir"
-	rm -rf "/System/Library/Extensions/IOath3kfrmwr.kext"
-fi
+done
