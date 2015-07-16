@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>14C1510</string>
+	<string>14E46</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.rehabman.injector.FakePCIID-BCM94352Z-as-BCM94360CS2</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -13,23 +13,23 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.1</string>
+	<string>1.2.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.1.1</string>
+	<string>1.2.0</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>6C131e</string>
+	<string>6E35b</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>14A383</string>
+	<string>10M2518</string>
 	<key>DTSDKName</key>
-	<string>macosx10.10</string>
+	<string>macosx10.6</string>
 	<key>DTXcode</key>
-	<string>0620</string>
+	<string>0640</string>
 	<key>DTXcodeBuild</key>
-	<string>6C131e</string>
+	<string>6E35b</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>Airport_Brcm4360</key>
@@ -45,6 +45,7 @@
 				<string>pci14e4,4353</string>
 				<string>pci14e4,4357</string>
 				<string>pci14e4,43b1</string>
+				<string>pci14e4,43b2</string>
 			</array>
 			<key>IOProbeScore</key>
 			<integer>901</integer>
@@ -93,7 +94,7 @@
 			<key>RM,Build</key>
 			<string>Release-RehabMan</string>
 			<key>RM,Version</key>
-			<string>FakePCIID_BCM94352Z_as_BCM94360CS2 1.1.1</string>
+			<string>FakePCIID_BCM94352Z_as_BCM94360CS2 1.2.0</string>
 		</dict>
 		<key>Broadcom FakePCIID WiFi 43a0</key>
 		<dict>
@@ -133,7 +134,7 @@
 			<key>RM,Build</key>
 			<string>Release-RehabMan</string>
 			<key>RM,Version</key>
-			<string>FakePCIID_BCM94352Z_as_BCM94360CS2 1.1.1</string>
+			<string>FakePCIID_BCM94352Z_as_BCM94360CS2 1.2.0</string>
 		</dict>
 		<key>Broadcom FakePCIID WiFi no device-id</key>
 		<dict>
@@ -172,7 +173,7 @@
 			<key>RM,Build</key>
 			<string>Release-RehabMan</string>
 			<key>RM,Version</key>
-			<string>FakePCIID_BCM94352Z_as_BCM94360CS2 1.1.1</string>
+			<string>FakePCIID_BCM94352Z_as_BCM94360CS2 1.2.0</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
