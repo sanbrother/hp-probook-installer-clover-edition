@@ -20,6 +20,10 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.8 (July 27th 2015)**
+
+* Remove FakePCIID_XHCIMux.kext for 8-series laptops.
+	
 **Version 6.3.7.5 (July 16th 2015)**
 
 * Update ACPIBacklight, BrcmPatchRAM.

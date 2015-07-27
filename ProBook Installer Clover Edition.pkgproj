@@ -42359,7 +42359,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Low-resolution screen</string>
+														<string>1366x768 screen</string>
 													</dict>
 												</array>
 												<key>TOOLTIP</key>
@@ -42396,7 +42396,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>High-resolution screen</string>
+														<string>1600x900+ screen</string>
 													</dict>
 												</array>
 												<key>TOOLTIP</key>

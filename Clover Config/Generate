@@ -8,6 +8,24 @@ osxver=`/usr/libexec/PlistBuddy -c 'Print ProductVersion' "${3}"/System/Library/
 
 if [ "$CloverModel" != "no" ]
 then
+	
+	if [ "$CloverResolution" == "no" ]
+	then
+	/usr/bin/osascript <<EOT
+tell application "Finder"
+    activate
+    display dialog "If you see this warning message, that means:
+
+	You didn't select display resolution in PBI CE.
+
+If you want to make yourself a new patched DSDT, you should do the following:
+
+Press F4 at Clover screen
+Run PBI Clover Edition again and select correct DSDT options." buttons {"OK"} default button "OK" with icon note with title "Missing display resolution!"
+end tell
+EOT
+	fi
+
 
 	config="/tmp/config.plist"	
 
