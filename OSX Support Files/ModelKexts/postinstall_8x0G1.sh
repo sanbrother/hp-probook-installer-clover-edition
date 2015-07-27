@@ -3,7 +3,7 @@
 Kexts=("RealtekRTL8111.kext")
 for kext in ${Kexts[@]}; 
 do
-if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.9/$kext" ]
+if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.9/$kext" "FakePCIID_XHCIMux.kext"]
 then
   rm -rf "/Volumes/EFI/EFI/CLOVER/kexts/10.9/$kext"
 fi
@@ -12,14 +12,14 @@ done
 Kexts=("RealtekRTL8111.kext")
 for kext in ${Kexts[@]}; 
 do
-if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.10/$kext" ]
+if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.10/$kext" "FakePCIID_XHCIMux.kext"]
 then
   rm -rf "/Volumes/EFI/EFI/CLOVER/kexts/10.10/$kext"
 fi
 done
 
 
-Kexts=("RealtekRTL8111.kext" "USBXHCI_4x40s.kext")
+Kexts=("RealtekRTL8111.kext" "USBXHCI_4x40s.kext" "FakePCIID_XHCIMux.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]

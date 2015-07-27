@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-Kexts=("IntelMausiEthernet.kext")
+Kexts=("IntelMausiEthernet.kext" "FakePCIID_XHCIMux.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.9/$kext" ]
@@ -10,7 +10,7 @@ then
 fi
 done
 
-Kexts=("IntelMausiEthernet.kext")
+Kexts=("IntelMausiEthernet.kext" "FakePCIID_XHCIMux.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.10/$kext" ]
@@ -20,7 +20,7 @@ fi
 done
 
 
-Kexts=("IntelMausiEthernet.kext" "USBXHCI_4x40s.kext")
+Kexts=("IntelMausiEthernet.kext" "USBXHCI_4x40s.kext" "FakePCIID_XHCIMux.kext")
 for kext in ${Kexts[@]}; 
 do
 if [ -d "/Volumes/EFI/EFI/CLOVER/kexts/10.11/$kext" ]
