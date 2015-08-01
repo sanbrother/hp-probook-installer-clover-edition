@@ -454,18 +454,18 @@ EOT
 	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] 
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>-xcpm kext-dev-mode=1 rootless=0 dart=0</string>\n' >> $config
+		printf '\t\t<string>-xcpm kext-dev-mode=1 dart=0</string>\n' >> $config
 	elif [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "ZBook" ] 
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>kext-dev-mode=1 rootless=0 dart=0</string>\n' >> $config
+		printf '\t\t<string>kext-dev-mode=1 dart=0</string>\n' >> $config
 	elif [ "$CloverModel" == "4x0G2" ]
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>kext-dev-mode=1 rootless=0 dart=0 darkwake=0</string>\n' >> $config
+		printf '\t\t<string>kext-dev-mode=1 dart=0 darkwake=0</string>\n' >> $config
 	else
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>kext-dev-mode=1 rootless=0 dart=0</string>\n' >> $config
+		printf '\t\t<string>kext-dev-mode=1 dart=0</string>\n' >> $config
 	fi
 
 	printf '\t\t<key>Legacy</key>\n' >> $config
