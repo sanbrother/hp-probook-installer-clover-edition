@@ -20,6 +20,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.8.5 (August 1st 2015)**
+
+* Update Clover 3253.
+* Update BrcmPatchRAM.
+* Remove rootless=0 from bootflag.
+
 **Version 6.3.8 (July 27th 2015)**
 
 * Remove FakePCIID_XHCIMux.kext for 8-series laptops.
