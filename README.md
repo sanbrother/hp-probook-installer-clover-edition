@@ -20,6 +20,10 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.9 (August 5th 2015)**
+
+* Add CsrActiveConfig=0x67 and BooterConfig=0x28 to  config.plist
+
 **Version 6.3.8.5 (August 1st 2015)**
 
 * Update Clover 3253.
