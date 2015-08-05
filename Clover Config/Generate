@@ -436,15 +436,20 @@ EOT
 	printf '\t</dict>\n' >> $config
 	
 	# RTVariables section
+	printf '\t<key>RtVariables</key>\n' >> $config
+	printf '\t<dict>\n' >> $config
 
 	if ! [[ "$rom" == "*Does Not Exist" ]] && [[ "$rom" != '' ]]
 	then
-		printf '\t<key>RtVariables</key>\n' >> $config
-		printf '\t<dict>\n' >> $config
 		printf '\t\t<key>ROM</key>\n' >> $config
 		printf '\t\t<string>'"$rom"'</string>\n' >> $config
-		printf '\t</dict>\n' >> $config
 	fi
+
+	printf '\t\t<key>CsrActiveConfig</key>\n' >> $config
+	printf '\t\t<string>0x67</string>\n' >> $config
+	printf '\t\t<key>BooterConfig</key>\n' >> $config
+	printf '\t\t<string>0x28</string>\n' >> $config
+	printf '\t</dict>\n' >> $config
 
 	# boot section
 
