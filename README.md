@@ -20,6 +20,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.3.9.5 (August 13th 2015)**
+
+* Fix HDMI audio for HD4000 1600x900+.
+* Remove AppleBacklightInjector.kext for models with only AMD graphics card.
+* Change AMD Framebuffer for 8x70p from Typha to Ebi.
+
 **Version 6.3.9 (August 5th 2015)**
 
 * Add CsrActiveConfig=0x67 and BooterConfig=0x28 to  config.plist
