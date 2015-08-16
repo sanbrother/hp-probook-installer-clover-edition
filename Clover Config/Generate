@@ -78,7 +78,7 @@ EOT
 				;;
 		esac
 		printf '\t\t<key>FBName</key>\n' >> $config
-		printf '\t\t<string>Typha</string>\n' >> $config
+		printf '\t\t<string>Ebi</string>\n' >> $config
 		printf '\t\t<key>Inject</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
 		printf '\t\t\t<key>Intel</key>\n' >> $config
@@ -760,10 +760,10 @@ EOT
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tMAIAAAIFAAAABAAABwQAAAMEAAAABAAAgQAAAAQGAAAABAAAgQAAAAAAAAAAAgAR\n' >> $config
+		printf '\t\t\t\tMAIAAAIFAAAABAAABwQAAAMEAAAABAAAgQAAAAQGAAAACAAABgAAAAAAAAAAAgAR\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
-		printf '\t\t\t\t<string>Patch DP port HD4000 1600x900 #2</string>\n' >> $config
+		printf '\t\t\t\t<string>Patch HDMI port HD4000 1600x900 #2</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config
 	elif ([ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "9470" ]) && [ "$CloverResolution" == "high" ]
 	then
@@ -791,7 +791,7 @@ EOT
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Replace</key>\n' >> $config
 		printf '\t\t\t\t<data>\n' >> $config
-		printf '\t\t\t\tMAIAAAIFAAAABAAABwQAAAMEAAAABAAAgQAAAAQGAAAACAAABgAAAAAAAAAAAgAR\n' >> $config
+		printf '\t\t\t\tMAIAAAIFAAAABAAABwQAAAMEAAAABAAAgQAAAAQGAAAABAAAgQAAAAAAAAAAAgAR\n' >> $config
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch DP port HD4000 1600x900 #2</string>\n' >> $config
