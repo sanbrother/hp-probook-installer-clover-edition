@@ -52,10 +52,10 @@ EOT
 		printf '\t\t\t<key>NVidia</key>\n' >> $config
 		printf '\t\t\t<false/>\n' >> $config
 		printf '\t\t</dict>\n' >> $config
-	elif [ "$CloverModel" == "ZBook" ]
+	elif [ "$CloverModel" == "4x0G2Broadwell" ]
 	then
 		printf '\t\t<key>ig-platform-id</key>\n' >> $config
-		printf '\t\t<string>0x0d260007</string>\n' >> $config
+		printf '\t\t<string>0x16260006</string>\n' >> $config
 		printf '\t\t<key>Inject</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
 		printf '\t\t\t<key>Intel</key>\n' >> $config
@@ -348,6 +348,21 @@ EOT
 			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"FGYY"
 			ModelY="3"
 			;;
+		4x0G2Broadwell)
+			boardtype="10"
+			chassistype="10"
+			chassis="Air-Enclosure"
+			family="MacBook Air"
+			mobile="true"
+
+			biosdate="03/24/15"
+			biosversion="MBA71.88Z.0166.B02.1503241251"
+			boardprod="Mac-937CB26E2E02BB01"
+			prodname="MacBookAir7,2"
+			serial="C1M"$week_letter2$(random_char)$(random_char)$(random_char)"G944"
+
+			ModelY="5"
+			;;
 	esac
 
 	# check existing serial number
@@ -456,21 +471,21 @@ EOT
 	printf '\t<key>Boot</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
 
-	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] 
+	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ] 
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>-xcpm kext-dev-mode=1 dart=0</string>\n' >> $config
-	elif [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "ZBook" ] 
+		printf '\t\t<string>-xcpm kext-dev-mode=1 dart=0 rootless=0</string>\n' >> $config
+	elif [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "ZBook" ] || [ "$CloverModel" == "4x0G2Broadwell" ] 
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>kext-dev-mode=1 dart=0</string>\n' >> $config
+		printf '\t\t<string>kext-dev-mode=1 dart=0 rootless=0</string>\n' >> $config
 	elif [ "$CloverModel" == "4x0G2" ]
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>kext-dev-mode=1 dart=0 darkwake=0</string>\n' >> $config
+		printf '\t\t<string>kext-dev-mode=1 dart=0 darkwake=0 rootless=0</string>\n' >> $config
 	else
 		printf '\t\t<key>Arguments</key>\n' >> $config
-		printf '\t\t<string>kext-dev-mode=1 dart=0</string>\n' >> $config
+		printf '\t\t<string>kext-dev-mode=1 dart=0 rootless=0</string>\n' >> $config
 	fi
 
 	printf '\t\t<key>Legacy</key>\n' >> $config
@@ -561,12 +576,13 @@ EOT
 	printf '\t\t<true/>\n' >> $config
 
 	
-	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ] || [ "$CloverModel" == "ZBook" ] 
+
+	if [ "$CloverModel" == "4x30" ] || [ "$CloverModel" == "4x40" ] || [[ $CloverModel == 6x60* ]] || [ "$CloverModel" == "6x70" ]
 	then
-		printf '\t\t<key>KernelPm</key>\n' >> $config
+		printf '\t\t<key>AsusAICPUPM</key>\n' >> $config
 		printf '\t\t<true/>\n' >> $config
 	else
-		printf '\t\t<key>AsusAICPUPM</key>\n' >> $config
+		printf '\t\t<key>KernelPm</key>\n' >> $config
 		printf '\t\t<true/>\n' >> $config
 	fi
 
@@ -798,7 +814,6 @@ EOT
 		printf '\t\t\t</dict>\n' >> $config
 	elif ([ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "4x0G2" ])
 	then
-		
 		printf '\t\t\t<dict>\n' >> $config
 		printf '\t\t\t\t<key>Name</key>\n' >> $config
 		printf '\t\t\t\t<string>AppleIntelFramebufferAzul</string>\n' >> $config
@@ -827,6 +842,22 @@ EOT
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HD4400/4600 HDMI Freeze</string>\n' >> $config
+		printf '\t\t\t</dict>\n' >> $config	
+	elif ([ "$CloverModel" == "4x0G2Broadwell" ])
+	then
+		printf '\t\t\t<dict>\n' >> $config
+		printf '\t\t\t\t<key>Name</key>\n' >> $config
+		printf '\t\t\t\t<string>AppleIntelBDWGraphicsFramebuffer</string>\n' >> $config
+		printf '\t\t\t\t<key>Find</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tAQULAAAEAAAHBQAAAgQLAAAEAAAHBQAA/wAAAAEAAABAAAAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Replace</key>\n' >> $config
+		printf '\t\t\t\t<data>\n' >> $config
+		printf '\t\t\t\tAQULAAAIAACCAAAAAgQLAAAIAACCAAAA/wAAAAEAAABAAAAA\n' >> $config
+		printf '\t\t\t\t</data>\n' >> $config
+		printf '\t\t\t\t<key>Comment</key>\n' >> $config
+		printf '\t\t\t\t<string>Patch HD5500 HDMI Audio</string>\n' >> $config
 		printf '\t\t\t</dict>\n' >> $config	
 	elif [ "$CloverModel" == "ZBook" ]
 	then
@@ -1098,7 +1129,7 @@ EOT
 			printf '\t\t\t\t<string>IDT 7695</string>\n' >> $config
 			printf '\t\t\t</dict>\n' >> $config
 			;;
-		4x0G2)
+		4x0G2*)
 			printf '\t\t\t<dict>\n' >> $config
 			printf '\t\t\t\t<key>Name</key>\n' >> $config
 			printf '\t\t\t\t<string>AppleHDA</string>\n' >> $config
@@ -1191,22 +1222,22 @@ EOT
 		CurrentTheme=$(/usr/libexec/PlistBuddy -c 'Print :GUI:Theme' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
 	fi
 
-	if ( ( [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "ZBook" ]  || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "4x40" ] || [ "$CloverModel" == "6x70" ] || [ "$CloverModel" == "4x0G0" ] || [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ] ) && [ "$CloverResolution" == "high" ] )
+	if ( ( [ "$CloverModel" != "6x70AMD" ] && [ "$CloverModel" != "6x70NVIDIA" ]  ) && [ "$CloverResolution" == "low" ] )
 	then
-		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
-		then
-			CurrentTheme='Yosemite'
-		fi
-
-		printf '\t\t<key>Theme</key>\n' >> $config
-		printf '\t\t<string>'"$CurrentTheme"'</string>\n' >> $config
-	else
 		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
 		then
 			CurrentTheme='Yosemite S'
 		fi
 		printf '\t\t<key>ScreenResolution</key>\n' >> $config
 		printf '\t\t<string>1024x768</string>\n' >> $config
+		printf '\t\t<key>Theme</key>\n' >> $config
+		printf '\t\t<string>'"$CurrentTheme"'</string>\n' >> $config	
+	else
+		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
+		then
+			CurrentTheme='Yosemite'
+		fi
+
 		printf '\t\t<key>Theme</key>\n' >> $config
 		printf '\t\t<string>'"$CurrentTheme"'</string>\n' >> $config
 	fi
