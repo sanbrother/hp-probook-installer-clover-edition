@@ -20,6 +20,18 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.4.0 (August 25th 2015)**
+
+* Add support for 4x0 G2 Broadwell.
+* Clover 3261.
+* ACPIBacklight.
+* SSDTPrgen 15.9.
+* XtraFinder, Clover Configurator.
+* Fix SSDT DGFX for 8x60/8x70 with AMD/nVidia.
+* Both Atheros and Broadcom Bluetooth kext will be installed by default.
+* Use OsxAptioFix2Drv-64.efi instead of OsxAptioFixDrv-64.efi for 8x70 AMD model.
+* Remove FakeSMC plugins.
+
 **Version 6.3.9.5 (August 13th 2015)**
 
 * Fix HDMI audio for HD4000 1600x900+.

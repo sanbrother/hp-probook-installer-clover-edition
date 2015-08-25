@@ -8649,6 +8649,38 @@
 																			<integer>0</integer>
 																		</dict>
 																		<dict>
+																			<key>CHILDREN</key>
+																			<array/>
+																			<key>GID</key>
+																			<integer>0</integer>
+																			<key>PATH</key>
+																			<string>OSX Support Files/CommonKexts/Extensions/10.11/BrcmBluetoothInjector.kext</string>
+																			<key>PATH_TYPE</key>
+																			<integer>1</integer>
+																			<key>PERMISSIONS</key>
+																			<integer>493</integer>
+																			<key>TYPE</key>
+																			<integer>3</integer>
+																			<key>UID</key>
+																			<integer>0</integer>
+																		</dict>
+																		<dict>
+																			<key>CHILDREN</key>
+																			<array/>
+																			<key>GID</key>
+																			<integer>0</integer>
+																			<key>PATH</key>
+																			<string>OSX Support Files/CommonKexts/Extensions/BrcmPatchRAM.kext</string>
+																			<key>PATH_TYPE</key>
+																			<integer>1</integer>
+																			<key>PERMISSIONS</key>
+																			<integer>493</integer>
+																			<key>TYPE</key>
+																			<integer>3</integer>
+																			<key>UID</key>
+																			<integer>0</integer>
+																		</dict>
+																		<dict>
 																			<key>BUNDLE_CAN_DOWNGRADE</key>
 																			<true/>
 																			<key>CHILDREN</key>
@@ -8827,6 +8859,22 @@
 																			<integer>0</integer>
 																			<key>PATH</key>
 																			<string>OSX Support Files/CommonKexts/Extensions/IntelMausiEthernet.kext</string>
+																			<key>PATH_TYPE</key>
+																			<integer>1</integer>
+																			<key>PERMISSIONS</key>
+																			<integer>493</integer>
+																			<key>TYPE</key>
+																			<integer>3</integer>
+																			<key>UID</key>
+																			<integer>0</integer>
+																		</dict>
+																		<dict>
+																			<key>CHILDREN</key>
+																			<array/>
+																			<key>GID</key>
+																			<integer>0</integer>
+																			<key>PATH</key>
+																			<string>OSX Support Files/CommonKexts/Extensions/IOath3kfrmwr.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
 																			<key>PERMISSIONS</key>
@@ -28401,6 +28449,39 @@
 																	<key>GID</key>
 																	<integer>0</integer>
 																	<key>PATH</key>
+																	<string>Clover UEFI/EFI/CLOVER/drivers64UEFI/OsxAptioFix2Drv-64.efi</string>
+																	<key>PATH_TYPE</key>
+																	<integer>1</integer>
+																	<key>PERMISSIONS</key>
+																	<integer>511</integer>
+																	<key>TYPE</key>
+																	<integer>3</integer>
+																	<key>UID</key>
+																	<integer>0</integer>
+																</dict>
+															</array>
+															<key>GID</key>
+															<integer>0</integer>
+															<key>PATH</key>
+															<string>drivers64UEFI</string>
+															<key>PATH_TYPE</key>
+															<integer>0</integer>
+															<key>PERMISSIONS</key>
+															<integer>493</integer>
+															<key>TYPE</key>
+															<integer>2</integer>
+															<key>UID</key>
+															<integer>0</integer>
+														</dict>
+														<dict>
+															<key>CHILDREN</key>
+															<array>
+																<dict>
+																	<key>CHILDREN</key>
+																	<array/>
+																	<key>GID</key>
+																	<integer>0</integer>
+																	<key>PATH</key>
 																	<string>ROM/1002_6841.ROM</string>
 																	<key>PATH_TYPE</key>
 																	<integer>1</integer>
@@ -32058,6 +32139,22 @@
 													<integer>0</integer>
 													<key>PATH</key>
 													<string>OSX Support Files/ModelKexts/AppleHDAALC/ALC 282/AppleHDAALC.kext</string>
+													<key>PATH_TYPE</key>
+													<integer>1</integer>
+													<key>PERMISSIONS</key>
+													<integer>493</integer>
+													<key>TYPE</key>
+													<integer>3</integer>
+													<key>UID</key>
+													<integer>0</integer>
+												</dict>
+												<dict>
+													<key>CHILDREN</key>
+													<array/>
+													<key>GID</key>
+													<integer>0</integer>
+													<key>PATH</key>
+													<string>OSX Support Files/CommonKexts/Extensions/CodecCommander.kext</string>
 													<key>PATH_TYPE</key>
 													<integer>1</integer>
 													<key>PERMISSIONS</key>
@@ -40769,6 +40866,1123 @@
 			<key>UUID</key>
 			<string>B0E7627D-2A68-4387-852B-BB999FDCE5C4</string>
 		</dict>
+		<dict>
+			<key>PACKAGE_FILES</key>
+			<dict>
+				<key>DEFAULT_INSTALL_LOCATION</key>
+				<string>/</string>
+				<key>HIERARCHY</key>
+				<dict>
+					<key>CHILDREN</key>
+					<array>
+						<dict>
+							<key>CHILDREN</key>
+							<array>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>80</integer>
+									<key>PATH</key>
+									<string>Utilities</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+							</array>
+							<key>GID</key>
+							<integer>80</integer>
+							<key>PATH</key>
+							<string>Applications</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+							<key>PERMISSIONS</key>
+							<integer>509</integer>
+							<key>TYPE</key>
+							<integer>1</integer>
+							<key>UID</key>
+							<integer>0</integer>
+						</dict>
+						<dict>
+							<key>CHILDREN</key>
+							<array>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>80</integer>
+									<key>PATH</key>
+									<string>Application Support</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Documentation</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Filesystems</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Frameworks</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Input Methods</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Internet Plug-Ins</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>LaunchAgents</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>LaunchDaemons</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>PreferencePanes</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Preferences</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>80</integer>
+									<key>PATH</key>
+									<string>Printers</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>PrivilegedHelperTools</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>QuickLook</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>QuickTime</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Screen Savers</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Scripts</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Services</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Widgets</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+							</array>
+							<key>GID</key>
+							<integer>0</integer>
+							<key>PATH</key>
+							<string>Library</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+							<key>PERMISSIONS</key>
+							<integer>493</integer>
+							<key>TYPE</key>
+							<integer>1</integer>
+							<key>UID</key>
+							<integer>0</integer>
+						</dict>
+						<dict>
+							<key>CHILDREN</key>
+							<array>
+								<dict>
+									<key>CHILDREN</key>
+									<array>
+										<dict>
+											<key>CHILDREN</key>
+											<array>
+												<dict>
+													<key>BUNDLE_CAN_DOWNGRADE</key>
+													<true/>
+													<key>CHILDREN</key>
+													<array/>
+													<key>GID</key>
+													<integer>0</integer>
+													<key>PATH</key>
+													<string>OSX Support Files/ModelKexts/AppleHDAALC/ALC 282/AppleHDAALC.kext</string>
+													<key>PATH_TYPE</key>
+													<integer>1</integer>
+													<key>PERMISSIONS</key>
+													<integer>493</integer>
+													<key>TYPE</key>
+													<integer>3</integer>
+													<key>UID</key>
+													<integer>0</integer>
+												</dict>
+												<dict>
+													<key>CHILDREN</key>
+													<array/>
+													<key>GID</key>
+													<integer>0</integer>
+													<key>PATH</key>
+													<string>OSX Support Files/CommonKexts/Extensions/CodecCommander.kext</string>
+													<key>PATH_TYPE</key>
+													<integer>1</integer>
+													<key>PERMISSIONS</key>
+													<integer>493</integer>
+													<key>TYPE</key>
+													<integer>3</integer>
+													<key>UID</key>
+													<integer>0</integer>
+												</dict>
+											</array>
+											<key>GID</key>
+											<integer>0</integer>
+											<key>PATH</key>
+											<string>Extensions</string>
+											<key>PATH_TYPE</key>
+											<integer>0</integer>
+											<key>PERMISSIONS</key>
+											<integer>493</integer>
+											<key>TYPE</key>
+											<integer>1</integer>
+											<key>UID</key>
+											<integer>0</integer>
+										</dict>
+									</array>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Library</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+							</array>
+							<key>GID</key>
+							<integer>0</integer>
+							<key>PATH</key>
+							<string>System</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+							<key>PERMISSIONS</key>
+							<integer>493</integer>
+							<key>TYPE</key>
+							<integer>1</integer>
+							<key>UID</key>
+							<integer>0</integer>
+						</dict>
+						<dict>
+							<key>CHILDREN</key>
+							<array>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Shared</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>1023</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+							</array>
+							<key>GID</key>
+							<integer>80</integer>
+							<key>PATH</key>
+							<string>Users</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+							<key>PERMISSIONS</key>
+							<integer>493</integer>
+							<key>TYPE</key>
+							<integer>1</integer>
+							<key>UID</key>
+							<integer>0</integer>
+						</dict>
+					</array>
+					<key>GID</key>
+					<integer>0</integer>
+					<key>PATH</key>
+					<string>/</string>
+					<key>PATH_TYPE</key>
+					<integer>0</integer>
+					<key>PERMISSIONS</key>
+					<integer>493</integer>
+					<key>TYPE</key>
+					<integer>1</integer>
+					<key>UID</key>
+					<integer>0</integer>
+				</dict>
+				<key>PAYLOAD_TYPE</key>
+				<integer>0</integer>
+				<key>VERSION</key>
+				<integer>2</integer>
+			</dict>
+			<key>PACKAGE_SCRIPTS</key>
+			<dict>
+				<key>POSTINSTALL_PATH</key>
+				<dict>
+					<key>PATH</key>
+					<string>OSX Support Files/ModelKexts/postinstall_4x0G2Broadwell.sh</string>
+					<key>PATH_TYPE</key>
+					<integer>1</integer>
+				</dict>
+				<key>RESOURCES</key>
+				<array/>
+			</dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<integer>1</integer>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>com.MadMax.pkg.Support.4x0G2Broadwell</string>
+				<key>LOCATION</key>
+				<integer>0</integer>
+				<key>NAME</key>
+				<string>Support.4x0G2Broadwell</string>
+				<key>OVERWRITE_PERMISSIONS</key>
+				<false/>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>0</integer>
+			<key>UUID</key>
+			<string>1B4EEA44-D4F5-479E-AD34-47E973011679</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_FILES</key>
+			<dict>
+				<key>DEFAULT_INSTALL_LOCATION</key>
+				<string>/</string>
+				<key>HIERARCHY</key>
+				<dict>
+					<key>CHILDREN</key>
+					<array>
+						<dict>
+							<key>CHILDREN</key>
+							<array>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>80</integer>
+									<key>PATH</key>
+									<string>Utilities</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+							</array>
+							<key>GID</key>
+							<integer>80</integer>
+							<key>PATH</key>
+							<string>Applications</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+							<key>PERMISSIONS</key>
+							<integer>509</integer>
+							<key>TYPE</key>
+							<integer>1</integer>
+							<key>UID</key>
+							<integer>0</integer>
+						</dict>
+						<dict>
+							<key>CHILDREN</key>
+							<array>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>80</integer>
+									<key>PATH</key>
+									<string>Application Support</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Documentation</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Filesystems</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Frameworks</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Input Methods</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Internet Plug-Ins</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>LaunchAgents</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>LaunchDaemons</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>PreferencePanes</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Preferences</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>80</integer>
+									<key>PATH</key>
+									<string>Printers</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>PrivilegedHelperTools</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>QuickLook</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>QuickTime</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Screen Savers</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Scripts</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Services</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Widgets</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+							</array>
+							<key>GID</key>
+							<integer>0</integer>
+							<key>PATH</key>
+							<string>Library</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+							<key>PERMISSIONS</key>
+							<integer>493</integer>
+							<key>TYPE</key>
+							<integer>1</integer>
+							<key>UID</key>
+							<integer>0</integer>
+						</dict>
+						<dict>
+							<key>CHILDREN</key>
+							<array>
+								<dict>
+									<key>CHILDREN</key>
+									<array>
+										<dict>
+											<key>CHILDREN</key>
+											<array/>
+											<key>GID</key>
+											<integer>0</integer>
+											<key>PATH</key>
+											<string>Extensions</string>
+											<key>PATH_TYPE</key>
+											<integer>0</integer>
+											<key>PERMISSIONS</key>
+											<integer>493</integer>
+											<key>TYPE</key>
+											<integer>1</integer>
+											<key>UID</key>
+											<integer>0</integer>
+										</dict>
+									</array>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Library</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+							</array>
+							<key>GID</key>
+							<integer>0</integer>
+							<key>PATH</key>
+							<string>System</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+							<key>PERMISSIONS</key>
+							<integer>493</integer>
+							<key>TYPE</key>
+							<integer>1</integer>
+							<key>UID</key>
+							<integer>0</integer>
+						</dict>
+						<dict>
+							<key>CHILDREN</key>
+							<array>
+								<dict>
+									<key>CHILDREN</key>
+									<array>
+										<dict>
+											<key>CHILDREN</key>
+											<array/>
+											<key>GID</key>
+											<integer>0</integer>
+											<key>PATH</key>
+											<string>DSDT Generator/03c_Haswell.txt</string>
+											<key>PATH_TYPE</key>
+											<integer>1</integer>
+											<key>PERMISSIONS</key>
+											<integer>420</integer>
+											<key>TYPE</key>
+											<integer>3</integer>
+											<key>UID</key>
+											<integer>0</integer>
+										</dict>
+										<dict>
+											<key>CHILDREN</key>
+											<array/>
+											<key>GID</key>
+											<integer>0</integer>
+											<key>PATH</key>
+											<string>DSDT Generator/12_Brightness_Haswell.txt</string>
+											<key>PATH_TYPE</key>
+											<integer>1</integer>
+											<key>PERMISSIONS</key>
+											<integer>420</integer>
+											<key>TYPE</key>
+											<integer>3</integer>
+											<key>UID</key>
+											<integer>0</integer>
+										</dict>
+										<dict>
+											<key>CHILDREN</key>
+											<array/>
+											<key>GID</key>
+											<integer>0</integer>
+											<key>PATH</key>
+											<string>DSDT Generator/13b_EliteBookKeyboard.txt</string>
+											<key>PATH_TYPE</key>
+											<integer>1</integer>
+											<key>PERMISSIONS</key>
+											<integer>420</integer>
+											<key>TYPE</key>
+											<integer>3</integer>
+											<key>UID</key>
+											<integer>0</integer>
+										</dict>
+										<dict>
+											<key>CHILDREN</key>
+											<array/>
+											<key>GID</key>
+											<integer>0</integer>
+											<key>PATH</key>
+											<string>DSDT Generator/14_audio_HDEF-layout1.txt</string>
+											<key>PATH_TYPE</key>
+											<integer>1</integer>
+											<key>PERMISSIONS</key>
+											<integer>420</integer>
+											<key>TYPE</key>
+											<integer>3</integer>
+											<key>UID</key>
+											<integer>0</integer>
+										</dict>
+										<dict>
+											<key>CHILDREN</key>
+											<array/>
+											<key>GID</key>
+											<integer>0</integer>
+											<key>PATH</key>
+											<string>DSDT Generator/4x0G1.txt</string>
+											<key>PATH_TYPE</key>
+											<integer>1</integer>
+											<key>PERMISSIONS</key>
+											<integer>420</integer>
+											<key>TYPE</key>
+											<integer>3</integer>
+											<key>UID</key>
+											<integer>0</integer>
+										</dict>
+									</array>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>tempDSDT</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>493</integer>
+									<key>TYPE</key>
+									<integer>2</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+							</array>
+							<key>GID</key>
+							<integer>0</integer>
+							<key>PATH</key>
+							<string>tmp</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+							<key>PERMISSIONS</key>
+							<integer>493</integer>
+							<key>TYPE</key>
+							<integer>2</integer>
+							<key>UID</key>
+							<integer>0</integer>
+						</dict>
+						<dict>
+							<key>CHILDREN</key>
+							<array>
+								<dict>
+									<key>CHILDREN</key>
+									<array/>
+									<key>GID</key>
+									<integer>0</integer>
+									<key>PATH</key>
+									<string>Shared</string>
+									<key>PATH_TYPE</key>
+									<integer>0</integer>
+									<key>PERMISSIONS</key>
+									<integer>1023</integer>
+									<key>TYPE</key>
+									<integer>1</integer>
+									<key>UID</key>
+									<integer>0</integer>
+								</dict>
+							</array>
+							<key>GID</key>
+							<integer>80</integer>
+							<key>PATH</key>
+							<string>Users</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+							<key>PERMISSIONS</key>
+							<integer>493</integer>
+							<key>TYPE</key>
+							<integer>1</integer>
+							<key>UID</key>
+							<integer>0</integer>
+						</dict>
+					</array>
+					<key>GID</key>
+					<integer>0</integer>
+					<key>PATH</key>
+					<string>/</string>
+					<key>PATH_TYPE</key>
+					<integer>0</integer>
+					<key>PERMISSIONS</key>
+					<integer>493</integer>
+					<key>TYPE</key>
+					<integer>1</integer>
+					<key>UID</key>
+					<integer>0</integer>
+				</dict>
+				<key>PAYLOAD_TYPE</key>
+				<integer>0</integer>
+				<key>VERSION</key>
+				<integer>2</integer>
+			</dict>
+			<key>PACKAGE_SCRIPTS</key>
+			<dict>
+				<key>POSTINSTALL_PATH</key>
+				<dict>
+					<key>PATH</key>
+					<string>Clover Config/4x0G2Broadwell</string>
+					<key>PATH_TYPE</key>
+					<integer>1</integer>
+				</dict>
+				<key>PREINSTALL_PATH</key>
+				<dict/>
+				<key>RESOURCES</key>
+				<array/>
+			</dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<integer>1</integer>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>com.MadMax.pkg.Part1.4x0G2Broadwell</string>
+				<key>LOCATION</key>
+				<integer>0</integer>
+				<key>NAME</key>
+				<string>Part1.4x0G2Broadwell</string>
+				<key>OVERWRITE_PERMISSIONS</key>
+				<false/>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>0</integer>
+			<key>UUID</key>
+			<string>125F3EDA-CA45-4898-9FB0-FFCBA341D28C</string>
+		</dict>
 	</array>
 	<key>PROJECT</key>
 	<dict>
@@ -40845,7 +42059,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 3253 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 3261 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -40918,8 +42132,7 @@
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 4x30s and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 4x30s and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -40956,8 +42169,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 4x40s and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 4x40s and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -40994,8 +42206,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 4x0 G0 and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 4x0 G0 and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41032,8 +42243,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 3x0 G1 and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 3x0 G1 and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41070,8 +42280,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 4x0 G1 and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 4x0 G1 and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41108,8 +42317,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 4x0 G2 and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 4x0 G2 Haswell and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41129,7 +42337,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>4x0 G2</string>
+														<string>4x0 G2 Haswell</string>
 													</dict>
 												</array>
 												<key>TOOLTIP</key>
@@ -41138,6 +42346,43 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 												<integer>0</integer>
 												<key>UUID</key>
 												<string>D2E354D4-F455-4DA4-BA9B-3F37FD873BEA</string>
+											</dict>
+											<dict>
+												<key>DESCRIPTION</key>
+												<array>
+													<dict>
+														<key>LANGUAGE</key>
+														<string>English</string>
+														<key>VALUE</key>
+														<string>Automatically detects and installs the support files for your 4x0 G2 Broadwell and the OS X version you have installed.</string>
+													</dict>
+												</array>
+												<key>OPTIONS</key>
+												<dict>
+													<key>HIDDEN</key>
+													<false/>
+													<key>STATE</key>
+													<integer>2</integer>
+												</dict>
+												<key>PACKAGE_UUID</key>
+												<string>1B4EEA44-D4F5-479E-AD34-47E973011679</string>
+												<key>REQUIREMENTS</key>
+												<array/>
+												<key>TITLE</key>
+												<array>
+													<dict>
+														<key>LANGUAGE</key>
+														<string>English</string>
+														<key>VALUE</key>
+														<string>4x0 G2 Broadwell</string>
+													</dict>
+												</array>
+												<key>TOOLTIP</key>
+												<array/>
+												<key>TYPE</key>
+												<integer>0</integer>
+												<key>UUID</key>
+												<string>800A67AA-3F53-4EAD-9149-CC5E67E28E1D</string>
 											</dict>
 										</array>
 										<key>DESCRIPTION</key>
@@ -41175,8 +42420,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 6x60b/8x60p and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 6x60b/8x60p and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41213,8 +42457,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 6x60b, 8x60p and 8x60w with AMD graphics card and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 6x60b, 8x60p and 8x60w with AMD graphics card and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41251,8 +42494,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 8x60w with nVidia graphics card and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 8x60w with nVidia graphics card and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41289,8 +42531,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 2x70p/6x70b/8x70p and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 2x70p/6x70b/8x70p and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41327,8 +42568,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 6x70b/8x70p/8x70w with AMD/nVidia graphics card and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 6x70b/8x70p/8x70w with AMD/nVidia graphics card and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41365,8 +42605,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 9470m and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 9470m and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41403,8 +42642,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<key>LANGUAGE</key>
 														<string>English</string>
 														<key>VALUE</key>
-														<string>Automatically detects and installs the support files for your 8x0 G1 and the OS X version you have installed.
-Supported OS X versions: Mavericks, Yosemite.</string>
+														<string>Automatically detects and installs the support files for your 8x0 G1 and the OS X version you have installed.</string>
 													</dict>
 												</array>
 												<key>OPTIONS</key>
@@ -41731,7 +42969,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 																<key>LANGUAGE</key>
 																<string>English</string>
 																<key>VALUE</key>
-																<string>Select this, if you have a 4x0 G2 model.</string>
+																<string>Select this, if you have a 4x0 G2 Haswell model.</string>
 															</dict>
 														</array>
 														<key>OPTIONS</key>
@@ -41751,7 +42989,7 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 																<key>LANGUAGE</key>
 																<string>English</string>
 																<key>VALUE</key>
-																<string>4x0 G2</string>
+																<string>4x0 G2 Haswell</string>
 															</dict>
 														</array>
 														<key>TOOLTIP</key>
@@ -41760,6 +42998,43 @@ Supported OS X versions: Mavericks, Yosemite.</string>
 														<integer>0</integer>
 														<key>UUID</key>
 														<string>23112BC6-3C5B-4ABB-BFCD-CF1A28A6541C</string>
+													</dict>
+													<dict>
+														<key>DESCRIPTION</key>
+														<array>
+															<dict>
+																<key>LANGUAGE</key>
+																<string>English</string>
+																<key>VALUE</key>
+																<string>Select this, if you have a 4x0 G2 Broadwell model.</string>
+															</dict>
+														</array>
+														<key>OPTIONS</key>
+														<dict>
+															<key>HIDDEN</key>
+															<false/>
+															<key>STATE</key>
+															<integer>2</integer>
+														</dict>
+														<key>PACKAGE_UUID</key>
+														<string>125F3EDA-CA45-4898-9FB0-FFCBA341D28C</string>
+														<key>REQUIREMENTS</key>
+														<array/>
+														<key>TITLE</key>
+														<array>
+															<dict>
+																<key>LANGUAGE</key>
+																<string>English</string>
+																<key>VALUE</key>
+																<string>4x0 G2 Broadwell</string>
+															</dict>
+														</array>
+														<key>TOOLTIP</key>
+														<array/>
+														<key>TYPE</key>
+														<integer>0</integer>
+														<key>UUID</key>
+														<string>AD6136E6-E1AC-4F62-B25B-6006AABA4384</string>
 													</dict>
 												</array>
 												<key>DESCRIPTION</key>
@@ -42634,67 +43909,6 @@ Credits for RevoGirl and PikeRAlpha.</string>
 												<key>LANGUAGE</key>
 												<string>English</string>
 												<key>VALUE</key>
-												<string>Install IOath3kfrmwr.kext to enable Atheros bluetooth.
-Caution: the kext may cause some sleep problem.</string>
-											</dict>
-										</array>
-										<key>OPTIONS</key>
-										<dict>
-											<key>HIDDEN</key>
-											<false/>
-											<key>STATE</key>
-											<integer>2</integer>
-										</dict>
-										<key>PACKAGE_UUID</key>
-										<string>6866CD08-9CCF-4E78-B967-E53A90EDAD78</string>
-										<key>REQUIREMENTS</key>
-										<array/>
-										<key>TITLE</key>
-										<array/>
-										<key>TOOLTIP</key>
-										<array/>
-										<key>TYPE</key>
-										<integer>0</integer>
-										<key>UUID</key>
-										<string>FA1DFC83-6415-4828-AB71-7E0E7974E7FD</string>
-									</dict>
-									<dict>
-										<key>DESCRIPTION</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
-												<string>Install BrcmPatchRAM.kext (10.10-) or BrcmBluetoothInjector.kext (10.11+) to enable Broadcom bluetooth.</string>
-											</dict>
-										</array>
-										<key>OPTIONS</key>
-										<dict>
-											<key>HIDDEN</key>
-											<false/>
-											<key>STATE</key>
-											<integer>2</integer>
-										</dict>
-										<key>PACKAGE_UUID</key>
-										<string>94740847-50A7-4ADD-996E-E1E081B341B3</string>
-										<key>REQUIREMENTS</key>
-										<array/>
-										<key>TITLE</key>
-										<array/>
-										<key>TOOLTIP</key>
-										<array/>
-										<key>TYPE</key>
-										<integer>0</integer>
-										<key>UUID</key>
-										<string>64BCE1B9-735F-425E-B7A4-BC0BA6990800</string>
-									</dict>
-									<dict>
-										<key>DESCRIPTION</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
 												<string>Fix gradient glitches in model with AMD graphical card by setting basic params in EDID to 90.
 Note: This can make system unbootable on models with Intel HD.</string>
 											</dict>
@@ -43454,6 +44668,38 @@ NOTE: RESTART IS REQUIRED FOR THIS OPTION.</string>
 								<key>UUID</key>
 								<string>EB6931FD-A244-4B15-95DC-B7E0BA38401E</string>
 							</dict>
+							<key>6866CD08-9CCF-4E78-B967-E53A90EDAD78</key>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Install IOath3kfrmwr.kext to enable Atheros bluetooth.
+Caution: the kext may cause some sleep problem.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>6866CD08-9CCF-4E78-B967-E53A90EDAD78</string>
+								<key>REQUIREMENTS</key>
+								<array/>
+								<key>TITLE</key>
+								<array/>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>FA1DFC83-6415-4828-AB71-7E0E7974E7FD</string>
+							</dict>
 							<key>6A86D2D2-2039-4812-9D8B-A738407B8FDB</key>
 							<dict>
 								<key>DESCRIPTION</key>
@@ -43530,6 +44776,37 @@ Mandatory for all 4x30s models with Atheros WiFi card!!!</string>
 								<integer>0</integer>
 								<key>UUID</key>
 								<string>120642D8-5F29-4C96-B740-60A780B92BE4</string>
+							</dict>
+							<key>94740847-50A7-4ADD-996E-E1E081B341B3</key>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Install BrcmPatchRAM.kext (10.10-) or BrcmBluetoothInjector.kext (10.11+) to enable Broadcom bluetooth.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>94740847-50A7-4ADD-996E-E1E081B341B3</string>
+								<key>REQUIREMENTS</key>
+								<array/>
+								<key>TITLE</key>
+								<array/>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>64BCE1B9-735F-425E-B7A4-BC0BA6990800</string>
 							</dict>
 							<key>A6B90AAD-540D-40AB-B6CC-796FFD95201E</key>
 							<dict>
