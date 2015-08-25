@@ -181,7 +181,8 @@ exitcode=1
 			then
 				if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ]
 				then
-					cp $file /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
+					./iasl -p SSDT-1 $file
+					cp ./SSDT-1.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
 				else
 					./patchmatic ./DSDT.dsl ./11b_Radeon_OFF_DSDT.txt ./DSDT.dsl			
 					./patchmatic $file ./11a_Radeon_OFF_SSDT.txt $file
@@ -209,7 +210,8 @@ exitcode=1
 				then
 					if [ "$CloverModel" == "6x60wAMD" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ]
 					then
-						cp $file /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
+						./iasl -p SSDT-1 $file
+						cp ./SSDT-1.aml /Volumes/EFI/EFI/CLOVER/acpi/patched/SSDT-1.aml
 					else
 						./patchmatic ./DSDT.dsl ./11b2_Radeon_OFF_DSDT.txt ./DSDT.dsl			
 						./patchmatic $file ./11a_Radeon_OFF_SSDT.txt $file
