@@ -8,7 +8,7 @@ osxver=`/usr/libexec/PlistBuddy -c 'Print ProductVersion' "${3}"/System/Library/
 
 if [ "$CloverModel" != "no" ]
 then
-	
+
 	if [ "$CloverResolution" == "no" ]
 	then
 	/usr/bin/osascript <<EOT
@@ -27,9 +27,9 @@ EOT
 	fi
 
 
-	config="/tmp/config.plist"	
+	config="/tmp/config.plist"
 
-	# header 
+	# header
 	printf '<?xml version="1.0" encoding="UTF-8"?>\n' > $config
 	printf '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n' >> $config
 	printf '<plist version="1.0">\n' >> $config
@@ -67,7 +67,7 @@ EOT
 		printf '\t\t</dict>\n' >> $config
 	elif [ "$CloverModel" == "6x70AMD" ]
 	then
-		case $CloverResolution in 
+		case $CloverResolution in
 			low)
 				printf '\t\t<key>DualLink</key>\n' >> $config
 				printf '\t\t<integer>0</integer>\n' >> $config
@@ -92,7 +92,7 @@ EOT
 		printf '\t\t<true/>\n' >> $config
 	elif [ "$CloverModel" == "6x70NVIDIA" ]
 	then
-		case $CloverResolution in 
+		case $CloverResolution in
 			low)
 				printf '\t\t<key>DualLink</key>\n' >> $config
 				printf '\t\t<integer>0</integer>\n' >> $config
@@ -102,7 +102,7 @@ EOT
 				printf '\t\t<integer>1</integer>\n' >> $config
 				;;
 		esac
-		
+
 		printf '\t\t<key>Inject</key>\n' >> $config
 		printf '\t\t<dict>\n' >> $config
 		printf '\t\t\t<key>Intel</key>\n' >> $config
@@ -116,7 +116,7 @@ EOT
 		printf '\t\t<true/>\n' >> $config
 	elif [ "$CloverModel" == "6x60wAMD" ]
 	then
-		case $CloverResolution in 
+		case $CloverResolution in
 			low)
 				printf '\t\t<key>DualLink</key>\n' >> $config
 				printf '\t\t<integer>0</integer>\n' >> $config
@@ -141,7 +141,7 @@ EOT
 		printf '\t\t<true/>\n' >> $config
 	elif [ "$CloverModel" == "6x60wNVIDIA" ]
 	then
-		case $CloverResolution in 
+		case $CloverResolution in
 			low)
 				printf '\t\t<key>DualLink</key>\n' >> $config
 				printf '\t\t<integer>0</integer>\n' >> $config
@@ -164,7 +164,7 @@ EOT
 		printf '\t\t<true/>\n' >> $config
 	elif [ "$CloverModel" == "6x60pAMD" ]
 	then
-		case $CloverResolution in 
+		case $CloverResolution in
 			low)
 				printf '\t\t<key>DualLink</key>\n' >> $config
 				printf '\t\t<integer>0</integer>\n' >> $config
@@ -194,7 +194,7 @@ EOT
 		printf '\t\t<key>VideoPorts</key>\n' >> $config
 		printf '\t\t<integer>5</integer>\n' >> $config
 	else
-		case $CloverResolution in 
+		case $CloverResolution in
 			low)
 				printf '\t\t<key>DualLink</key>\n' >> $config
 				printf '\t\t<integer>0</integer>\n' >> $config
@@ -254,16 +254,16 @@ EOT
 			if [[ "$mlb" == "" ]] || [[ "$mlb" == Error* ]]
 			then
 				boardserial=""
-			else 
+			else
 				boardserial="$mlb"
 			fi
 		fi
 	else
 		boardserial=""
 	fi
-	
-	
-	case $CloverModel in 
+
+
+	case $CloverModel in
 		6x60pAMD|6x60wAMD)
 			boardtype="10"
 			chassistype="8"
@@ -319,7 +319,7 @@ EOT
 			prodname="MacBookPro9,2"
 			serial="C02L"$week_letter$(random_char)$(random_char)$(random_char)"DTY3"
 			ModelY="2"
-			;;		
+			;;
 		9470)
 			boardtype="10"
 			chassistype="10"
@@ -443,13 +443,13 @@ EOT
 	printf '\t\t<key>BoardSerialNumber</key>\n' >> $config
 	printf '\t\t<string>'"$boardserial"'</string>\n' >> $config
 
-	
+
 	printf '\t\t<key>Mobile</key>\n' >> $config
 	printf '\t\t<'"$mobile"'/>\n' >> $config
 	printf '\t\t<key>Trust</key>\n' >> $config
 	printf '\t\t<true/>\n' >> $config
 	printf '\t</dict>\n' >> $config
-	
+
 	# RTVariables section
 	printf '\t<key>RtVariables</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
@@ -471,11 +471,11 @@ EOT
 	printf '\t<key>Boot</key>\n' >> $config
 	printf '\t<dict>\n' >> $config
 
-	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ] 
+	if [ "$CloverModel" == "9470" ] || [ "$CloverModel" == "6x70AMD" ] || [ "$CloverModel" == "6x70NVIDIA" ]
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
 		printf '\t\t<string>-xcpm kext-dev-mode=1 dart=0 rootless=0</string>\n' >> $config
-	elif [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "ZBook" ] || [ "$CloverModel" == "4x0G2Broadwell" ] 
+	elif [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "3x0G1" ] || [ "$CloverModel" == "ZBook" ] || [ "$CloverModel" == "4x0G2Broadwell" ]
 	then
 		printf '\t\t<key>Arguments</key>\n' >> $config
 		printf '\t\t<string>kext-dev-mode=1 dart=0 rootless=0</string>\n' >> $config
@@ -571,11 +571,11 @@ EOT
 		printf '\t\t<key>ATIConnectorsPatch</key>\n' >> $config
 		printf '\t\t<string>0200000040000000090100001001000100040000040300000001020011020105000400000402000000010200210202020004000004020000000100001200030310000000100000000001000000000408</string>\n' >> $config
 	fi
-	
+
 	printf '\t\t<key>AppleRTC</key>\n' >> $config
 	printf '\t\t<true/>\n' >> $config
 
-	
+
 
 	if [ "$CloverModel" == "4x30" ] || [ "$CloverModel" == "4x40" ] || [[ $CloverModel == 6x60* ]] || [ "$CloverModel" == "6x70" ]
 	then
@@ -603,7 +603,7 @@ EOT
 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
 	printf '\t\t\t\t<string>Enable Trim on SSD</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
-	
+
 	if [ "$CloverModel" != "6x60pAMD" ] && [ "$CloverModel" != "6x0wAMD" ] && [ "$CloverModel" != "6x60wNVIDIA" ] && [ "$CloverModel" != "6x70AMD" ] && [ "$CloverModel" != "6x70NVIDIA" ]
 	then
 
@@ -622,6 +622,24 @@ EOT
 			printf '\t\t\t\t</data>\n' >> $config
 			printf '\t\t\t\t<key>Comment</key>\n' >> $config
 			printf '\t\t\t\t<string>Second Stage patch 10.10</string>\n' >> $config
+			printf '\t\t\t</dict>\n' >> $config
+		fi
+
+		if [[ "$osxver" == 10.11* ]]
+		then
+			printf '\t\t\t<dict>\n' >> $config
+			printf '\t\t\t\t<key>Name</key>\n' >> $config
+			printf '\t\t\t\t<string>IOGraphicsFamily</string>\n' >> $config
+			printf '\t\t\t\t<key>Find</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\tAQAAdRc=\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Replace</key>\n' >> $config
+			printf '\t\t\t\t<data>\n' >> $config
+			printf '\t\t\t\tAQAAdBc=\n' >> $config
+			printf '\t\t\t\t</data>\n' >> $config
+			printf '\t\t\t\t<key>Comment</key>\n' >> $config
+			printf '\t\t\t\t<string>Second Stage patch 10.11</string>\n' >> $config
 			printf '\t\t\t</dict>\n' >> $config
 		fi
 
@@ -701,7 +719,7 @@ EOT
 	fi
 
 
-	
+
 	if [ "$CloverModel" == "4x30" ] || [ "$CloverModel" == "6x60" ] || [ "$CloverModel" == "4x40sb" ]
 	then
 		printf '\t\t\t<dict>\n' >> $config
@@ -827,7 +845,7 @@ EOT
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HD4400/4600 9mb Cursor bytes</string>\n' >> $config
-		printf '\t\t\t</dict>\n' >> $config	
+		printf '\t\t\t</dict>\n' >> $config
 
 		printf '\t\t\t<dict>\n' >> $config
 		printf '\t\t\t\t<key>Name</key>\n' >> $config
@@ -842,7 +860,7 @@ EOT
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HD4400/4600 HDMI Freeze</string>\n' >> $config
-		printf '\t\t\t</dict>\n' >> $config	
+		printf '\t\t\t</dict>\n' >> $config
 	elif ([ "$CloverModel" == "4x0G2Broadwell" ])
 	then
 		printf '\t\t\t<dict>\n' >> $config
@@ -858,7 +876,7 @@ EOT
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HD5500 HDMI Audio</string>\n' >> $config
-		printf '\t\t\t</dict>\n' >> $config	
+		printf '\t\t\t</dict>\n' >> $config
 	elif [ "$CloverModel" == "ZBook" ]
 	then
 		printf '\t\t\t<dict>\n' >> $config
@@ -889,7 +907,7 @@ EOT
 		printf '\t\t\t\t</data>\n' >> $config
 		printf '\t\t\t\t<key>Comment</key>\n' >> $config
 		printf '\t\t\t\t<string>Patch HD4400/4600 DP</string>\n' >> $config
-		printf '\t\t\t</dict>\n' >> $config		
+		printf '\t\t\t</dict>\n' >> $config
 	fi
 
 	if ([ "$CloverModel" == "4x30" ] || [[ $CloverModel == 6x60* ]]) && [[ "$osxver" != 10.11* ]]
@@ -1032,7 +1050,7 @@ EOT
 	# 	printf '\t\t\t\t<string>Patch HD4600 10.10</string>\n' >> $config
 	# 	printf '\t\t\t</dict>\n' >> $config
 	# fi
-	
+
 	printf '\t\t\t<dict>\n' >> $config
 	printf '\t\t\t\t<key>Name</key>\n' >> $config
 	printf '\t\t\t\t<string>AppleHDA</string>\n' >> $config
@@ -1047,9 +1065,9 @@ EOT
 	printf '\t\t\t\t<key>Comment</key>\n' >> $config
 	printf '\t\t\t\t<string>AppleHDA Patch 10.11</string>\n' >> $config
 	printf '\t\t\t</dict>\n' >> $config
-	
 
-	case $CloverModel in 
+
+	case $CloverModel in
 		4x30)
 			printf '\t\t\t<dict>\n' >> $config
 			printf '\t\t\t\t<key>Name</key>\n' >> $config
@@ -1081,7 +1099,7 @@ EOT
 			printf '\t\t\t\t<key>Comment</key>\n' >> $config
 			printf '\t\t\t\t<string>IDT 76D9</string>\n' >> $config
 			printf '\t\t\t</dict>\n' >> $config
-			;;		
+			;;
 		4x0G0|9470|4x0G1|ZBook)
 			printf '\t\t\t<dict>\n' >> $config
 			printf '\t\t\t\t<key>Name</key>\n' >> $config
@@ -1207,7 +1225,7 @@ EOT
 			printf '\t\t\t</dict>\n' >> $config
 			;;
 	esac
-	
+
 
 	printf '\t\t</array>\n' >> $config
 
@@ -1231,7 +1249,7 @@ EOT
 		printf '\t\t<key>ScreenResolution</key>\n' >> $config
 		printf '\t\t<string>1024x768</string>\n' >> $config
 		printf '\t\t<key>Theme</key>\n' >> $config
-		printf '\t\t<string>'"$CurrentTheme"'</string>\n' >> $config	
+		printf '\t\t<string>'"$CurrentTheme"'</string>\n' >> $config
 	else
 		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
 		then
@@ -1241,7 +1259,7 @@ EOT
 		printf '\t\t<key>Theme</key>\n' >> $config
 		printf '\t\t<string>'"$CurrentTheme"'</string>\n' >> $config
 	fi
-	
+
 	printf '\t\t<key>Mouse</key>\n' >> $config
 	printf '\t\t<dict>\n' >> $config
 	printf '\t\t\t<key>Enabled</key>\n' >> $config
