@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-rm -f /Volumes/EFI/EFI/CLOVER/drivers64UEFI/OsxAptioFixDrv-64.efi
+#rm -f /Volumes/EFI/EFI/CLOVER/drivers64UEFI/OsxAptioFixDrv-64.efi
 
 Kexts=("RealtekRTL8111.kext" "ACPIBacklight.kext" "FakePCIID_HD4600_HD4400.kext" "FakePCIID_Intel_HDMI_Audio.kext")
 for kext in ${Kexts[@]}; 
