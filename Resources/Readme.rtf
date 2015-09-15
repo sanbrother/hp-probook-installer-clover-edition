@@ -1,92 +1,139 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1397
-{\fonttbl\f0\fnil\fcharset0 LucidaGrande;\f1\fswiss\fcharset0 Helvetica-Light;\f2\fswiss\fcharset0 Helvetica;
+{\rtf1\ansi\ansicpg1252\cocoartf1404
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;\f2\fswiss\fcharset0 Helvetica-Light;
 \f3\fnil\fcharset0 AppleSymbols;}
 {\colortbl;\red255\green255\blue255;\red77\green77\blue77;\red52\green52\blue52;\red26\green26\blue26;
 }
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid1\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
 \paperw11900\paperh16840\margl1440\margr1440\vieww18720\viewh10620\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf2 \
+\f0\fs24 \cf0   
+\f1 \cf2 \
 \pard\pardeftab720\sa280\qc\partightenfactor0
 
-\f1\fs72 \cf2 Requirements
-\f2\fs24 \cf0 \
+\f2\fs72 \cf2 Requirements
+\f0\fs24 \cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
 \cf3 \
 \pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\li720\fi-720\pardirnatural\partightenfactor0
 \ls1\ilvl0\cf2 {\listtext	
-\f0 \uc0\u9642 
-\f2 	}Your laptop model is supported.\
+\f1 \uc0\u9642 
+\f0 	}Your laptop model is supported.\
 {\listtext	
-\f0 \uc0\u9642 
-\f2 	}You\'92re booting in UEFI mode with GPT hard drive.\
+\f1 \uc0\u9642 
+\f0 	}You\'92re booting in UEFI mode with GPT hard drive.\
 {\listtext	
-\f0 \uc0\u9642 
-\f2 	}You pressed F4 at Clover screen to extract ACPI tables to \
+\f1 \uc0\u9642 
+\f0 	}You pressed F4 at Clover screen to extract ACPI tables to \
 {\listtext	
-\f0 \uc0\u9642 
-\f2 	}EFI/Clover/ACPI/origin folder\
+\f1 \uc0\u9642 
+\f0 	}EFI/Clover/ACPI/origin folder\
 {\listtext	
-\f0 \uc0\u9642 
-\f2 	}This EFI folder is located in EFI partition, or a partition named CLOVER.\cf0 \
+\f1 \uc0\u9642 
+\f0 	}This EFI folder is located in EFI partition, or a partition named CLOVER.\cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0 \cf2 \
+\f1 \cf2 \
 \pard\pardeftab720\sa280\qc\partightenfactor0
 
-\f1\fs72 \cf2 Changelog\
+\f2\fs72 \cf2 Changelog\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
 
-\f2\fs28 \cf4 Version 6.4.0 (August 25th 2015)
+\f0\fs28 \cf4 Version 6.4.2.5 (September 15th 2015)
 \fs24 \cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
+\i0 Fix USB in 10.11 for 8-series/9-series laptops.
+\fs28 \cf4 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
+\cf4 \
+Version 6.4.2 (September 14th 2015)
+\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\i \cf3 \
+	
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
+\i0 Add 6x0/8x0/ZBook Broadwell.\
+
+\i 	
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
+\i0 Add Second Stage Glitch Fix for 10.11.
+\fs28 \cf4 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
+\cf4 \
+Version 6.4.1 (September 11th 2015)
+\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\i \cf3 \
+	
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
+\i0 Update OsxAptioFixDrv-64.efi for 10.11 GM.
+\i \
+	
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
+\i0 Remove Broadcom bluetooth kexts from EFI folder.
+\fs28 \cf4 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
+\cf4 \
+Version 6.4.0 (August 25th 2015)
+\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\i \cf3 \
+	
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Add support for 4x0 G2 Broadwell.
 \i \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Clover 3261.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 ACPIBacklight.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 SSDTPrgen 15.9.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 XtraFinder, Clover Configurator.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Fix SSDT DGFX for 8x60/8x70 with AMD/nVidia.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Both Atheros and Broadcom Bluetooth kext will be installed by default.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Use OsxAptioFix2Drv-64.efi instead of OsxAptioFixDrv-64.efi for 8x70 AMD model.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Remove FakeSMC plugins.
 \fs28 \cf4 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
@@ -97,18 +144,18 @@ Version 6.3.9.5 (August 13th 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Fix HDMI audio for HD4000 1600x900+.
 \i \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Remove AppleBacklightInjector.kext for models with only AMD graphics card.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Change AMD Framebuffer for 8x70p from Typha to Ebi.
 \fs28 \cf4 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
@@ -119,8 +166,8 @@ Version 6.3.9 (August 5th 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Add CsrActiveConfig=0x67 and BooterConfig=0x28 to  config.plist.
 \fs28 \cf4 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
@@ -131,18 +178,18 @@ Version 6.3.8.5 (August 1st 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Update Clover 3253.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Update BrcmPatchRAM.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Remove rootless=0 from bootflag.
 \fs28 \cf4 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
@@ -153,8 +200,8 @@ Version 6.3.8 (July 27th 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Remove FakePCIID_XHCIMux.kext for 8-series laptops.\
 
 \fs28 \cf4 \
@@ -165,8 +212,8 @@ Version 6.3.8 (July 27th 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Update ACPIBacklight, BrcmPatchRAM.
 \fs28 \cf4 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
@@ -177,28 +224,28 @@ Version 6.3.7 (July 15th 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Some fixes for El Capitan.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 FakeSMC, FakePCIID and VoodooPS2Controller, IntelMausiEthernet.kext.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Add VGA patch for 8x60w AMD series (thank xiaowuya1).\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 7-series laptops: switch to FakePCIID_XHCIMux.kext for USB 3.0 instead of Multiplex DSDT patch.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 8-series laptops: add FakePCIID_XHCIMux.kext for USB 3.0.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qj\partightenfactor0
 
@@ -210,8 +257,8 @@ Version 6.3.7 (July 15th 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Atheros Bluetooth.
 \fs28 \cf4 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
@@ -222,18 +269,18 @@ Version 6.3.5.5 (July 1st 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 SSDT Generator.
 \i \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Revert ig-platform-id for 6x0/8x0/ZBook to 0x0a260006.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Add DP port patch (non-4K) for 6x0/8x0 series.
 \fs28 \cf4 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
@@ -244,13 +291,13 @@ Version 6.3.5 (June 27th 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Clover 3241.
 \i \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Disable hibernation completely.
 \fs28 \cf4 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
@@ -261,28 +308,28 @@ Version 6.3.4 (June 25th 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Remove USB sleep patch for 8-series in config.plist.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Add USB sleep DSDT patch for 8-series.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Change ig-platform-id to 0x0d260007 for 6x0/8x0/Zbook to enable DP port\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Set SMBIOS Trust=True to fix El Capitan boot for 8-series.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Update Clover Configurator.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qj\partightenfactor0
 
@@ -294,8 +341,8 @@ Version 6.3.4 (June 25th 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Fix El Capitan USB 3.0 on 7-series model.
 \fs28 \cf4 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3333\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl288\slmult1\pardirnatural\qj\partightenfactor0
@@ -306,13 +353,13 @@ Version 6.3.2 (June 21st 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Fix for El Capitan.\
 
 \i 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Clover 3237.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qj\partightenfactor0
 
@@ -324,8 +371,8 @@ Version 6.3.2 (June 21st 2015)
 
 \i \cf3 \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Bug fix.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qj\partightenfactor0
 
@@ -340,32 +387,32 @@ Version 6.3.2 (June 21st 2015)
 
 \i0\fs26 \cf3 	
 \f3\fs32 \uc0\u8853 
-\f2\i\fs24  
+\f0\i\fs24  
 \i0 Ready for OS X El Capitan.
 \i \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Clover 3227.
 \i \
 	
-\f0\i0\fs26 \uc0\u8679 
-\f2\i\fs24  
+\f1\i0\fs26 \uc0\u8679 
+\f0\i\fs24  
 \i0 Replace AppleIntelE1000e.kext by IntelMausiEthernet.kext.\
 
 \fs26 	
-\f0 \uc0\u8679  
-\f2\fs24 XtraFinder.
-\f0 \cf2 \
+\f1 \uc0\u8679  
+\f0\fs24 XtraFinder.
+\f1 \cf2 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f2 \cf0 \
+\f0 \cf0 \
 
 \b\fs28 \
 \pard\pardeftab720\sa280\qc\partightenfactor0
 
-\f1\b0\fs72 \cf2 Credits
-\f2\fs24 \
+\f2\b0\fs72 \cf2 Credits
+\f0\fs24 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \b\fs28 \cf2 Special thanks for:\

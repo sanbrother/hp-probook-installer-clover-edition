@@ -74,11 +74,24 @@ EOT
 	        echo "ERROR: can't mount EFI partition ($ESPDevice) !"
 	        exit 1
 	    fi
+	else
+		while read line; do
+			efidevice=`diskutil list $line | grep EFI | tr -s ' ' | awk '{print $NF}'`
+			case "$efidevice" in
+			"")	echo "This drive $line has no EFI partition.";;
+			*)	echo "Found EFI partition at /dev/$efidevice."
+				if [ "`df -h | grep /dev/$efidevice`" != "" ]
+				then
+					diskutil unmount "/dev/$efidevice" && mkdir -p /Volumes/EFI && mount -t msdos "/dev/$efidevice" /Volumes/EFI
+					echo "Mounted /dev/$efidevice at /Volumes/EFI."
+				else
+					mkdir -p /Volumes/EFI && mount -t msdos "/dev/$efidevice" /Volumes/EFI
+				fi
+				exitcode=0
+				break;;
+			esac
+		done < <(diskutil list | grep "/dev/")
 	fi
-
-
-
-
 fi
 
  if [ "$exitcode" == "0" ] && [ ! -d "$BackupDir/EFI" ]

@@ -20,6 +20,20 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.4.2.5 (September 15th 2015)**
+
+* Fix USB in 10.11 for 8-series/9-series laptops.
+
+**Version 6.4.2 (September 14th 2015)**
+
+* Add 6x0/8x0/ZBook Broadwell.
+* Add Second Stage Glitch Fix for 10.11.
+
+**Version 6.4.1 (September 11th 2015)**
+
+* Update OsxAptioFixDrv-64.efi for 10.11 GM.
+* Remove Broadcom bluetooth kexts from EFI folder.
+
 **Version 6.4.0 (August 25th 2015)**
 
 * Add support for 4x0 G2 Broadwell.
