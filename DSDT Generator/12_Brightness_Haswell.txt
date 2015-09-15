@@ -135,7 +135,7 @@ Device (PNLF)\n
     }\n
     // Set XOPT bit 0 to disable smooth transitions\n
     // Set XOPT bit 1 to wait for native BacklightHandler\n
-    Name (XOPT, 0x02)\n
+    Name (XOPT, 0x06)\n
     // XRGL/XRGH: defines the valid range\n
     Name (XRGL, 25)\n
     Name (XRGH, 2777)\n
