@@ -367,8 +367,8 @@ end;
 # patch _INI method in Scope(_SB)
 into method label _INI replace_content
 begin
-    // always store 0x07D6 for "Darwin"\n
-    Store (0x07D6, OSYS)\n
+    // always store 0x07DC for "Darwin"\n
+    Store (0x07DC, OSYS)\n
     //\_TZ.BOTT ()\n
     //\_TZ.RETD ()\n
     Store (One, PFLV)\n      
