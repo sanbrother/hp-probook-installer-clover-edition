@@ -671,9 +671,3 @@ into method label _PRW parent_adr 0x00190000 code_regex Return[^(]*\([^(]*\(([^,
 begin
 Return (Package(){%1,0})
 end;
-
-into method label _PRW parent_adr 0x00190000 code_regex (Return\s+\(.*) replace_matched
-begin
-Store (0x00, Index (Local0, 0x01))\n
-%1
-end;
