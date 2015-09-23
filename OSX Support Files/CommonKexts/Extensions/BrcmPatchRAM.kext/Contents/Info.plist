@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>#OSBundleRequired</key>
+	<string>Safe Boot</string>
 	<key>BuildMachineOSBuild</key>
-	<string>14E46</string>
+	<string>15A282a</string>
 	<key>CFBundleExecutable</key>
 	<string>BrcmPatchRAM</string>
 	<key>CFBundleIdentifier</key>
@@ -15,28 +17,32 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.7.4</string>
+	<string>1.8.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>1.7.4</string>
+	<string>1.8.1</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>6E35b</string>
+	<string>7B60</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>10M2518</string>
+	<string>10K549</string>
 	<key>DTSDKName</key>
 	<string>macosx10.6</string>
 	<key>DTXcode</key>
-	<string>0640</string>
+	<string>0710</string>
 	<key>DTXcodeBuild</key>
-	<string>6E35b</string>
+	<string>7B60</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>03f0_231d</key>
+		<key>03f0_231d no firmware</key>
 		<dict>
 			<key>#FirmwareKey</key>
 			<string>only load and unload native bluetooth</string>
@@ -271,7 +277,7 @@
 			<key>DisplayName</key>
 			<string>Toshiba NGFF (4352/20702A1)</string>
 			<key>FirmwareKey</key>
-			<string>BCM20702A1_001.002.014.1483.1648_v5744</string>
+			<string>BCM20702A1_001.002.014.1483.1674_v5770</string>
 			<key>IOClass</key>
 			<string>BrcmPatchRAM</string>
 			<key>IOMatchCategory</key>
@@ -549,7 +555,7 @@
 			<key>idVendor</key>
 			<integer>2821</integer>
 		</dict>
-		<key>13d3_3295</key>
+		<key>13d3_3295 no firmware</key>
 		<dict>
 			<key>#FirmwareKey</key>
 			<string>only load and unload native bluetooth</string>
@@ -30690,8 +30696,6 @@
 		<key>com.apple.kpi.mach</key>
 		<string>9.0</string>
 	</dict>
-	<key>OSBundleRequired</key>
-	<string>Root</string>
 	<key>Source Code</key>
 	<string>https://github.com/RehabMan/BrcmPatchRAM.git</string>
 </dict>
