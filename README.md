@@ -20,6 +20,12 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.4.3 (September 23th 2015)**
+
+* Clover 3270.
+* Remove OsxAptioFix2Drv-64.efi, use OsxAptioFixDrv-64.efi.
+* Replace BrcmBluetoothInjector by BrcmPatchRAM2.
+
 **Version 6.4.2.5 (September 15th 2015)**
 
 * Fix USB in 10.11 for 8-series/9-series laptops.

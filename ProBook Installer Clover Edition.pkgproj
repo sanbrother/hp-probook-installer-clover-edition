@@ -8654,7 +8654,7 @@
 																			<key>GID</key>
 																			<integer>0</integer>
 																			<key>PATH</key>
-																			<string>OSX Support Files/CommonKexts/Extensions/10.11/BrcmBluetoothInjector.kext</string>
+																			<string>OSX Support Files/CommonKexts/Extensions/BrcmPatchRAM.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
 																			<key>PERMISSIONS</key>
@@ -8670,7 +8670,7 @@
 																			<key>GID</key>
 																			<integer>0</integer>
 																			<key>PATH</key>
-																			<string>OSX Support Files/CommonKexts/Extensions/BrcmPatchRAM.kext</string>
+																			<string>OSX Support Files/CommonKexts/Extensions/10.11/BrcmPatchRAM2.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
 																			<key>PERMISSIONS</key>
@@ -43143,7 +43143,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 3261 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 3270 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>

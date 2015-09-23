@@ -8,12 +8,12 @@ then
 	cp -f /Volumes/EFI/EFI/Boot/BOOTX64.efi /Volumes/EFI/EFI/CLOVER/CLOVERX64.efi
 fi
 
-if [ "$CloverAptioFix2" != "no" ]
-then
-	rm -f /Volumes/EFI/EFI/CLOVER/drivers64UEFI/OsxAptioFixDrv-64.efi
-else
-	rm -f /Volumes/EFI/EFI/CLOVER/drivers64UEFI/OsxAptioFix2Drv-64.efi
-fi
+#if [ "$CloverAptioFix2" != "no" ]
+#then
+#	rm -f /Volumes/EFI/EFI/CLOVER/drivers64UEFI/OsxAptioFixDrv-64.efi
+#else
+#	rm -f /Volumes/EFI/EFI/CLOVER/drivers64UEFI/OsxAptioFix2Drv-64.efi
+#fi
 
 # if [ -e "/Volumes/EFI/EFI/CLOVER/themes/Yosemite/Yosemite all blur.png" ]
 # then

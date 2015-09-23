@@ -27,8 +27,8 @@ rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/FakePCIID_HD4600_HD4400.kext
 rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/USBXHCI_4x40s.kext
 rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/USBXHCI_4x40s.kext
 
-rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/BrcmBluetoothInjector.kext
-rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/BrcmBluetoothInjector.kext
+rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.9/BrcmPatchRAM2.kext
+rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.10/BrcmPatchRAM2.kext
 rm -rf /Volumes/EFI/EFI/CLOVER/kexts/10.11/BrcmPatchRAM.kext
 
 systemsetup -setwakeonnetworkaccess off

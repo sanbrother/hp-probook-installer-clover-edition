@@ -37,3 +37,8 @@
 /System/Library/Extensions/USBXHCI_4x40s.kext<=>y
 /System/Library/Extensions/AppleUSBXHCIPCIPortInjector.kext<=>y
 /System/Library/Extensions/AppleBacklightInjector.kext<=>y
+/System/Library/Extensions/BTFirmwareUploader.kext<=>y
+/System/Library/Extensions/IOath3kfrmwr.kext<=>y
+/System/Library/Extensions/BrcmBluetoothInjector.kext<=>y
+/System/Library/Extensions/BrcmPatchRAM.kext<=>y
+/System/Library/Extensions/BrcmPatchRAM2.kext<=>y
