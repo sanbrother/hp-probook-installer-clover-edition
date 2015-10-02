@@ -1240,7 +1240,7 @@ EOT
 		CurrentTheme=$(/usr/libexec/PlistBuddy -c 'Print :GUI:Theme' /Volumes/EFI/EFI/CLOVER/config.plist 2>null)
 	fi
 
-	if ( ( [ "$CloverModel" != "6x70AMD" ] && [ "$CloverModel" != "6x70NVIDIA" ]  ) && [ "$CloverResolution" == "low" ] )
+	if ( ( [ "$CloverModel" != "6x70AMD" ] && [ "$CloverModel" != "6x70NVIDIA" ]  ) && [ "$CloverResolution" == "low" ] ) || (  [ "$CloverModel" == "Zbook" ] ||  [ "$CloverModel" == "4x0G2Broadwell" ] || [ "$CloverModel" == "4x0G1" ] || [ "$CloverModel" == "4x0G2" ] || [ "$CloverModel" == "3x0G1" ] )
 	then
 		if [[ "$CurrentTheme" == '' ]] || [[ "$CurrentTheme" == Error* ]]
 		then
