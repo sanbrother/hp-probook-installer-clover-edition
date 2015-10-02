@@ -8416,6 +8416,22 @@
 											<key>CHILDREN</key>
 											<array>
 												<dict>
+													<key>CHILDREN</key>
+													<array/>
+													<key>GID</key>
+													<integer>0</integer>
+													<key>PATH</key>
+													<string>OSX Support Files/CommonKexts/Extensions/BrcmFirmwareRepo.kext</string>
+													<key>PATH_TYPE</key>
+													<integer>1</integer>
+													<key>PERMISSIONS</key>
+													<integer>493</integer>
+													<key>TYPE</key>
+													<integer>3</integer>
+													<key>UID</key>
+													<integer>0</integer>
+												</dict>
+												<dict>
 													<key>BUNDLE_CAN_DOWNGRADE</key>
 													<true/>
 													<key>CHILDREN</key>
@@ -43143,7 +43159,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Install Clover UEFI Bootloader 3270 to EFI partition.</string>
+										<string>Install Clover UEFI Bootloader 3277 to EFI partition.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
