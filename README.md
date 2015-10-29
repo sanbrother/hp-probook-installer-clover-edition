@@ -20,6 +20,17 @@ Supported models:
 
 ###C h a n g e l o g   
 
+**Version 6.4.5 (October 29th 2015)**
+
+* Clover 3316.
+* Update BrcmPatchRAM, ACPIBatteryManager, VoodooPS2Controller.
+
+**Version 6.4.4 (October 2nd 2015)**
+
+* Clover 3277.
+* Update BrcmPatchRAM and BrcmPatchRAM2.
+* Fix problems while mounting EFI partition in CoreStorage of 10.11.
+	
 **Version 6.4.3 (September 23th 2015)**
 
 * Clover 3270.
