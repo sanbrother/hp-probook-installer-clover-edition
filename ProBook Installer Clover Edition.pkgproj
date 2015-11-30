@@ -8618,24 +8618,6 @@
 																			<key>GID</key>
 																			<integer>0</integer>
 																			<key>PATH</key>
-																			<string>OSX Support Files/CommonKexts/Extensions/ACPIBacklight.kext</string>
-																			<key>PATH_TYPE</key>
-																			<integer>1</integer>
-																			<key>PERMISSIONS</key>
-																			<integer>493</integer>
-																			<key>TYPE</key>
-																			<integer>3</integer>
-																			<key>UID</key>
-																			<integer>0</integer>
-																		</dict>
-																		<dict>
-																			<key>BUNDLE_CAN_DOWNGRADE</key>
-																			<true/>
-																			<key>CHILDREN</key>
-																			<array/>
-																			<key>GID</key>
-																			<integer>0</integer>
-																			<key>PATH</key>
 																			<string>OSX Support Files/CommonKexts/Extensions/ACPIBatteryManager.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
@@ -8715,14 +8697,12 @@
 																			<integer>0</integer>
 																		</dict>
 																		<dict>
-																			<key>BUNDLE_CAN_DOWNGRADE</key>
-																			<true/>
 																			<key>CHILDREN</key>
 																			<array/>
 																			<key>GID</key>
 																			<integer>0</integer>
 																			<key>PATH</key>
-																			<string>OSX Support Files/CommonKexts/Extensions/FakePCIID_BCM94352Z_as_BCM94360CS2.kext</string>
+																			<string>OSX Support Files/CommonKexts/Extensions/FakePCIID_Broadcom_WiFi.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
 																			<key>PERMISSIONS</key>
@@ -8733,14 +8713,12 @@
 																			<integer>0</integer>
 																		</dict>
 																		<dict>
-																			<key>BUNDLE_CAN_DOWNGRADE</key>
-																			<true/>
 																			<key>CHILDREN</key>
 																			<array/>
 																			<key>GID</key>
 																			<integer>0</integer>
 																			<key>PATH</key>
-																			<string>OSX Support Files/CommonKexts/Extensions/FakePCIID_HD4600_HD4400.kext</string>
+																			<string>OSX Support Files/CommonKexts/Extensions/FakePCIID_Intel_HD_Graphics.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
 																			<key>PERMISSIONS</key>
@@ -8857,6 +8835,22 @@
 																			<integer>0</integer>
 																			<key>PATH</key>
 																			<string>OSX Support Files/CommonKexts/Extensions/FakeSMC_LPCSensors.kext</string>
+																			<key>PATH_TYPE</key>
+																			<integer>1</integer>
+																			<key>PERMISSIONS</key>
+																			<integer>493</integer>
+																			<key>TYPE</key>
+																			<integer>3</integer>
+																			<key>UID</key>
+																			<integer>0</integer>
+																		</dict>
+																		<dict>
+																			<key>CHILDREN</key>
+																			<array/>
+																			<key>GID</key>
+																			<integer>0</integer>
+																			<key>PATH</key>
+																			<string>OSX Support Files/CommonKexts/Extensions/IntelBacklight.kext</string>
 																			<key>PATH_TYPE</key>
 																			<integer>1</integer>
 																			<key>PERMISSIONS</key>

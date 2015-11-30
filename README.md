@@ -14,11 +14,21 @@ Supported models:
 * 6-series laptop: HP Probook 4x30s, 6x60b, Elitebook 8x60p, 2x60p
 * 7-series laptop: HP Probook 4x40s, 4x0 G0, 6x70b, Elitebook 8x70p, 2x70p, 9470m
 * 8-series laptop: HP 3x0, Probook 4x0 G1/G2, Elitebook 8x0 G1, ZBook
+* 9-series laptop: Probook 4x0 G2, Elitebook 8x0 G2, ZBook
 
 [Guide to install OS X Mavericks on HP Probook](http://www.tonymacx86.com/hp-probook-mavericks/112383-guide-install-mavericks-clover-bootloader.html)  
 [Guide to install OS X Yosemite on HP Probook](http://www.tonymacx86.com/hp-probook-yosemite/143675-guide-install-yosemite-hp-laptops-clover-uefi.html)  
 
 ###C h a n g e l o g   
+
+**Version 6.4.6 (November 14th 2015)**
+
+* Clover 3320.
+* Replace ACPIBacklight by IntelBacklight.
+* Use Shell_Full.efi.
+* Update BrcmPatchRAM, ACPIBatteryManager, VoodooPS2Controller, FakePCIID.
+* Update XtraFinder, Clover Configurator.
+
 
 **Version 6.4.5 (October 29th 2015)**
 

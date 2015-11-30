@@ -43,3 +43,6 @@
 /System/Library/Extensions/BrcmPatchRAM.kext<=>y
 /System/Library/Extensions/BrcmPatchRAM2.kext<=>y
 /System/Library/Extensions/BrcmFirmwareRepo.kext<=>y
+/System/Library/Extensions/FakePCIID_Intel_HD_Graphics.kext<=>y
+/System/Library/Extensions/FakePCIID_Broadcom_WiFi.kext<=>y
+/System/Library/Extensions/IntelBacklight.kext<=>y

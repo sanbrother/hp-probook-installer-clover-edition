@@ -10,19 +10,19 @@
 		</data>
 		<key>Resources/About.nib</key>
 		<data>
-		8lbeoO2g+ElnlMPyztBt/CmHeQU=
+		O04PSg+uvZ4VT9q1KzPLq8BJLYY=
 		</data>
 		<key>Resources/AdjustWidthOfColumns.nib</key>
 		<data>
-		c+HNku1KlKNSyTaJMp3EdzU7qd8=
+		ZggcoAo1qCjDjpT7ZTPv+uRCN8c=
 		</data>
 		<key>Resources/AttributesMenu.nib</key>
 		<data>
-		8H2KT15ezPKNuOlho3ag4/GavvA=
+		GEJGfuuICupOHmM+/saZv+n1ZMk=
 		</data>
 		<key>Resources/BrowserWindow.nib</key>
 		<data>
-		28ytY1Y2Q2h/1uQSmMJEQtBe3sM=
+		LvojZu6BBGqR6fySHP4I74Miop0=
 		</data>
 		<key>Resources/CopyPath.nib</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Resources/CopyQueue.nib</key>
 		<data>
-		pCsM71LEdsAPgT7uLTvg8Imf3aI=
+		6gJGkvuBy31AcIeiKcodgZVl9zc=
 		</data>
 		<key>Resources/DeletePernamentTemplate.png</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Resources/EditWindows.nib</key>
 		<data>
-		8zP7yyl/E1XCcFAZ2aY8AFcjnS0=
+		vDVi4Xb2j0wCpKxugb8EbqXlUbM=
 		</data>
 		<key>Resources/GoUpTemplate.png</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Resources/Main.nib</key>
 		<data>
-		8THzKDxDpZzKpMYPyj4Zgshqses=
+		K1Lwomw/kbi2CO1l1ZWJ5h/9SOY=
 		</data>
 		<key>Resources/NewFile.nib</key>
 		<data>
-		ttv777bevC132HAZsKKu8vhFVXI=
+		cGcZgNucsRbV/1p0by7p0ZIqdQo=
 		</data>
 		<key>Resources/NewFileTemplates/Untitled.html</key>
 		<data>
@@ -102,11 +102,11 @@
 		</data>
 		<key>Resources/PinnableBrowserWindow.nib</key>
 		<data>
-		BUR/ASAosHnqyMUxEHEMMkb5BCg=
+		SWm1+fb/+nPwhTnVWEVI32jYcss=
 		</data>
 		<key>Resources/Preferences.nib</key>
 		<data>
-		cEPkm4wfjFzvEuTg5a1aU0rZH9w=
+		tPxN7B7U64UCGpBvlFxs5fEtYao=
 		</data>
 		<key>Resources/RightArrowTemplate.png</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>Resources/SaveWindow.nib</key>
 		<data>
-		DCi/PW/VMEtK6kcOuIWGAPUYjMc=
+		kVj9bO8riRS+r59ZJYz27K1aZxw=
 		</data>
 		<key>Resources/Select.nib</key>
 		<data>
-		cgRjxhojMdOPYBiFh7IAH+Q6ANY=
+		MSa39ZYrsSFT7J9k5aezkTWvpj8=
 		</data>
 		<key>Resources/SelectToolbarButtonTemplate.png</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Resources/StatusItemHelp.nib</key>
 		<data>
-		uyPbuy8KGD8+du6sy5zE1S8pegE=
+		QdTUBmMLSLK7yWaqSLJmZFZ+1Wc=
 		</data>
 		<key>Resources/SymbolicLinkTemplate.png</key>
 		<data>
@@ -150,15 +150,15 @@
 		</data>
 		<key>Resources/TabContents.nib</key>
 		<data>
-		VZ+XSTGBj7AiSPgkQ8uodbeaBb4=
+		xozCLhaoWnMnrV9DfTsqYIh4ZYU=
 		</data>
 		<key>Resources/TabView.nib</key>
 		<data>
-		qROuntgyRnBshq9PKByTYzpLN1M=
+		92LuNHa1R297ef4X4004oiXa6To=
 		</data>
 		<key>Resources/TabViewOpera.nib</key>
 		<data>
-		+lAEwBW6nyAXhxkNzEwcq02rjfY=
+		CkyBeJcLu+wrjSLtOu7D76aVjT4=
 		</data>
 		<key>Resources/Tabs.nib</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>Resources/TextAndBackgroundColor.nib</key>
 		<data>
-		+qIXXzVraDLIEz+d5hCJzQXZiHE=
+		/+FPXWhphnZ7Xdzcvtvqa4eA0fU=
 		</data>
 		<key>Resources/Tip.png</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Resources/ToolbarItemSplitButtonView.nib</key>
 		<data>
-		YxW+mvq6UOIMX4N6Hhn8wW80HTI=
+		q6LIboGZ0odKIG+11Xmy1I5yAYA=
 		</data>
 		<key>Resources/Window.png</key>
 		<data>
@@ -2157,19 +2157,19 @@
 		</data>
 		<key>Resources/About.nib</key>
 		<data>
-		8lbeoO2g+ElnlMPyztBt/CmHeQU=
+		O04PSg+uvZ4VT9q1KzPLq8BJLYY=
 		</data>
 		<key>Resources/AdjustWidthOfColumns.nib</key>
 		<data>
-		c+HNku1KlKNSyTaJMp3EdzU7qd8=
+		ZggcoAo1qCjDjpT7ZTPv+uRCN8c=
 		</data>
 		<key>Resources/AttributesMenu.nib</key>
 		<data>
-		8H2KT15ezPKNuOlho3ag4/GavvA=
+		GEJGfuuICupOHmM+/saZv+n1ZMk=
 		</data>
 		<key>Resources/BrowserWindow.nib</key>
 		<data>
-		28ytY1Y2Q2h/1uQSmMJEQtBe3sM=
+		LvojZu6BBGqR6fySHP4I74Miop0=
 		</data>
 		<key>Resources/CopyPath.nib</key>
 		<data>
@@ -2177,7 +2177,7 @@
 		</data>
 		<key>Resources/CopyQueue.nib</key>
 		<data>
-		pCsM71LEdsAPgT7uLTvg8Imf3aI=
+		6gJGkvuBy31AcIeiKcodgZVl9zc=
 		</data>
 		<key>Resources/DeletePernamentTemplate.png</key>
 		<data>
@@ -2193,7 +2193,7 @@
 		</data>
 		<key>Resources/EditWindows.nib</key>
 		<data>
-		8zP7yyl/E1XCcFAZ2aY8AFcjnS0=
+		vDVi4Xb2j0wCpKxugb8EbqXlUbM=
 		</data>
 		<key>Resources/GoUpTemplate.png</key>
 		<data>
@@ -2213,11 +2213,11 @@
 		</data>
 		<key>Resources/Main.nib</key>
 		<data>
-		8THzKDxDpZzKpMYPyj4Zgshqses=
+		K1Lwomw/kbi2CO1l1ZWJ5h/9SOY=
 		</data>
 		<key>Resources/NewFile.nib</key>
 		<data>
-		ttv777bevC132HAZsKKu8vhFVXI=
+		cGcZgNucsRbV/1p0by7p0ZIqdQo=
 		</data>
 		<key>Resources/NewFileTemplates/Untitled.html</key>
 		<data>
@@ -2249,11 +2249,11 @@
 		</data>
 		<key>Resources/PinnableBrowserWindow.nib</key>
 		<data>
-		BUR/ASAosHnqyMUxEHEMMkb5BCg=
+		SWm1+fb/+nPwhTnVWEVI32jYcss=
 		</data>
 		<key>Resources/Preferences.nib</key>
 		<data>
-		cEPkm4wfjFzvEuTg5a1aU0rZH9w=
+		tPxN7B7U64UCGpBvlFxs5fEtYao=
 		</data>
 		<key>Resources/RightArrowTemplate.png</key>
 		<data>
@@ -2265,11 +2265,11 @@
 		</data>
 		<key>Resources/SaveWindow.nib</key>
 		<data>
-		DCi/PW/VMEtK6kcOuIWGAPUYjMc=
+		kVj9bO8riRS+r59ZJYz27K1aZxw=
 		</data>
 		<key>Resources/Select.nib</key>
 		<data>
-		cgRjxhojMdOPYBiFh7IAH+Q6ANY=
+		MSa39ZYrsSFT7J9k5aezkTWvpj8=
 		</data>
 		<key>Resources/SelectToolbarButtonTemplate.png</key>
 		<data>
@@ -2285,7 +2285,7 @@
 		</data>
 		<key>Resources/StatusItemHelp.nib</key>
 		<data>
-		uyPbuy8KGD8+du6sy5zE1S8pegE=
+		QdTUBmMLSLK7yWaqSLJmZFZ+1Wc=
 		</data>
 		<key>Resources/SymbolicLinkTemplate.png</key>
 		<data>
@@ -2297,15 +2297,15 @@
 		</data>
 		<key>Resources/TabContents.nib</key>
 		<data>
-		VZ+XSTGBj7AiSPgkQ8uodbeaBb4=
+		xozCLhaoWnMnrV9DfTsqYIh4ZYU=
 		</data>
 		<key>Resources/TabView.nib</key>
 		<data>
-		qROuntgyRnBshq9PKByTYzpLN1M=
+		92LuNHa1R297ef4X4004oiXa6To=
 		</data>
 		<key>Resources/TabViewOpera.nib</key>
 		<data>
-		+lAEwBW6nyAXhxkNzEwcq02rjfY=
+		CkyBeJcLu+wrjSLtOu7D76aVjT4=
 		</data>
 		<key>Resources/Tabs.nib</key>
 		<data>
@@ -2321,7 +2321,7 @@
 		</data>
 		<key>Resources/TextAndBackgroundColor.nib</key>
 		<data>
-		+qIXXzVraDLIEz+d5hCJzQXZiHE=
+		/+FPXWhphnZ7Xdzcvtvqa4eA0fU=
 		</data>
 		<key>Resources/Tip.png</key>
 		<data>
@@ -2333,7 +2333,7 @@
 		</data>
 		<key>Resources/ToolbarItemSplitButtonView.nib</key>
 		<data>
-		YxW+mvq6UOIMX4N6Hhn8wW80HTI=
+		q6LIboGZ0odKIG+11Xmy1I5yAYA=
 		</data>
 		<key>Resources/Window.png</key>
 		<data>
